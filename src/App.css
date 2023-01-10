@@ -10,7 +10,7 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-darkL: hsl(var(--hue), var(--sat), 0%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
@@ -175,7 +175,10 @@ section__subtitle {
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 992px) {
-
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 /* Medium Device */
@@ -189,7 +192,10 @@ section__subtitle {
 
 /* Small Device */
 @media screen and (max-width: 350px) {
-
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
 
 
