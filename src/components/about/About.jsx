@@ -11,7 +11,9 @@ const About = () => {
         <h3 className="section__subtitle">My Introduction</h3>
 
         <div className="about__container container grid">
-            <img src={AboutImg} alt="about me pic" className="about__img" />
+            <div className="about__center">
+                <img src={AboutImg} alt="about me pic" className="about__img" />
+            </div>
             <div className="about__data">
                 <Info/>
 
