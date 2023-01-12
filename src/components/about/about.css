@@ -1,0 +1,17 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    columns: 4rem;
+    margin-top: 4rem;
+}
+
+.about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-content: center;
+}
+
+.about__description {
+    padding: 0.4rem 0 0;
+    margin-bottom: var(--mb-2);
+}
