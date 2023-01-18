@@ -24,9 +24,9 @@ const Frontend = () => {
               <span className="skills__level">Advanced</span>
             </div>
           </div>
-        </div>
+        
 
-        <div className="skills__group">
+        
           <div className="skills__data">
             <i class='bx bx-check-circle' ></i>
           
@@ -35,7 +35,8 @@ const Frontend = () => {
               <span className="skills__level">intermediate</span>
             </div>
           </div>
-
+          </div>
+          <div className="skills__group">
           <div className="skills__data">
             <i class='bx bx-check-circle' ></i>
           
@@ -44,7 +45,8 @@ const Frontend = () => {
               <span className="skills__level">intermediate</span>
             </div>
           </div>
-
+          
+          
           <div className="skills__data">
             <i class='bx bx-check-circle' ></i>
           
