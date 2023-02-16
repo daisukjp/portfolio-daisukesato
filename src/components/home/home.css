@@ -87,7 +87,8 @@
 }
 
 .home__scroll {
-    margin-left: 9.25rem;
+    /* margin-left: 9.25rem; */
+    text-align: center;
 }
 
 .wheel {
