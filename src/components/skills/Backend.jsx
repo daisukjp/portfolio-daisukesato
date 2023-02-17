@@ -44,7 +44,7 @@ const Backend = () => {
           <i className="bx bx-check-circle"></i>
         
           <div>
-            <h3 className="skills__name">My SQL</h3>
+            <h3 className="skills__name">MySQL</h3>
             <span className="skills__level">Basic</span>
           </div>
         </div>
