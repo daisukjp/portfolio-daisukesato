@@ -45,10 +45,19 @@
     display: none;
 }
 
+a {
+    color: var(--title-color-dark);
+}
+
 /* Active Link */
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: #909090;
+}
+
+/* background changer */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Break Points */
