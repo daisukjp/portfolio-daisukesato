@@ -17,9 +17,9 @@ const App = () => {
     <Header />
     <main className='main' >
       <Home />
-      <About />
-      <Service />
       <Work />
+      {/* <About /> */}
+      <Service />
 
       <Skills />
       <Qualification />

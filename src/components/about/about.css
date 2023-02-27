@@ -1,3 +1,7 @@
+.about {
+    margin-top: 8rem;
+}
+
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;

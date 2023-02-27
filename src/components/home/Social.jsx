@@ -3,7 +3,7 @@ import React from 'react'
 const Social = () => {
   return (
     <div className="home__social">
-        <a href="https://www.instagram.com/film_jp/" className="home__social-icon" target="_blank">
+        {/* <a href="https://www.instagram.com/film_jp/" className="home__social-icon" target="_blank">
           <i className="uil uil-instagram"></i>
         </a>
 
@@ -13,7 +13,7 @@ const Social = () => {
 
         <a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" className="home__social-icon" target="_blank">
           <i className="uil uil-linkedin-alt"></i>
-        </a>
+        </a> */}
     </div>
   )
 }

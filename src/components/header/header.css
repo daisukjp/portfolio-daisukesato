@@ -60,13 +60,46 @@ a {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+.snsArea {
+    position: fixed;
+    bottom: 120px;
+    right: 35px;
+    z-index: 99999;
+}
+
+.pc_show {
+    display: block;
+}
+
+.ttl {
+    writing-mode: vertical-rl;
+    font-size: 1.1rem;
+    position: relative;
+    letter-spacing: 0.08em;
+}
+
+.ttl::before {
+    content: "";
+    position: absolute;
+    bottom: -65px;
+    right: 13px;
+    width: 1px;
+    height: 60px;
+    background: #222;
+}
+
+.snsList {
+    text-align: center;
+    margin-top: 75px;
+}
+
 /* Break Points */
 /* Medium Device */
 @media screen and (max-width: 768px) {
-    .header {
+    /* .header {
         top: initial;
         bottom: 0;
-    }
+    } */
 
     .nav {
         height: var(--header-height);
@@ -74,9 +107,10 @@ a {
 
     .nav__menu {
         position: fixed;
-        bottom: -100%;
-        left: 0;
+        bottom: 0;
+        right: 100%;
         width: 100%;
+        height: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
@@ -91,6 +125,7 @@ a {
     /* Show the menu */
     .show-menu {
         bottom: 0;
+        right: 0;
     }
 
 .nav__list {
@@ -104,12 +139,14 @@ a {
 }
 
 .nav__close {
-    position: absolute;
+    /* position: absolute;
     right: 1.2rem;
     bottom: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--title-color);
+    color: var(--title-color); */
+    opacity: 0 !important;
+    transition: all .6s ease-in-out;
 }
 
 .nav__close:hover {
@@ -119,6 +156,7 @@ a {
 .nav__toggle {
     font-size: 1.1rem;
     cursor: pointer;
+    z-index: 100;
 }
 
     .nav__icon,
@@ -137,4 +175,10 @@ a {
     .nav__list {
         column-gap: 0;
     }
+    .snsArea {
+        bottom: 100px;
+        right: 20px;
+        position: absolute;
+    }
+    
 }

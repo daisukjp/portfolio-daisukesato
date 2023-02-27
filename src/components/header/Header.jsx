@@ -15,6 +15,7 @@ const Header = () => {
 
 
     return (
+        <div>
         <header className="header">
             <nav className="nav container">
                 <a href="index.html" className="nav__logo">&lt;/DS&gt;</a>
@@ -76,6 +77,14 @@ const Header = () => {
                             </a>
                         </li>
                     </ul>
+                    <div class="snsArea pc_show">
+                    <p class="ttl en_go"> &nbsp;</p>
+                        <ul class="snsList">
+                            <li class="first"><a href="https://www.instagram.com/film_jp/" target="_blank"><i className="uil uil-instagram"></i></a></li>
+                            <li class="even"><a href="https://github.com/daisukjp" target="_blank"><i className="uil uil-github-alt"></i></a></li>
+                            <li class="last"><a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" target="_blank"> <i className="uil uil-linkedin-alt"></i></a></li>
+                        </ul>
+                    </div>
 
                     <i className="uil uil-times nav__close" onClick={() => ShowMenu(!Toggle)}></i>
                 </div>
@@ -84,7 +93,11 @@ const Header = () => {
                 <i className="uil uil-apps"></i>
                 </div>
             </nav>
+            
         </header>
+            
+        </div>
+        
     )
 }
 
