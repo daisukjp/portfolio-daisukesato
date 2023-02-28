@@ -53,7 +53,7 @@
 
 /* Break Points */
 /* Large Device */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
     .skills__container {
         grid-template-columns: max-content;
         row-gap: 2rem;

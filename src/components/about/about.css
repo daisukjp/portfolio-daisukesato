@@ -23,7 +23,7 @@
 
 /* Break Points */
 /* Large Device */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;

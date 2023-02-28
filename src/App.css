@@ -50,7 +50,7 @@
 }
 
 /* Responsive Typography */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
   :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
@@ -175,7 +175,7 @@ section__subtitle {
 
 /* Break Points */
 /* Large Device */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);

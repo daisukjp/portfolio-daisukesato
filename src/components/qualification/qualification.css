@@ -83,7 +83,7 @@
 
 /* Break Points */
 /* Large Device */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
     .qualification__container {
         margin-left: auto;
         margin-right: auto;

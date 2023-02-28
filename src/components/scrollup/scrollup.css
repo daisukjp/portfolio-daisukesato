@@ -27,7 +27,7 @@
 
 /* Break Points */
 /* Large Device */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
     .scrollup {
         right: 1.5rem;
         padding: 0.25rem 0.5rem;
