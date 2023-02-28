@@ -181,6 +181,12 @@ a {
     position: relative;
     /* opacity: 0; */
     }
+
+    .snsArea {
+        bottom: 16px;
+        right: 20px;
+        position: absolute;
+    }
 }
 
 /* Medium Device */
