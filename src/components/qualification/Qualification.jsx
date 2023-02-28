@@ -45,8 +45,10 @@ const Qualification = () => {
                     }>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">NAIT - DMIT</h3>
+                            <h3 className="qualification__title">Northern Alberta Institute of Technology</h3>
                             <span className="qualification__subtitle">
+                                DMIT Web Design & Development
+                                <br />
                                 Edmonton, AB
                             </span>
                             <div className="qualification__calendar">
@@ -72,32 +74,16 @@ const Qualification = () => {
                         </div>
                         
                         <div>
-                            <h3 className="qualification__title">UC San Diego</h3>
-                            <span className="qualification__subtitle">
-                                San Diego - CA
-                            </span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 
-                                {" "}2019 - 2020
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
                             <h3 className="qualification__title">Surugadai University</h3>
                             <span className="qualification__subtitle">
+                                Contemporary Culture literature
+                            <br />
                                 Saitama, Japan
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
                                 {" "}2017 - 2021
                             </div>
-                        </div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
                         </div>
                     </div>
 
@@ -107,13 +93,15 @@ const Qualification = () => {
                     : "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Contemporary Culture </h3>
+                            <h3 className="qualification__title">Front-End Developer Intern</h3>
                             <span className="qualification__subtitle">
-                                Canada - Institute
+                                Diamond Head Inc.
+                                <br/>
+                                Sapporo - Japan
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
+                                {" "}2022 May - August
                             </div>
                         </div>
                         
@@ -134,32 +122,16 @@ const Qualification = () => {
                         </div>
                         
                         <div>
-                            <h3 className="qualification__title">Web Design</h3>
+                            <h3 className="qualification__title">Inside Sales Team Lead Intern</h3>
                             <span className="qualification__subtitle">
-                                Canada - Institute
+                                Smiloops Inc.
+                                <br/>
+                                Tokyo - Japan
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
                                 {" "}2021 - Present
                             </div>
-                        </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Web Development</h3>
-                            <span className="qualification__subtitle">
-                                Canada - Institute
-                            </span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
                         </div>
                     </div>
 
