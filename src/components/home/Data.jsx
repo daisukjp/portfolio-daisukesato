@@ -9,7 +9,7 @@ const Data = () => {
         <h3 className="home__subtitle">CREATIVE FRONT-END DEVELOPER BASED IN Edmonton</h3>
         <p className="home__description">
             {/* CREATIVE FRONT-END DEVELOPER BASED IN Edmonton */}
-            Web Developer with a background in web design and academic accomplishments in multimedia studies. Fast and efficient problem-solving skills and highly motivated to make a  difference in web development teams. Genuinely enjoy collaboration, teamwork, and analytical and creative thinking. Eager to hone my skills and become a valuable member of your web development team. 
+            Experienced web developer with design background seeks to join web development team to utilize problem-solving skills and foster collaborative, analytical, and creative thinking.
 
         </p>
 
