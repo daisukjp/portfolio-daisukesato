@@ -45,13 +45,13 @@ const Qualification = () => {
                     }>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Web Development</h3>
+                            <h3 className="qualification__title">NAIT - DMIT</h3>
                             <span className="qualification__subtitle">
-                                Canada - Institute
+                                Edmonton, AB
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
+                                {" "}2021 September - Present
                             </div>
                         </div>
                         
@@ -72,26 +72,26 @@ const Qualification = () => {
                         </div>
                         
                         <div>
-                            <h3 className="qualification__title">Web Design</h3>
+                            <h3 className="qualification__title">UC San Diego</h3>
                             <span className="qualification__subtitle">
-                                Canada - Institute
+                                San Diego - CA
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
+                                {" "}2019 - 2020
                             </div>
                         </div>
                     </div>
 
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Web Development</h3>
+                            <h3 className="qualification__title">Surugadai University</h3>
                             <span className="qualification__subtitle">
-                                Canada - Institute
+                                Saitama, Japan
                             </span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
+                                {" "}2017 - 2021
                             </div>
                         </div>
                         
@@ -101,27 +101,6 @@ const Qualification = () => {
                         </div>
                     </div>
 
-                    <div className="qualification__data">
-                        <div>
-
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        
-                        <div>
-                            <h3 className="qualification__title">Web Design</h3>
-                            <span className="qualification__subtitle">
-                                Canada - Institute
-                            </span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 
-                                {" "}2021 - Present
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div className={toggleState === 2 ? "qualification__content qualification__content-active button--flex" 
