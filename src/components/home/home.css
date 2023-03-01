@@ -3,7 +3,7 @@
 }
 
 .home__content {
-    grid-template-columns: 616px 416px;
+    grid-template-columns: 516px 316px;
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
@@ -26,8 +26,20 @@
 }
 
 .home__title {
-    font-size: var(--big-font-size); 
-    margin-bottom: var(--mb-0-25);
+    font-size: 95px;
+    line-height: 1.2;
+    letter-spacing: 6px;
+}
+
+.name__intro {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.name__bottom {
+    font-size: 59px;
+    letter-spacing: 30px;
+    line-height: 1;
 }
 
 .home__hand {
@@ -130,7 +142,8 @@
 /* Large Device */
 @media screen and (max-width: 1120px) {
     .home__content {
-        grid-template-columns: 400px repeat(1, 1fr);
+        /* grid-template-columns: 400px repeat(1, 1fr); */
+        grid-template-columns: 416px 316px;
     }
 
     .home__hand {
@@ -162,6 +175,18 @@
 
 /* Medium Device */
 @media screen and (max-width: 768px) {
+
+    .home__title {
+        font-size: 75px;
+    }
+    
+    .name__intro {
+        font-size: 26px;
+    }
+
+    .name__bottom {
+        font-size: 40px;
+    }
     
     .home__content {
         grid-template-columns: 200px repeat(2, 1fr);
@@ -184,7 +209,15 @@
 
 @media screen and (max-width: 576px) {
     .home__title {
-        font-size: 30px;
+        font-size: 50px;
+    }
+    
+    .name__intro {
+        font-size: 26px;
+    }
+
+    .name__bottom {
+        font-size: 40px;
     }
 
     .home__subtitle {
@@ -211,6 +244,18 @@
 
 /* Small Device */
 @media screen and (max-width: 466px) {
+    .home__title {
+        font-size: 30px;
+    }
+    
+    .name__intro {
+        font-size: 20px;
+    }
+
+    .name__bottom {
+        font-size: 26px;
+    }
+
     .button {
         padding: 1rem 0.75rem;
     }

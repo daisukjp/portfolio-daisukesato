@@ -52,6 +52,20 @@
     font-size: var(--tiny-font-size);
 }
 
+.about__ul {
+    width: 70vw;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+.about__li {
+    font-size: 18px;
+    color: rgb(35, 41, 70);
+    padding: 5px 0px;
+    margin-top: 5px;
+    line-height: 156%;
+}
+
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 1120px) {
