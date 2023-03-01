@@ -13,7 +13,7 @@ const Typed = () => {
         padding: '20px 0px 0px',
         textAlign: 'center',
         }}
-        startDelay={2000}
+        startDelay={1000}
         cursorColor="rgb(35, 41, 70)"
         multiText={[
         'My name is',

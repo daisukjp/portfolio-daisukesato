@@ -4,7 +4,8 @@ const Data = () => {
   return (
     <div className="home__data">
         <h1 className="name__intro">HELLO. I'M</h1>
-        <h1 className="home__title">Daisuke
+        <h1 className="home__title">
+            Daisuke
         </h1>
         <h1 className="name__bottom">
         Sato
