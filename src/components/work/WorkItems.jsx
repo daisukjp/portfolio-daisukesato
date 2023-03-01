@@ -9,39 +9,41 @@ const WorkItems = ({item}) => {
         setToggleState(index);
     }
     return (
+        <>
         <div className="work__card" key={item.id} onClick={() => toggleTab(1)
         }>
             <img src={item.image} alt="" className="work__img" />
             <div className="card__content">
             <h3 className="work__title">{item.title}</h3>
-            <a href="#" className="work__button">
-                Demo
+            <span className="work__button" onClick={() => toggleTab(1)}>
+                View More
                 <i className="bx bx-right-arrow-alt work__button-icon"></i>
-            </a>
+            </span>
             </div>
 
-            {/* <div className={toggleState === 1 ? "service__model active-model" : "service__model"}>
-                <div className="service__model-content">
+            
+        </div>
+            {/* <div className={toggleState === 1 ? "work__model active-model" : "work__model"}>
+                <div className="work__model-content">
                     <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                     </i>
-                    <h3 className="service__model-title">
+                    <h3 className="work__model-title">
                         hello
                     </h3>
-                    <p className="service__model-description">
+                    <p className="work__model-description">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse sapiente quidem eveniet culpa reiciendis eius, sint id cumque fugiat ullam possimus qui eaque cupiditate!
                     </p>
-                    <ul className="service__model-services grid">
-                        <li className="service__model-service">
+                    <ul className="work__model-services grid">
+                        <li className="work__model-service">
                             <i className="uil uil-check-circle"></i>
-                            <p className="service__model-info">
+                            <p className="work__model-info">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
                             </p>
                         </li>
                     </ul>
                 </div>
             </div> */}
-            
-        </div>
+            </>
     )
 }
 
