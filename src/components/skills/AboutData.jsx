@@ -30,14 +30,14 @@ const AboutData = () => {
                                 High potential as a developer
                             </span>
                             <br />
-                            I'm pleased to code, learn about new things, solve problems.
+                            Coding brings me immense pleasure, and the pursuit of knowledge and problem-solving invigorate my passion for learning.
                         </li>
                         <li className="about__li">
                             <span className='about__span'>
-                                Bachelor of Multi-media
+                            Diploma in Digital Media and IT Web Design and Development
                             </span>
                             <br />
-                            I've had a bachelor of multi-media. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I'm looking for a job as a front-end developer.
+                            I'm furthering my professional web development studies at Northern Alberta institute of Technology. I'm looking for a job as a front-end developer.
                         </li>
                     </ul>
                     
