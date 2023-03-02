@@ -180,7 +180,7 @@
 /* Medium Device */
 @media screen and (max-width: 768px) {
     .service__container {
-        grid-template-columns: max-content;
+        grid-template-columns: repeat(2, 248px);
     }
 
 }
@@ -188,11 +188,24 @@
 @media screen and (max-width: 576px) {
 
     .service__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .work__img {
         width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .work__card {
+        padding: 0.5rem;
     }
 }
+
+/* Small Device */
+/* @media screen and (max-width: 350px) {
+    .service__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
 
