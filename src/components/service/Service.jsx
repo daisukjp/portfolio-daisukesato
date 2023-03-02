@@ -39,13 +39,28 @@ const Service = () => {
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                             </i>
+                            <h2>Hellllo</h2>
                             <h3 className="service__model-title">
                                 hello
                             </h3>
                             <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse sapiente quidem eveniet culpa reiciendis eius, sint id cumque fugiat ullam possimus qui eaque cupiditate!
                             </p>
                             <ul className="service__model-services grid">
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
                                 <li className="service__model-service">
                                     <i className="uil uil-check-circle"></i>
                                     <p className="service__model-info">
@@ -80,9 +95,23 @@ const Service = () => {
                                 hello
                             </h3>
                             <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse sapiente quidem eveniet culpa reiciendis eius, sint id cumque fugiat ullam possimus qui eaque cupiditate!
                             </p>
                             <ul className="service__model-services grid">
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
                                 <li className="service__model-service">
                                     <i className="uil uil-check-circle"></i>
                                     <p className="service__model-info">
@@ -118,9 +147,23 @@ const Service = () => {
                                 hello
                             </h3>
                             <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse sapiente quidem eveniet culpa reiciendis eius, sint id cumque fugiat ullam possimus qui eaque cupiditate!
                             </p>
                             <ul className="service__model-services grid">
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
+                                <li className="service__model-service">
+                                    <i className="uil uil-check-circle"></i>
+                                    <p className="service__model-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
+                                    </p>
+                                </li>
+
                                 <li className="service__model-service">
                                     <i className="uil uil-check-circle"></i>
                                     <p className="service__model-info">
@@ -131,7 +174,9 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div>
+                
             </div>
         </section>
     )
