@@ -1,9 +1,9 @@
 import React from 'react'
 import "./service.css"
 import { useState } from 'react'
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 
 import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
 import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
 import Daisuke from "../../assets/daisuke_portforio.jpg";
 
@@ -92,21 +92,25 @@ const Service = () => {
                                     My portfolio page
                                 </h3>
                                 <p className="service__model-description">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, esse magnam! Nam eaque non, laudantium distinctio saepe inventore quibusdam, ad asperiores fugiat voluptas corrupti quasi accusantium, amet provident eum consequuntur.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, 
                                 </p>
                             </div>
                             <div className="work__cover">
-                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                            <BrowserRouter>
+                                <a className="sc-iwjdpV ilgNXF"><Link to="./Portfolio">Detail</Link>
                                 <i class="uil uil-file-info-alt"></i>
                                 </a>
+                            </BrowserRouter>
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
                                 <i class="uil uil-window"></i>
                                 </a>
                                 <div class="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
-                                <i class="uil uil-github"></i>
+                                
+                                    <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
+                                    <i class="uil uil-github"></i>
                                 </a>
+                    
                             </div>
 
                         </div>
@@ -141,7 +145,7 @@ const Service = () => {
 
                                 </h3>
                                 <p className="service__model-description">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, accusantium dolores aperiam mollitia ea ullam, earum quae vel ab necessitatibus dolore voluptatem, a incidunt rerum corporis voluptas error similique ad!
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 </p>
                             </div>
                             <div className="work__cover">
