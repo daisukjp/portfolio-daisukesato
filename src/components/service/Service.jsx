@@ -4,7 +4,8 @@ import { useState } from 'react'
 
 import Work1 from "../../assets/work1.jpg";
 import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
+import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
+import Daisuke from "../../assets/daisuke_portforio.jpg";
 
 
 const Service = () => {
@@ -24,7 +25,7 @@ const Service = () => {
                 <div className="work__card">
                     <img src={Work1} alt="work__img" className="work__img" />
                     <div className="card__content">
-                    <h3 className="work__title">Title</h3>
+                    <h3 className="work__title">Title1</h3>
                     <span className="work__button" onClick={() => toggleTab(1)}>
                         View More
                         <i className="bx bx-right-arrow-alt work__button-icon"></i>
@@ -39,20 +40,29 @@ const Service = () => {
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                             </i>
-                            <h3 className="service__model-title">
-                                hello
-                            </h3>
-                            <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum
-                            </p>
-                            <ul className="service__model-services grid">
-                                <li className="service__model-service">
-                                    <i className="uil uil-check-circle"></i>
-                                    <p className="service__model-info">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
-                                    </p>
-                                </li>
-                            </ul>
+                            <img src={Work1} alt="work__img" className="work__img2" />
+                            <div className="work__cover-content">
+                                <h3 className="service__model-title">
+                                    hello1
+                                </h3>
+                                <p className="service__model-description">
+                                    test1
+                                </p>
+                            </div>
+                            <div className="work__cover">
+                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <i class="uil uil-file-info-alt"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <i class="uil uil-window"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <i class="uil uil-github"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -60,10 +70,10 @@ const Service = () => {
                 <div className="service__content">
                     
                 <div className="work__card">
-                    <img src={Work2} alt="work__img" className="work__img" />
+                    <img src={Daisuke} alt="work__img" className="work__img" />
                     <div className="card__content">
-                    <h3 className="work__title">Title</h3>
-                    <span className="work__button" onClick={() => toggleTab(1)}>
+                    <h3 className="work__title">My portfolio page</h3>
+                    <span className="work__button" onClick={() => toggleTab(2)}>
                         View More
                         <i className="bx bx-right-arrow-alt work__button-icon"></i>
                     </span>
@@ -72,24 +82,33 @@ const Service = () => {
                     
                 </div>
 
-                        <div className={toggleState === 1 ? "service__model active-model" : "service__model"}>
+                        <div className={toggleState === 2 ? "service__model active-model" : "service__model"}>
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                             </i>
-                            <h3 className="service__model-title">
-                                hello
-                            </h3>
-                            <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse
-                            </p>
-                            <ul className="service__model-services grid">
-                                <li className="service__model-service">
-                                    <i className="uil uil-check-circle"></i>
-                                    <p className="service__model-info">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
-                                    </p>
-                                </li>
-                            </ul>
+                            <img src={Daisuke} alt="work__img" className="work__img2" />
+                            <div className="work__cover-content">
+                                <h3 className="service__model-title">
+                                    My portfolio page
+                                </h3>
+                                <p className="service__model-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, esse magnam! Nam eaque non, laudantium distinctio saepe inventore quibusdam, ad asperiores fugiat voluptas corrupti quasi accusantium, amet provident eum consequuntur.
+                                </p>
+                            </div>
+                            <div className="work__cover">
+                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <i class="uil uil-file-info-alt"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
+                                <i class="uil uil-window"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
+                                <i class="uil uil-github"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -97,10 +116,11 @@ const Service = () => {
                 <div className="service__content">
                     
                 <div className="work__card">
-                    <img src={Work3} alt="work__img" className="work__img" />
+                    <img src={Fuwa} alt="work__img" className="work__img" />
                     <div className="card__content">
-                    <h3 className="work__title">Title</h3>
-                    <span className="work__button" onClick={() => toggleTab(1)}>
+                    <h3 className="work__title">Fuwa Fuwa-Gallery
+</h3>
+                    <span className="work__button" onClick={() => toggleTab(3)}>
                         View More
                         <i className="bx bx-right-arrow-alt work__button-icon"></i>
                     </span>
@@ -110,24 +130,34 @@ const Service = () => {
                 </div>
 
                     {/* <div className="service__model active-model"> */}
-                        <div className={toggleState === 1 ? "service__model active-model" : "service__model"}>
+                        <div className={toggleState === 3 ? "service__model active-model" : "service__model"}>
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                             </i>
-                            <h3 className="service__model-title">
-                                hello
-                            </h3>
-                            <p className="service__model-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse
-                            </p>
-                            <ul className="service__model-services grid">
-                                <li className="service__model-service">
-                                    <i className="uil uil-check-circle"></i>
-                                    <p className="service__model-info">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
-                                    </p>
-                                </li>
-                            </ul>
+                            <img src={Fuwa} alt="Fuwa fuwa" className="work__img2" />
+                            <div className="work__cover-content">
+                                <h3 className="service__model-title">
+                                    FuwaFuwa-Gallery
+
+                                </h3>
+                                <p className="service__model-description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, accusantium dolores aperiam mollitia ea ullam, earum quae vel ab necessitatibus dolore voluptatem, a incidunt rerum corporis voluptas error similique ad!
+                                </p>
+                            </div>
+                            <div className="work__cover">
+                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <i class="uil uil-file-info-alt"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank">View
+                                <i class="uil uil-window"></i>
+                                </a>
+                                <div class="sc-dlVxhl psblj"></div>
+                                <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank">GitHub
+                                <i class="uil uil-github"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
