@@ -11,28 +11,33 @@ const AboutData = () => {
                     <div>
                         <Typed />
                     </div>
+                    <div className="about__div">
+                    <h1 className="about__h1">
+                    Learning is a lifelong, goalless pursuit that I will embrace with unwavering passion.
+                    </h1>
+                    </div>
                     <ul className="about__ul">
                         <li className="about__li">
-                            <span>
+                            <span className='about__span'>
                                 Passionate about web development
-                                <br />
-                                I am a front-end developer who is eager to learn about new technologies.
                             </span>
+                            <br />
+                            I am a front-end developer who is eager to learn about new technologies.
                         </li>
 
                         <li className="about__li">
-                            <span>
+                            <span className='about__span'>
                                 High potential as a developer
-                                <br />
-                                I'm pleased to code, learn about new things, solve problems.
                             </span>
+                            <br />
+                            I'm pleased to code, learn about new things, solve problems.
                         </li>
                         <li className="about__li">
-                            <span>
+                            <span className='about__span'>
                                 Bachelor of Multi-media
-                                <br />
-                                I've had a bachelor of multi-media. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I'm looking for a job as a front-end developer.
                             </span>
+                            <br />
+                            I've had a bachelor of multi-media. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I'm looking for a job as a front-end developer.
                         </li>
                     </ul>
                     
