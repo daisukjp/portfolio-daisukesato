@@ -6,6 +6,7 @@ import { useState } from 'react'
 // import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom';
 import { Portfolio } from './Portfolio';
+// import { useNavigate } from "react-router-dom"
 
 import Work1 from "../../assets/work1.jpg";
 import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
@@ -103,13 +104,19 @@ const Service = () => {
                             </div>
                             <div className="work__cover">
                             {/* <BrowserRouter> */}
-                                {/* <a className="sc-iwjdpV ilgNXF" onClick={() => navigate('/portfolio')}> */}
-                                {/* <a className="sc-iwjdpV ilgNXF" >
+                                
+                                <a className="sc-iwjdpV ilgNXF" href={<Portfolio />}>Detail
+                                <i class="uil uil-file-info-alt"></i>
+                                </a>
+
+                                {/* <a className="sc-iwjdpV ilgNXF" onClick={() => navigate('/portfolio')}>
                                 <i class="uil uil-file-info-alt"></i>
                                 </a> */}
-                                <Link className="sc-iwjdpV ilgNXF" to="./Portfolio.jsx">
+
+
+                                {/* <Link className="sc-iwjdpV ilgNXF" to="./Portfolio.jsx">
                                 <i class="uil uil-file-info-alt"></i>
-                                </Link>
+                                </Link> */}
                                 {/* <Router /> */}
                             {/* </BrowserRouter> */}
                                 <div class="sc-dlVxhl psblj"></div>

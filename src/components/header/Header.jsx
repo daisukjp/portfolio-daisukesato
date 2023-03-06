@@ -76,6 +76,17 @@ const Header = () => {
                                 Contact
                             </a>
                         </li>
+
+                        <li className='nav__item'>
+                            <a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing"
+                            onClick={() => setActiveNav('#resume')} className={
+                            activeNav === "#resume" ? "nav__link active-link" : "nav_link"
+                            }
+                            target="_blank">
+                                <i className='uil uil-message nav__icon'></i>
+                                Resume
+                            </a>
+                        </li>
                     </ul>
                     <div class="snsArea pc_show">
                     <p class="ttl en_go"> &nbsp;</p>
