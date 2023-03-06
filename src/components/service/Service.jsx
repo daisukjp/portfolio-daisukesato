@@ -1,7 +1,11 @@
 import React from 'react'
 import "./service.css"
 import { useState } from 'react'
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+// import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+// import { Router } from "../../router/Router";
+// import { useNavigate } from "react-router-dom"
+import { Link } from 'react-router-dom';
+import { Portfolio } from './Portfolio';
 
 import Work1 from "../../assets/work1.jpg";
 import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
@@ -10,6 +14,8 @@ import Daisuke from "../../assets/daisuke_portforio.jpg";
 
 const Service = () => {
     const [toggleState, setToggleState] = useState(0)
+
+    // const navigate = useNavigate()
 
     const toggleTab = (index) => {
         setToggleState(index);
@@ -96,11 +102,16 @@ const Service = () => {
                                 </p>
                             </div>
                             <div className="work__cover">
-                            <BrowserRouter>
-                                <a className="sc-iwjdpV ilgNXF"><Link to="./Portfolio">Detail</Link>
+                            {/* <BrowserRouter> */}
+                                {/* <a className="sc-iwjdpV ilgNXF" onClick={() => navigate('/portfolio')}> */}
+                                {/* <a className="sc-iwjdpV ilgNXF" >
                                 <i class="uil uil-file-info-alt"></i>
-                                </a>
-                            </BrowserRouter>
+                                </a> */}
+                                <Link className="sc-iwjdpV ilgNXF" to="./Portfolio.jsx">
+                                <i class="uil uil-file-info-alt"></i>
+                                </Link>
+                                {/* <Router /> */}
+                            {/* </BrowserRouter> */}
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
                                 <i class="uil uil-window"></i>

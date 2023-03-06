@@ -10,6 +10,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Scrollup from './components/scrollup/Scrollup';
 import Service from './components/service/Service';
+import Router from 'router';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       {/* <Work /> */}
       {/* <About /> */}
       <Service />
+      <Router />
 
       <Skills />
       <Qualification />
