@@ -22,9 +22,6 @@ const Footer = () => {
                 </ul>
 
                 <div className="footer__social">
-                <a href="https://www.instagram.com/film_jp/" className="footer__social-link" target="_blank">
-                <i className="uil uil-instagram"></i>
-                </a>
 
                 <a href="https://github.com/daisukjp" className="footer__social-link" target="_blank">
                 <i className="uil uil-github-alt"></i>
@@ -32,6 +29,10 @@ const Footer = () => {
 
                 <a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" className="footer__social-link" target="_blank">
                 <i className="uil uil-linkedin-alt"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/film_jp/" className="footer__social-link" target="_blank">
+                <i className="uil uil-file-download-alt"></i>
                 </a>
                 </div>
 
