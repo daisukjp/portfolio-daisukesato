@@ -105,20 +105,10 @@ const Service = () => {
                             <div className="work__cover">
                             {/* <BrowserRouter> */}
                                 
-                                <a className="sc-iwjdpV ilgNXF" href={<Portfolio />}>Detail
+                                <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
                                 <i class="uil uil-file-info-alt"></i>
                                 </a>
 
-                                {/* <a className="sc-iwjdpV ilgNXF" onClick={() => navigate('/portfolio')}>
-                                <i class="uil uil-file-info-alt"></i>
-                                </a> */}
-
-
-                                {/* <Link className="sc-iwjdpV ilgNXF" to="./Portfolio.jsx">
-                                <i class="uil uil-file-info-alt"></i>
-                                </Link> */}
-                                {/* <Router /> */}
-                            {/* </BrowserRouter> */}
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
                                 <i class="uil uil-window"></i>
