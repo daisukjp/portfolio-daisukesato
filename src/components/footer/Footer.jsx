@@ -9,15 +9,23 @@ const Footer = () => {
 
                 <ul className="footer__list">
                     <li>
-                        <a href="#about" className="footer__link">About</a>
+                        <a href="#home" className="footer__link">Home</a>
                     </li>
 
                     <li>
-                        <a href="#work" className="footer__link">Work</a>
+                        <a href="#service" className="footer__link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" className="footer__link">Skills</a>
                     </li>
 
                     <li>
                         <a href="#contact" className="footer__link">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" className="footer__link" target="_blank">Resume</a>
                     </li>
                 </ul>
 
@@ -30,7 +38,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" className="footer__social-link" target="_blank">
                 <i className="uil uil-linkedin-alt"></i>
                 </a>
-                
+
                 <a href="https://www.instagram.com/film_jp/" className="footer__social-link" target="_blank">
                 <i className="uil uil-file-download-alt"></i>
                 </a>
