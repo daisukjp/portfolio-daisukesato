@@ -112,7 +112,10 @@ const Service = () => {
                                 {/* <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
                                 <i class="uil uil-file-info-alt"></i>
                                 </a> */}
-                                <Link to="/portfolio">Portfolio</Link>
+                                <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
+                                    Detail
+                                <i class="uil uil-file-info-alt"></i>
+                                </Link>
 
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
