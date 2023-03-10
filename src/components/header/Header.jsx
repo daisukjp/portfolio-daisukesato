@@ -18,12 +18,12 @@ const Header = () => {
         <div>
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">&lt;/DS&gt;</a>
+                <a href="/" className="nav__logo">&lt;/DS&gt;</a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className='nav__list grid'>
                         <li className='nav__item'>
-                            <a href="#home" 
+                            <a href="/#home" 
                             onClick={() => setActiveNav('#home')} className={
                             activeNav === "#home" ? "nav__link active-link" : "nav_link"
                             }
@@ -34,7 +34,7 @@ const Header = () => {
                         </li>
 
                         <li className='nav__item'>
-                            <a href="#service" 
+                            <a href="/#service" 
                             onClick={() => setActiveNav('#service')} className={
                             activeNav === "#service" ? "nav__link active-link" : "nav_link"
                             }
@@ -45,7 +45,7 @@ const Header = () => {
                         </li>
 
                         <li className='nav__item'>
-                            <a href="#skills" 
+                            <a href="/#skills" 
                                 onClick={() => setActiveNav('#skills')} className={
                                 activeNav === "#skills" ? "nav__link active-link" : "nav_link"
                                 }
@@ -57,7 +57,7 @@ const Header = () => {
 
 
                         <li className='nav__item'>
-                            <a href="#contact"
+                            <a href="/#contact"
                             onClick={() => setActiveNav('#contact')} className={
                             activeNav === "#contact" ? "nav__link active-link" : "nav_link"
                             }

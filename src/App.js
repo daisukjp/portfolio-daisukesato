@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+// import { Routes, Route, Link } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -24,15 +24,15 @@ const App = () => {
       {/* <About /> */}
       <Service />
       {/* <Router /> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/service/*" element={<Service />} />
         <Route path="/service/portfolio/:id" element={<Portfolio />} />
-      </Routes>
+      </Routes> */}
 
       <Skills />
       <Qualification />
       <Contact />
-      <Link to="/portfolio">Go to Portfolio</Link>
+      {/* <Link to="/portfolio">Go to Portfolio</Link> */}
     </main>
 
     <Footer />

@@ -1,0 +1,32 @@
+.project__container {
+    margin-top: 5rem;
+}
+
+.project__title {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.project__title-div {
+    width: 60vw;
+    position: relative;
+    margin: 0 auto 4rem auto;
+}
+
+.project__body {
+    width: 80vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+.project__nav-ul {
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project__img-img {
+    border: 1px solid #a6a6a6;
+}

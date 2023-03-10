@@ -112,7 +112,7 @@ const Service = () => {
                                 {/* <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
                                 <i class="uil uil-file-info-alt"></i>
                                 </a> */}
-                                <Link to="portfolio">Portfolio</Link>
+                                <Link to="/portfolio">Portfolio</Link>
 
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
@@ -136,7 +136,7 @@ const Service = () => {
                     <img src={Fuwa} alt="work__img" className="work__img" />
                     <div className="card__content">
                     <h3 className="work__title">Fuwa Fuwa-Gallery
-</h3>
+                    </h3>
                     <span className="work__button" onClick={() => toggleTab(3)}>
                         View More
                         <i className="bx bx-right-arrow-alt work__button-icon"></i>
