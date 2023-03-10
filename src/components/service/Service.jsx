@@ -4,7 +4,7 @@ import { useState } from 'react'
 // import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 // import { Router } from "../../router/Router";
 // import { useNavigate } from "react-router-dom"
-import { Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { Portfolio } from './Portfolio';
 // import { useNavigate } from "react-router-dom"
 
@@ -73,6 +73,10 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
+                <Routes>
+                <Route path="/" />
+                <Route path="portfolio" element={<Portfolio />} />
+                </Routes>
                 
                 <div className="service__content">
                     
@@ -105,9 +109,10 @@ const Service = () => {
                             <div className="work__cover">
                             {/* <BrowserRouter> */}
                                 
-                                <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
+                                {/* <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
                                 <i class="uil uil-file-info-alt"></i>
-                                </a>
+                                </a> */}
+                                <Link to="portfolio">Portfolio</Link>
 
                                 <div class="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
