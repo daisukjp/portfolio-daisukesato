@@ -3,7 +3,7 @@
 }
 
 .project__title {
-    margin-top: 9rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
 }
 
@@ -27,6 +27,33 @@
     flex-wrap: wrap;
 }
 
+.project__img {
+    text-align: center;
+}
+
 .project__img-img {
     border: 1px solid #a6a6a6;
 }
+
+.project__icon {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.project__icon-a {
+    font-size: 2rem;
+    color: rgb(35, 41, 70);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease 0s;
+    padding: 10px 0px;
+}
+
+.project__icon-a:hover {
+    transform: translateY(-3px);
+}
+
