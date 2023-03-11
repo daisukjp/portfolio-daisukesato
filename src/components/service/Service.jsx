@@ -1,13 +1,7 @@
 import React from 'react'
 import "./service.css"
 import { useState } from 'react'
-// import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-// import { Router } from "../../router/Router";
-// import { useNavigate } from "react-router-dom"
-import { Routes, Route, Link } from 'react-router-dom';
-import { Portfolio } from './Portfolio';
-// import { useNavigate } from "react-router-dom"
-
+import {  Link } from 'react-router-dom';
 import Work1 from "../../assets/work1.jpg";
 import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
 import Daisuke from "../../assets/daisuke_portforio.jpg";
@@ -15,8 +9,6 @@ import Daisuke from "../../assets/daisuke_portforio.jpg";
 
 const Service = () => {
     const [toggleState, setToggleState] = useState(0)
-
-    // const navigate = useNavigate()
 
     const toggleTab = (index) => {
         setToggleState(index);
@@ -42,7 +34,6 @@ const Service = () => {
                     
                 </div>
 
-                    {/* <div className="service__model active-model"> */}
                         <div className={toggleState === 1 ? "service__model active-model" : "service__model"}>
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
@@ -73,11 +64,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <Routes>
-                <Route path="/" />
-                <Route path="portfolio" element={<Portfolio />} />
-                </Routes>
-                
+
                 <div className="service__content">
                     
                 <div className="work__card">
@@ -107,11 +94,6 @@ const Service = () => {
                                 </p>
                             </div>
                             <div className="work__cover">
-                            {/* <BrowserRouter> */}
-                                
-                                {/* <a className="sc-iwjdpV ilgNXF" href="https://drive.google.com/file/d/1T2cpushcTKc__e58QHM9jYXJgYkT43rR/view?usp=sharing">Detail
-                                <i class="uil uil-file-info-alt"></i>
-                                </a> */}
                                 <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
                                     Detail
                                 <i class="uil uil-file-info-alt"></i>

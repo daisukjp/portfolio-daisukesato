@@ -30,6 +30,27 @@ export const Portfolio = () => {
                         <div className="project__img">
                             <img src={Daisuke} alt="daisuke's portfolio image" className="project__img-img" />
                         </div>
+                        <div className="project__icon">
+                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank">
+                                <i class="uil uil-window"></i>
+                            </a>
+                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+
+                        <div className="project__body-content">
+                            <section className="project__body-flex">
+                                <div className="project__body-left">
+                                    <h1 className="project__content-title">
+                                        Test
+                                    </h1>
+                                    <p className="project__content-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </section>
             </div>
