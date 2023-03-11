@@ -13,18 +13,64 @@
     margin: 0 auto 4rem auto;
 }
 
+.project__line {
+    width: 80px;
+    height: 2px;
+    background: rgb(158, 158, 158);
+    margin: 30px auto;
+}
+
 .project__body {
     width: 80vw;
     position: relative;
     margin: 0 auto;
 }
 
-.project__nav-ul {
+.project__body-flex {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
+.project__body-flex-middle {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.project__body-right {
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(35, 41, 70);
+}
+
+.project__body-left {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.project__nav-ul {
     display: flex;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+.project__nav-li {
+    letter-spacing: 1px;
 }
 
 .project__img {
@@ -32,7 +78,14 @@
 }
 
 .project__img-img {
-    border: 1px solid #a6a6a6;
+    transition: all ease-in 0.3s;
+    border: solid 2px #707070;
+    border-radius: 8px;
+}
+
+.project__img-img:hover {
+    box-shadow: -8px 8px 0 0 #000;
+    transform: translate(8px, -8px);
 }
 
 .project__icon {
@@ -57,3 +110,56 @@
     transform: translateY(-3px);
 }
 
+.project__bottom {
+    width: 60vw;
+    margin: 0 auto 4rem auto;
+}
+
+.project__bottom-h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.project__bottom-p {
+    font-size: 1rem;
+    color: rgb(35, 41, 70);
+}
+
+
+/* Break Points */
+/* Medium Device */
+@media screen and (max-width: 768px) {
+    .project__body-flex,
+    .project__body-flex-middle {
+        flex-direction: column;
+        padding: 10px 20px;
+        width: 80vw;
+    }
+
+    .project__body-right {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .project__body-left {
+        width: 80%;
+    }
+
+    .project__nav-ul {
+        gap: 1rem;
+    }
+
+    .project__nav-li {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+/* Small Device */
+@media screen and (max-width: 350px) {
+
+}

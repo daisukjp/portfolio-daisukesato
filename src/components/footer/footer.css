@@ -7,7 +7,6 @@
     padding: 2rem 0 6rem;
 }
 
-.footer__title,
 .footer__link {
     color: var(--title-color);
 }
@@ -55,6 +54,20 @@
     font-size: var(--smaller-font-size);
 }
 
+
+.footer__img{
+    width: 6rem;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.nav__logo {
+    transition: transform 0.3s ease 0s;
+}
+
+.nav__logo:hover {
+    transform: translateY(-3px);
+}
 
 /* Break Points */
 /* Large Device */

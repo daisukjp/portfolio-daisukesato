@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./header.css";
+import DSLOGO from "../../assets/daisuke-sato-logo.webp"
 
 const Header = () => {
     /* Background color changer */
@@ -18,7 +19,7 @@ const Header = () => {
         <div>
         <header className="header">
             <nav className="nav container">
-                <a href="/" className="nav__logo">&lt;/DS&gt;</a>
+                <a href="/" className="nav__logo"><img src={DSLOGO} alt="DS logo" /></a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className='nav__list grid'>

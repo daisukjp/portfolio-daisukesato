@@ -116,15 +116,16 @@
 
 .work__card {
     background-color: var(--container-color);
-    box-shadow: 8px 8px 0 0 #9b9b9b!important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all ease-in 0.3s;
+    border: solid 2px #9d9d9d;
+    border-radius: 8px;
     padding: 1.25rem;
     border-radius: 1rem;
-    transition: all 0.3s ease 0s;
 }
 
 .work__card:hover {
-    transform: translateY(-10px);
+    box-shadow: -8px 8px 0 0 #000;
+    transform: translate(8px, -8px);
 
 }
 

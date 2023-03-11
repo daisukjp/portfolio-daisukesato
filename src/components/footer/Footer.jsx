@@ -1,11 +1,14 @@
 import React from 'react'
 import "./footer.css"
+import DSLOGO from "../../assets/daisuke-sato-logo-footer.webp"
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container container">
-                <h1 className="footer__title">&lt;/DS&gt;</h1>
+                <div className='footer__title'>
+                    <a href="/"><img src={DSLOGO} alt="DS logo" className="footer__img nav__logo" /></a>
+                </div>
 
                 <ul className="footer__list">
                     <li>
