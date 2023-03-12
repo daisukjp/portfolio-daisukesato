@@ -110,6 +110,10 @@
     transform: translateY(-3px);
 }
 
+.project__content-title {
+    margin-bottom: 1rem;
+}
+
 .project__bottom {
     width: 60vw;
     margin: 0 auto 4rem auto;

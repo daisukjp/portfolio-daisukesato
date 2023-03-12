@@ -21,9 +21,8 @@ export const Ethical = () => {
                         <div className="project__nav">
                             <nav>
                             <ul className="project__nav-ul">
-                                <li className="project__nav-li">#React(JavaScript)</li>
-                                <li className="project__nav-li">#React Router</li>
-                                <li className="project__nav-li">#Framer Motion</li>
+                                <li className="project__nav-li">#PHP</li>
+                                <li className="project__nav-li">#Laravel 6</li>
                                 </ul>
                             </nav>
                         </div>
@@ -46,10 +45,10 @@ export const Ethical = () => {
                                 <img src={EthicalTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        Story
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                    I interned as a front-end developer for four months at a company in Sapporo, Japan, during the summer vacation of 2022. I was assigned to a small team to build an e-commerce site for a client using PHP and Laravel 6.
                                     </p>
                                 </div>
                             </section>
@@ -58,10 +57,10 @@ export const Ethical = () => {
                                 <img src={EthicalThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        About Ethical Conveni
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                        Ethical Conveni is a website that sells items made from environmentally friendly resources and other products. They will be working on initiatives to curb those things before they become waste/waste in the resource.
                                     </p>
                                 </div>
                             </section>
@@ -70,10 +69,10 @@ export const Ethical = () => {
                                 <img src={EthicalFour} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        What I did
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                        I mainly validated the entire page. I can't describe it in detail, but I validated it to make the site more comfortable for the clients who use the site, such as product management.
                                     </p>
                                 </div>
                             </section>
@@ -87,17 +86,16 @@ export const Ethical = () => {
                             Description
                         </h1>
                         <h2 className="project__bottom-h2">
-                            1 - Challenged using React
+                            - Challenged Working Remotely
                         </h2>
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                            &#8209;
+                            I was an online intern for a Japanese company from Canada. Due to time zone differences, I could only work with my teammates and boss for about 3 hours during an 8 hours workday. So I had a tough time during the first 2 weeks when there were problems that I needed help solving.
                         </p>
-
-                        <h2 className="project__bottom-h2">
-                            2 - something else
-                        </h2>
+                        <br />
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                            &#8209;
+                            Gradually, however, my search skills grew, and when I encountered a problem, I could search for and solve it. This experience gave me confidence in my research skills.
                         </p>
                     </div>
                 </section>

@@ -20,7 +20,7 @@ const Frontend = () => {
             <i className='bx bx-check-circle' ></i>
           
             <div>
-              <h3 className="skills__name">CSS</h3>
+              <h3 className="skills__name">CSS3</h3>
               <span className="skills__level">Advanced</span>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Frontend = () => {
             <i className='bx bx-check-circle' ></i>
           
             <div>
-              <h3 className="skills__name">Bootstrap</h3>
+              <h3 className="skills__name">Figma</h3>
               <span className="skills__level">intermediate</span>
             </div>
           </div>

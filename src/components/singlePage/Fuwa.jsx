@@ -21,9 +21,8 @@ export const Fuwa = () => {
                         <div className="project__nav">
                             <nav>
                             <ul className="project__nav-ul">
-                                <li className="project__nav-li">#React(JavaScript)</li>
-                                <li className="project__nav-li">#React Router</li>
-                                <li className="project__nav-li">#Framer Motion</li>
+                                <li className="project__nav-li">#WordPress</li>
+                                <li className="project__nav-li">#PHP</li>
                                 </ul>
                             </nav>
                         </div>
@@ -49,10 +48,10 @@ export const Fuwa = () => {
                                 <img src={FuwaTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        Story
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                        I created this gallery site to document the growth of my friend's cat in the fall of 2022 with photos and videos. I used WordPress to build the site. I also made the original theme in PHP.
                                     </p>
                                 </div>
                             </section>
@@ -61,22 +60,10 @@ export const Fuwa = () => {
                                 <img src={FuwaThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        Fun Part
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
-                                    </p>
-                                </div>
-                            </section>
-
-                            <section className="project__body-flex">
-                                <img src={FuwaFour} alt="" className="project__body-left project__img-img"/>
-                                <div className="project__body-right">
-                                    <h1 className="project__content-title">
-                                        Test
-                                    </h1>
-                                    <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                        On this site, I have created an original theme. I like simple designs, so I designed it to be easy to use for users accessing this site.
                                     </p>
                                 </div>
                             </section>
@@ -90,17 +77,17 @@ export const Fuwa = () => {
                             Description
                         </h1>
                         <h2 className="project__bottom-h2">
-                            1 - Challenged using React
+                            - Challenged making Original Theme
                         </h2>
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                        I was in school learning a wordpress course when I designed the theme for this site. I had a hard time with the back-end coding, including the placement of the site's appearance, but it was an excellent opportunity to output what I had learned.
                         </p>
 
                         <h2 className="project__bottom-h2">
-                            2 - something else
+                            - Just for FUN
                         </h2>
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                            My motivation when planning this site's creation was Just for FUN. I am a cat person, so creating a site just for cats motivated me.
                         </p>
                     </div>
                 </section>
