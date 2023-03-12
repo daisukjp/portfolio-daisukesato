@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css"
-import DSLOGO from "../../assets/daisuke-sato-logo-footer.webp"
+import DSLOGO from "../../assets/daisuke-sato-footer-logo.png"
 
 const Footer = () => {
     return (

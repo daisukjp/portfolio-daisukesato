@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./header.css";
-import DSLOGO from "../../assets/daisuke-sato-logo.webp"
+import DSLOGO from "../../assets/daisuke-sato-footer-logo.png"
 
 const Header = () => {
     /* Background color changer */
@@ -52,7 +52,7 @@ const Header = () => {
                                 }
                                 >
                                 <i className='uil uil-file-alt nav__icon'></i>
-                                Skills
+                                About
                             </a>
                         </li>
 

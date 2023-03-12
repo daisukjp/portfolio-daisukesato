@@ -2,6 +2,7 @@
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
 }
 /* 
 .service__content {

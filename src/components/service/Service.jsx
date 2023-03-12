@@ -2,7 +2,7 @@ import React from 'react'
 import "./service.css"
 import { useState } from 'react'
 import {  Link } from 'react-router-dom';
-import Work1 from "../../assets/work1.jpg";
+import EthicalOne from "../../assets/ethical-convini-pic-1.png";
 import Fuwa from "../../assets/fuwafuwa_garalley.jpg";
 import Daisuke from "../../assets/daisuke_portforio.jpg";
 
@@ -22,7 +22,7 @@ const Service = () => {
                 <div className="service__content">
                     
                 <div className="work__card">
-                    <img src={Work1} alt="work__img" className="work__img" />
+                    <img src={EthicalOne} alt="work__img" className="work__img" />
                     <div className="card__content">
                     <h3 className="work__title">Title1</h3>
                     <span className="work__button" onClick={() => toggleTab(1)}>
@@ -38,7 +38,7 @@ const Service = () => {
                         <div className="service__model-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
                             </i>
-                            <img src={Work1} alt="work__img" className="work__img2" />
+                            <img src={EthicalOne} alt="work__img" className="work__img2" />
                             <div className="work__cover-content">
                                 <h3 className="service__model-title">
                                     hello1
@@ -48,17 +48,21 @@ const Service = () => {
                                 </p>
                             </div>
                             <div className="work__cover">
-                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <Link to="/ethical" className="sc-iwjdpV ilgNXF">
+                                    Detail
                                 <i class="uil uil-file-info-alt"></i>
-                                </a>
+                                </Link>
+
                                 <div class="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
+                                <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
                                 <i class="uil uil-window"></i>
                                 </a>
                                 <div class="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="/work/mokumoku">Detail
-                                <i class="uil uil-github"></i>
+                                
+                                    <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
+                                    <i class="uil uil-github"></i>
                                 </a>
+                    
                             </div>
 
                         </div>
