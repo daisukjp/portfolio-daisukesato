@@ -1,20 +1,22 @@
 import React from 'react';
-import "./project.css"
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import Daisuke from "../../assets/daisuke_portforio.jpg";
-import Portfolio_project from "../../assets/prtfolio_project.png";
+// import "./project.css"
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
+import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
+import FuwaTwo from "../../assets/fuwa-1.png"
+import FuwaThree from "../../assets/fuwa-2.png"
+import FuwaFour from "../../assets/fuwa-3.png"
 
-export const Portfolio = () => {
+export const Fuwa = () => {
 
     return (
         <>
         <Header />
-            <div id="portfoliopage" className="project__container">
+            <div className="project__container">
                 <section className="project__title">
                     <div className="project__title-div">
                         <h1 className="project__title">
-                        My Portfolio Page
+                        Fuwa Fuwa Gallery
                         </h1>
                         <div className="project__nav">
                             <nav>
@@ -29,13 +31,13 @@ export const Portfolio = () => {
 
                     <div className="project__body">
                         <div className="project__img">
-                            <img src={Daisuke} alt="daisuke's portfolio image" className="project__img-img" />
+                            <img src={FuwaOne} alt="daisuke's ethical image" className="project__img-img" />
                         </div>
                         <div className="project__icon">
-                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank">
+                            <a className="project__icon-a" href="https://xs272520.xsrv.jp" target="_blank">
                                 <i class="uil uil-window"></i>
                             </a>
-                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">
+                            <a className="project__icon-a" href="https://github.com/daisukjp/FuwaFuwa-Gallery/tree/main/FuwaFuwa" target="_blank">
                                 <i class="uil uil-github"></i>
                             </a>
                         </div>
@@ -44,7 +46,7 @@ export const Portfolio = () => {
 
                         <div className="project__body-content">
                             <section className="project__body-flex">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
+                                <img src={FuwaTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
                                         Test
@@ -56,7 +58,7 @@ export const Portfolio = () => {
                             </section>
 
                             <section className="project__body-flex-middle">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
+                                <img src={FuwaThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
                                         Test
@@ -68,7 +70,7 @@ export const Portfolio = () => {
                             </section>
 
                             <section className="project__body-flex">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
+                                <img src={FuwaFour} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
                                         Test
