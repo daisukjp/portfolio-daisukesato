@@ -33,10 +33,10 @@ export const Portfolio = () => {
                         </div>
                         <div className="project__icon">
                             <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank">
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                             </a>
                             <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">
-                                <i class="uil uil-github"></i>
+                                <i className="uil uil-github"></i>
                             </a>
                         </div>
 

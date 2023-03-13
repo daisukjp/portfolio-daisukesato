@@ -1,5 +1,4 @@
 import React from 'react';
-// import "./project.css"
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import EthicalOne from "../../assets/ethical-convini-pic-1.png";
@@ -34,7 +33,7 @@ export const Ethical = () => {
                         </div>
                         <div className="project__icon">
                             <a className="project__icon-a" href="https://ethical-conveni.com/" target="_blank">
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                             </a>
                         </div>
 

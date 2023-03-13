@@ -5,7 +5,6 @@ import Footer from '../footer/Footer';
 import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
 import FuwaTwo from "../../assets/fuwa-1.png"
 import FuwaThree from "../../assets/fuwa-2.png"
-import FuwaFour from "../../assets/fuwa-3.png"
 
 export const Fuwa = () => {
 
@@ -34,10 +33,10 @@ export const Fuwa = () => {
                         </div>
                         <div className="project__icon">
                             <a className="project__icon-a" href="https://xs272520.xsrv.jp" target="_blank">
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                             </a>
                             <a className="project__icon-a" href="https://github.com/daisukjp/FuwaFuwa-Gallery/tree/main/FuwaFuwa" target="_blank">
-                                <i class="uil uil-github"></i>
+                                <i className="uil uil-github"></i>
                             </a>
                         </div>
 

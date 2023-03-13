@@ -50,19 +50,13 @@ const Service = () => {
                             <div className="work__cover">
                                 <Link to="/ethical" className="sc-iwjdpV ilgNXF">
                                     Detail
-                                <i class="uil uil-file-info-alt"></i>
+                                <i className="uil uil-file-info-alt"></i>
                                 </Link>
 
-                                <div class="sc-dlVxhl psblj"></div>
+                                <div className="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://ethical-conveni.com/" target="_blank">View
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                                 </a>
-                                {/* <div class="sc-dlVxhl psblj"></div>
-                                
-                                    <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
-                                    <i class="uil uil-github"></i>
-                                </a> */}
-                    
                             </div>
 
                         </div>
@@ -103,15 +97,15 @@ const Service = () => {
                             <div className="work__cover">
                                 <Link to="/fuwa" className="sc-iwjdpV ilgNXF">
                                     Detail
-                                <i class="uil uil-file-info-alt"></i>
+                                <i className="uil uil-file-info-alt"></i>
                                 </Link>
-                                <div class="sc-dlVxhl psblj"></div>
+                                <div className="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank">View
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                                 </a>
-                                <div class="sc-dlVxhl psblj"></div>
+                                <div className="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank">GitHub
-                                <i class="uil uil-github"></i>
+                                <i className="uil uil-github"></i>
                                 </a>
                             </div>
 
@@ -150,17 +144,17 @@ const Service = () => {
                             <div className="work__cover">
                                 <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
                                     Detail
-                                <i class="uil uil-file-info-alt"></i>
+                                <i className="uil uil-file-info-alt"></i>
                                 </Link>
 
-                                <div class="sc-dlVxhl psblj"></div>
+                                <div className="sc-dlVxhl psblj"></div>
                                 <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
-                                <i class="uil uil-window"></i>
+                                <i className="uil uil-window"></i>
                                 </a>
-                                <div class="sc-dlVxhl psblj"></div>
+                                <div className="sc-dlVxhl psblj"></div>
                                 
                                     <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
-                                    <i class="uil uil-github"></i>
+                                    <i className="uil uil-github"></i>
                                 </a>
                     
                             </div>

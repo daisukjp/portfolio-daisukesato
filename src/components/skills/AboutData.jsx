@@ -6,8 +6,8 @@ import Typed from './Typed'
 const AboutData = () => {
     return (
         <div className="profile__section section">
-            <h1 class="sc-hKwDye iyooZD">
-                <div class="Typewriter" data-testid="typewriter-wrapper">
+            <h1 className="sc-hKwDye iyooZD">
+                <div className="Typewriter" data-testid="typewriter-wrapper">
                     <div>
                         <Typed />
                     </div>
