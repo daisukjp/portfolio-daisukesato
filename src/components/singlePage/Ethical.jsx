@@ -48,7 +48,7 @@ export const Ethical = () => {
                                         Story
                                     </h1>
                                     <p className="project__content-body">
-                                    I interned as a front-end developer for four months at a company in Sapporo, Japan, during the summer vacation of 2022. I was assigned to a small team to build an e-commerce site for a client using PHP and Laravel 6.
+                                        During the summer break of 2022, I completed a four-month internship as a front-end developer in Sapporo, Japan. While there, I collaborated with a small team to develop an e-commerce website for a client, utilizing PHP and Laravel 6.
                                     </p>
                                 </div>
                             </section>
@@ -60,7 +60,7 @@ export const Ethical = () => {
                                         About Ethical Conveni
                                     </h1>
                                     <p className="project__content-body">
-                                        Ethical Conveni is a website that sells items made from environmentally friendly resources and other products. They will be working on initiatives to curb those things before they become waste/waste in the resource.
+                                        Ethical Conveni is an e-commerce website that offers a range of products made from sustainable and environmentally friendly materials. In addition to selling these items, the company is committed to implementing proactive measures aimed at reducing waste and preventing resources from being needlessly discarded.
                                     </p>
                                 </div>
                             </section>
@@ -72,7 +72,7 @@ export const Ethical = () => {
                                         What I did
                                     </h1>
                                     <p className="project__content-body">
-                                        I mainly validated the entire page. I can't describe it in detail, but I validated it to make the site more comfortable for the clients who use the site, such as product management.
+                                        My main responsibility was to conduct a comprehensive validation of the entire page, ensuring that it was optimized for ease-of-use for clients accessing the site, particularly for product management. While it is difficult to describe the process in detail, my efforts were focused on enhancing the overall user experience.
                                     </p>
                                 </div>
                             </section>
@@ -90,12 +90,12 @@ export const Ethical = () => {
                         </h2>
                         <p className="project__bottom-p">
                             &#8209;
-                            I was an online intern for a Japanese company from Canada. Due to time zone differences, I could only work with my teammates and boss for about 3 hours during an 8 hours workday. So I had a tough time during the first 2 weeks when there were problems that I needed help solving.
+                            As an online intern based in Canada, I worked remotely for a Japanese company. The time zone difference posed a significant challenge, as I was only able to collaborate with my colleagues and supervisor for approximately three hours each day out of an eight-hour workday. During the initial two weeks of my internship, I faced difficulties when encountering issues that required assistance from my team.
                         </p>
                         <br />
                         <p className="project__bottom-p">
                             &#8209;
-                            Gradually, however, my search skills grew, and when I encountered a problem, I could search for and solve it. This experience gave me confidence in my research skills.
+                            Over time, my search skills improved, enabling me to efficiently troubleshoot any issue that came my way. Through this process, I gained a newfound sense of assurance in my research abilities.
                         </p>
                     </div>
                 </section>

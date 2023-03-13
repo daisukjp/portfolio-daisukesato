@@ -3,7 +3,8 @@ import "./project.css"
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Daisuke from "../../assets/daisuke_portforio.jpg";
-import Portfolio_project from "../../assets/prtfolio_project.png";
+import PortfolioOne from "../../assets/Daisuke Sato logo.png";
+import PortfolioTwo from "../../assets/portfolio_skills.png";
 
 export const Portfolio = () => {
 
@@ -21,7 +22,6 @@ export const Portfolio = () => {
                             <ul className="project__nav-ul">
                                 <li className="project__nav-li">#React(JavaScript)</li>
                                 <li className="project__nav-li">#React Router</li>
-                                <li className="project__nav-li">#Framer Motion</li>
                                 </ul>
                             </nav>
                         </div>
@@ -44,40 +44,29 @@ export const Portfolio = () => {
 
                         <div className="project__body-content">
                             <section className="project__body-flex">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
+                                <img src={PortfolioTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        Story
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                    Welcome to my website, which was built using React! As of March 2023, I've updated the design to its latest version. I chose to use mostly white color because I appreciate clean and simple design aesthetics. I believe that the use of white color helps to highlight the content and create a more accessible user experience. I hope that you enjoy exploring my website and learning more about me and my work!
                                     </p>
                                 </div>
                             </section>
 
                             <section className="project__body-flex-middle">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
+                                <img src={PortfolioOne} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Test
+                                        Logo Design
                                     </h1>
                                     <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
+                                        The logo design I created was inspired by my passion for baking and my Japanese anime fandom. I used a bread motif to represent my love for baking and incorporated my initials, D and S, into the design. By combining these elements, I created a unique logo that reflects my personality and interests. 
                                     </p>
                                 </div>
                             </section>
 
-                            <section className="project__body-flex">
-                                <img src={Portfolio_project} alt="" className="project__body-left project__img-img"/>
-                                <div className="project__body-right">
-                                    <h1 className="project__content-title">
-                                        Test
-                                    </h1>
-                                    <p className="project__content-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias quo in corrupti sequi ut deleniti, ipsam, animi fugit assumenda perferendis laudantium doloremque rerum illum facere ipsum a saepe quaerat!
-                                    </p>
-                                </div>
-                            </section>
                         </div>
                     </div>
 
@@ -88,17 +77,18 @@ export const Portfolio = () => {
                             Description
                         </h1>
                         <h2 className="project__bottom-h2">
-                            1 - Challenged using React
+                            - Challenged using React
                         </h2>
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                            &#8209;
+                            It's impressive that I built this site using React, a technology that I'm currently studying. This project has helped me realize the significance of immediately applying the concepts I learn to reinforce my learning process. 
                         </p>
 
-                        <h2 className="project__bottom-h2">
-                            2 - something else
-                        </h2>
+                        <br />
+
                         <p className="project__bottom-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci ipsa id consequatur, eligendi omnis quae doloremque! Iusto, quae saepe ratione laudantium nesciunt sapiente nulla, explicabo facere aliquid quibusdam dicta.
+                            &#8209;
+                            One of the more challenging aspects of creating this site was incorporating page transitions into React Router version 6, a topic that wasn't covered in my class. Nonetheless, through extensive research, I learned how to do it, and I thoroughly enjoyed the process.
                         </p>
                     </div>
                 </section>

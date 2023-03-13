@@ -51,7 +51,7 @@ export const Fuwa = () => {
                                         Story
                                     </h1>
                                     <p className="project__content-body">
-                                        I created this gallery site to document the growth of my friend's cat in the fall of 2022 with photos and videos. I used WordPress to build the site. I also made the original theme in PHP.
+                                        In the autumn of 2022, I developed a gallery site to chronicle the growth of my friend's feline companion with a collection of captivating photos and videos. Utilizing WordPress as a platform, I customized the site further by crafting an original theme through the power of PHP programming.
                                     </p>
                                 </div>
                             </section>
@@ -63,7 +63,7 @@ export const Fuwa = () => {
                                         Fun Part
                                     </h1>
                                     <p className="project__content-body">
-                                        On this site, I have created an original theme. I like simple designs, so I designed it to be easy to use for users accessing this site.
+                                        I have developed an original theme for this site, keeping in mind my preference for simplicity, and ensuring that it is user-friendly for visitors.
                                     </p>
                                 </div>
                             </section>
@@ -80,14 +80,16 @@ export const Fuwa = () => {
                             - Challenged making Original Theme
                         </h2>
                         <p className="project__bottom-p">
-                        I was in school learning a wordpress course when I designed the theme for this site. I had a hard time with the back-end coding, including the placement of the site's appearance, but it was an excellent opportunity to output what I had learned.
+                            &#8209;
+                            While taking a WordPress course in school, I designed the theme for this site. Although I struggled with the back-end coding and the placement of certain design elements, it was an invaluable opportunity to apply and expand upon what I had learned.
                         </p>
 
                         <h2 className="project__bottom-h2">
                             - Just for FUN
                         </h2>
                         <p className="project__bottom-p">
-                            My motivation when planning this site's creation was Just for FUN. I am a cat person, so creating a site just for cats motivated me.
+                            &#8209;
+                            My primary motivation for creating this site was purely for the enjoyment of it. As a devoted cat person, the idea of designing a site solely dedicated to felines was particularly inspiring to me.
                         </p>
                     </div>
                 </section>
