@@ -24,43 +24,25 @@ const Service = () => {
                 <div className="work__card">
                     <img src={EthicalOne} alt="work__img" className="work__img" />
                     <div className="card__content">
-                    <h3 className="work__title">Ethical Conveni</h3>
-                    <span className="work__button" onClick={() => toggleTab(1)}>
-                        View More
-                        <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                    </span>
+                    <h3 className="work__title">
+                        Ethical Conveni 
+                    </h3>
+
+                    <div className="work__cover">
+                        <Link to="/ethical" className="sc-iwjdpV ilgNXF">
+                            Detail
+                        <i className="uil uil-file-info-alt"></i>
+                        </Link>
+
+                        <div className="sc-dlVxhl psblj"></div>
+                        <a className="sc-iwjdpV ilgNXF" href="https://ethical-conveni.com/" target="_blank">View
+                        <i className="uil uil-window"></i>
+                        </a>
+                    </div>
                     </div>
 
                     
                 </div>
-
-                        <div className={toggleState === 1 ? "service__model active-model" : "service__model"}>
-                        <div className="service__model-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
-                            </i>
-                            <img src={EthicalOne} alt="work__img" className="work__img2" />
-                            <div className="work__cover-content">
-                                <h3 className="service__model-title">
-                                    Ethical Conveni 
-                                </h3>
-                                <p className="service__model-description">
-                                    This is the website I worked on during my internship as a front-end developer at Diamondhead inc. in Japan during the summer of 2022.
-                                </p>
-                            </div>
-                            <div className="work__cover">
-                                <Link to="/ethical" className="sc-iwjdpV ilgNXF">
-                                    Detail
-                                <i className="uil uil-file-info-alt"></i>
-                                </Link>
-
-                                <div className="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="https://ethical-conveni.com/" target="_blank">View
-                                <i className="uil uil-window"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <div className="service__content">
@@ -70,47 +52,29 @@ const Service = () => {
                     <div className="card__content">
                     <h3 className="work__title">Fuwa Fuwa-Gallery
                     </h3>
-                    <span className="work__button" onClick={() => toggleTab(3)}>
+                    <div className="work__cover">
+                        <Link to="/fuwa" className="sc-iwjdpV ilgNXF">
+                            Detail
+                        <i className="uil uil-file-info-alt"></i>
+                        </Link>
+                        <div className="sc-dlVxhl psblj"></div>
+                        <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank">View
+                        <i className="uil uil-window"></i>
+                        </a>
+                        <div className="sc-dlVxhl psblj"></div>
+                        <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank">GitHub
+                        <i className="uil uil-github"></i>
+                        </a>
+                    </div>
+
+                    {/* <span className="work__button" onClick={() => toggleTab(3)}>
                         View More
                         <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                    </span>
+                    </span> */}
                     </div>
 
                     
                 </div>
-
-                    {/* <div className="service__model active-model"> */}
-                        <div className={toggleState === 3 ? "service__model active-model" : "service__model"}>
-                        <div className="service__model-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
-                            </i>
-                            <img src={FuwaOne} alt="Fuwa fuwa" className="work__img2" />
-                            <div className="work__cover-content">
-                                <h3 className="service__model-title">
-                                    FuwaFuwa-Gallery
-
-                                </h3>
-                                <p className="service__model-description">
-                                    This is a gallery site to document the growth of my friend's cat in the fall of 2022 with photos and videos.
-                                </p>
-                            </div>
-                            <div className="work__cover">
-                                <Link to="/fuwa" className="sc-iwjdpV ilgNXF">
-                                    Detail
-                                <i className="uil uil-file-info-alt"></i>
-                                </Link>
-                                <div className="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank">View
-                                <i className="uil uil-window"></i>
-                                </a>
-                                <div className="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank">GitHub
-                                <i className="uil uil-github"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <div className="service__content">
@@ -119,10 +83,21 @@ const Service = () => {
                     <img src={Daisuke} alt="work__img" className="work__img" />
                     <div className="card__content">
                     <h3 className="work__title">My Portfolio Website</h3>
-                    <span className="work__button" onClick={() => toggleTab(2)}>
-                        View More
-                        <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                    </span>
+                    <div className="work__cover">
+                        <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
+                            Detail
+                        <i className="uil uil-file-info-alt"></i>
+                        </Link>
+
+                        <div className="sc-dlVxhl psblj"></div>
+                        <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
+                        <i className="uil uil-window"></i>
+                        </a>
+                        <div className="sc-dlVxhl psblj"></div>
+                            <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
+                            <i className="uil uil-github"></i>
+                        </a>
+                    </div>
                     </div>
 
                     
@@ -141,7 +116,7 @@ const Service = () => {
                                     This is my personal portfoli website using React with JavaScript.
                                 </p>
                             </div>
-                            <div className="work__cover">
+                            {/* <div className="work__cover">
                                 <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
                                     Detail
                                 <i className="uil uil-file-info-alt"></i>
@@ -152,12 +127,10 @@ const Service = () => {
                                 <i className="uil uil-window"></i>
                                 </a>
                                 <div className="sc-dlVxhl psblj"></div>
-                                
                                     <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
                                     <i className="uil uil-github"></i>
                                 </a>
-                    
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>

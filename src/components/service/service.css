@@ -127,7 +127,6 @@
 .work__card:hover {
     box-shadow: -8px 8px 0 0 #000;
     transform: translate(8px, -8px);
-
 }
 
 .work__img {
@@ -158,7 +157,7 @@
 }
 
 .ilgNXF {
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(35, 41, 70);
     display: flex;
     -webkit-box-align: center;
@@ -246,7 +245,7 @@
     }
 
     .ilgNXF {
-        font-size: 18px;
+        font-size: 14px;
         gap: 1px;
         padding: 0px;
     }
