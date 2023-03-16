@@ -273,9 +273,16 @@
 
 /* Small Device */
 @media screen and (max-width: 480px) {
+    .service__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* @media screen and (max-width: 480px) {
     .ilgNXF {
         font-size: 10px;
     }
-}
+} */
 
 
