@@ -8,14 +8,8 @@
 .skills__content {
     background-color: var(--container-color);
     padding: 2rem 4rem;
-    transition: all ease-in 0.3s;
     border: solid 2px #9d9d9d;
     border-radius: 8px;
-}
-
-.skills__content:hover {
-    box-shadow: -8px 8px 0 0 #000;
-    transform: translate(8px, -8px);
 }
 
 .skills__title {
@@ -93,6 +87,16 @@
     background: #333333;
     padding: 3px;
     color: rgb(255, 255, 254);
+}
+
+.volunteer__span {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.vl_plp {
+    color: #6d6d6d;
 }
 
 /* Break Points */
