@@ -1,6 +1,7 @@
 import React from 'react';
 import "./skills.css";
 import AboutData from './AboutData';
+import Vltr from './Vltr';
 import Frontend from './Frontend';
 import Backend from './Backend';
 
@@ -11,6 +12,8 @@ const Skills = () => {
             <h3 className="section__subtitle">My technical level</h3> */}
 
             <AboutData />
+
+            <Vltr />
 
             <div className="skills__container container grid">
                 <Frontend />
