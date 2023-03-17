@@ -15,6 +15,7 @@ const Skills = () => {
 
             <Vltr />
 
+            <h2 className="section__title">Skills</h2>
             <div className="skills__container container grid">
                 <Frontend />
 
