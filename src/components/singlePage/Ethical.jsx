@@ -30,10 +30,10 @@ export const Ethical = () => {
 
                     <div className="project__body">
                         <div className="project__img">
-                            <img src={EthicalOne} alt="daisuke's ethical image" className="project__img-img" />
+                            <img src={EthicalOne} alt="ethical" className="project__img-img" />
                         </div>
                         <div className="project__icon">
-                            <a className="project__icon-a" href="https://ethical-conveni.com/" target="_blank">
+                            <a className="project__icon-a" href="https://ethical-conveni.com/" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-window"></i>
                             </a>
                         </div>

@@ -73,7 +73,7 @@ const Header = () => {
                             onClick={() => setActiveNav('#resume')} className={
                             activeNav === "#resume" ? "nav__link active-link" : "nav_link"
                             }
-                            target="_blank">
+                            target="_blank" rel="noopener noreferrer">
                                 <i className='uil uil-message nav__icon'></i>
                                 Resume
                             </a>
@@ -82,9 +82,9 @@ const Header = () => {
                     <div className="snsArea pc_show">
                     <p className="ttl en_go"> &nbsp;</p>
                         <ul className="snsList">
-                            <li className="even"><a href="https://github.com/daisukjp" target="_blank"><i className="uil uil-github-alt"></i></a></li>
-                            <li className="last"><a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" target="_blank"> <i className="uil uil-linkedin-alt"></i></a></li>
-                            <li className="first"><a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" target="_blank"><i className="uil uil-file-download-alt"></i></a></li>
+                            <li className="even"><a href="https://github.com/daisukjp" target="_blank" rel="noopener noreferrer"><i className="uil uil-github-alt"></i></a></li>
+                            <li className="last"><a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" target="_blank" rel="noopener noreferrer"> <i className="uil uil-linkedin-alt"></i></a></li>
+                            <li className="first"><a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i className="uil uil-file-download-alt"></i></a></li>
                         </ul>
                     </div>
 

@@ -30,13 +30,13 @@ export const Portfolio = () => {
 
                     <div className="project__body">
                         <div className="project__img">
-                            <img src={Daisuke} alt="daisuke's portfolio image" className="project__img-img" />
+                            <img src={Daisuke} alt="daisuke's portfolio" className="project__img-img" />
                         </div>
                         <div className="project__icon">
-                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank">
+                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-window"></i>
                             </a>
-                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">
+                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-github"></i>
                             </a>
                         </div>

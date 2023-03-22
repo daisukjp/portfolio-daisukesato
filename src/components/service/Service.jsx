@@ -16,7 +16,6 @@ const Service = () => {
     return (
         <section className="services section" id="service">
             <h2 className="section__title">Projects</h2>
-            {/* <h3 className="section__subtitle">Recent works</h3> */}
 
             <div className="service__container container grid">
                 <div className="service__content">
@@ -35,7 +34,7 @@ const Service = () => {
                         </Link>
 
                         <div className="sc-dlVxhl psblj"></div>
-                        <a className="sc-iwjdpV ilgNXF" href="https://ethical-conveni.com/" target="_blank">View
+                        <a className="sc-iwjdpV ilgNXF" href="https://ethical-conveni.com/" target="_blank" rel="noopener noreferrer">View
                         <i className="uil uil-window"></i>
                         </a>
                     </div>
@@ -58,11 +57,11 @@ const Service = () => {
                         <i className="uil uil-file-info-alt"></i>
                         </Link>
                         <div className="sc-dlVxhl psblj"></div>
-                        <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank">View
+                        <a className="sc-iwjdpV ilgNXF" href="https://xs272520.xsrv.jp/" target="_blank" rel="noopener noreferrer">View
                         <i className="uil uil-window"></i>
                         </a>
                         <div className="sc-dlVxhl psblj"></div>
-                        <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank">GitHub
+                        <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/FuwaFuwa-Gallery" target="_blank" rel="noopener noreferrer">GitHub
                         <i className="uil uil-github"></i>
                         </a>
                     </div>
@@ -90,11 +89,11 @@ const Service = () => {
                         </Link>
 
                         <div className="sc-dlVxhl psblj"></div>
-                        <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
+                        <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank" rel="noopener noreferrer">View
                         <i className="uil uil-window"></i>
                         </a>
                         <div className="sc-dlVxhl psblj"></div>
-                            <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
+                            <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank" rel="noopener noreferrer">GitHub
                             <i className="uil uil-github"></i>
                         </a>
                     </div>

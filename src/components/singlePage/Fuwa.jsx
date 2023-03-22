@@ -29,13 +29,13 @@ export const Fuwa = () => {
 
                     <div className="project__body">
                         <div className="project__img">
-                            <img src={FuwaOne} alt="daisuke's ethical image" className="project__img-img" />
+                            <img src={FuwaOne} alt="Fuwa" className="project__img-img"/>
                         </div>
                         <div className="project__icon">
-                            <a className="project__icon-a" href="https://xs272520.xsrv.jp" target="_blank">
+                            <a className="project__icon-a" href="https://xs272520.xsrv.jp" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-window"></i>
                             </a>
-                            <a className="project__icon-a" href="https://github.com/daisukjp/FuwaFuwa-Gallery/tree/main/FuwaFuwa" target="_blank">
+                            <a className="project__icon-a" href="https://github.com/daisukjp/FuwaFuwa-Gallery/tree/main/FuwaFuwa" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-github"></i>
                             </a>
                         </div>

@@ -28,21 +28,21 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" className="footer__link" target="_blank">Resume</a>
+                        <a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" className="footer__link" target="_blank" rel="noopener noreferrer">Resume</a>
                     </li>
                 </ul>
 
                 <div className="footer__social">
 
-                <a href="https://github.com/daisukjp" className="footer__social-link" target="_blank">
+                <a href="https://github.com/daisukjp" className="footer__social-link" target="_blank" rel="noopener noreferrer">
                 <i className="uil uil-github-alt"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" className="footer__social-link" target="_blank">
+                <a href="https://www.linkedin.com/in/daisuke-sato-2b82241a0/" className="footer__social-link" target="_blank" rel="noopener noreferrer">
                 <i className="uil uil-linkedin-alt"></i>
                 </a>
 
-                <a href="https://www.instagram.com/film_jp/" className="footer__social-link" target="_blank">
+                <a href="https://www.instagram.com/film_jp/" className="footer__social-link" target="_blank" rel="noopener noreferrer">
                 <i className="uil uil-file-download-alt"></i>
                 </a>
                 </div>
