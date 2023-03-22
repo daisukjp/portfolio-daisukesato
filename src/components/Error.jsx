@@ -7,4 +7,4 @@ export const Error = () => {
             <div>404 Error Page</div>
         </>
         )
-    };
+};
