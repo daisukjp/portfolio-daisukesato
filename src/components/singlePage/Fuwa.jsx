@@ -1,7 +1,7 @@
 import React from 'react';
-// import "./project.css"
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import ScrollUp from '../scrollup/ScrollUp';
 import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
 import FuwaTwo from "../../assets/fuwa-1.png"
 import FuwaThree from "../../assets/fuwa-2.png"
@@ -94,6 +94,7 @@ export const Fuwa = () => {
                 </section>
             </div>
         <Footer />
+        <ScrollUp />
         </>
     );
 };

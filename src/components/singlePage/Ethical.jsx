@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import ScrollUp from '../scrollup/ScrollUp';
 import EthicalOne from "../../assets/ethical-convini-pic-1.png";
 import EthicalTwo from "../../assets/ethical-2.png"
 import EthicalThree from "../../assets/ethical-3.png";
@@ -100,6 +101,7 @@ export const Ethical = () => {
                 </section>
             </div>
         <Footer />
+        <ScrollUp />
         </>
     );
 };

@@ -6,7 +6,7 @@ import Skills from './components/skills/Skills';
 import Qualification from './components/qualification/Qualification';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Scrollup from './components/scrollup/Scrollup';
+import ScrollUp from './components/scrollup/ScrollUp';
 import Service from './components/service/Service';
 
 
@@ -32,7 +32,7 @@ const App = () => {
     </main>
 
     <Footer />
-    <Scrollup />
+    <ScrollUp />
     </>
   );
 }
