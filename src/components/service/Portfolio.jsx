@@ -4,7 +4,7 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import ScrollUp from '../scrollup/ScrollUp';
 import Daisuke from "../../assets/daisuke_portforio.jpg";
-import PortfolioOne from "../../assets/Daisuke Sato logo.png";
+import PortfolioOne from "../../assets/dsato-logo.jpg";
 import PortfolioTwo from "../../assets/portfolio_skills.png";
 
 export const Portfolio = () => {

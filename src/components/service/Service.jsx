@@ -26,6 +26,7 @@ const Service = () => {
                     <h3 className="work__title">
                         Ethical Conveni 
                     </h3>
+                    <h5 className="pt-h5">PHP, Laravel6</h5>
 
                     <div className="work__cover">
                         <Link to="/ethical" className="sc-iwjdpV ilgNXF">
@@ -51,6 +52,7 @@ const Service = () => {
                     <div className="card__content">
                     <h3 className="work__title">Fuwa Fuwa-Gallery
                     </h3>
+                    <h5 className="pt-h5">WordPress, PHP</h5>
                     <div className="work__cover">
                         <Link to="/fuwa" className="sc-iwjdpV ilgNXF">
                             Detail
@@ -65,11 +67,6 @@ const Service = () => {
                         <i className="uil uil-github"></i>
                         </a>
                     </div>
-
-                    {/* <span className="work__button" onClick={() => toggleTab(3)}>
-                        View More
-                        <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                    </span> */}
                     </div>
 
                     
@@ -82,6 +79,8 @@ const Service = () => {
                     <img src={Daisuke} alt="work__img" className="work__img" />
                     <div className="card__content">
                     <h3 className="work__title">My Portfolio Website</h3>
+                    <h5 className="pt-h5">React(JavaScript), React Router</h5>
+                    
                     <div className="work__cover">
                         <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
                             Detail
@@ -98,8 +97,6 @@ const Service = () => {
                         </a>
                     </div>
                     </div>
-
-                    
                 </div>
 
                         <div className={toggleState === 2 ? "service__model active-model" : "service__model"}>
@@ -115,26 +112,9 @@ const Service = () => {
                                     This is my personal portfoli website using React with JavaScript.
                                 </p>
                             </div>
-                            {/* <div className="work__cover">
-                                <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
-                                    Detail
-                                <i className="uil uil-file-info-alt"></i>
-                                </Link>
-
-                                <div className="sc-dlVxhl psblj"></div>
-                                <a className="sc-iwjdpV ilgNXF" href="https://www.daisukjp.com/" target="_blank">View
-                                <i className="uil uil-window"></i>
-                                </a>
-                                <div className="sc-dlVxhl psblj"></div>
-                                    <a className="sc-iwjdpV ilgNXF" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank">GitHub
-                                    <i className="uil uil-github"></i>
-                                </a>
-                            </div> */}
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )

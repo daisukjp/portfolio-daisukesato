@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./header.css";
-import DSLOGO from "../../assets/daisuke-sato-footer-logo.png"
+import DSLOGO from "../../assets/dsato-logo.png"
 
 const Header = () => {
     /* Background color changer */
