@@ -107,23 +107,6 @@
     resize: none;
 }
 
-/* .contact__form-button {
-    display: inline-block;
-    background-color: var(--title-color);
-    color: var(--container-color);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    font-weight: var(1rem);
-    transition: 0.4s ease;
-    border: 2px solid #979797;
-}
-
-.contact__form-button:hover {
-    box-shadow: 1px 1px 0 0 #000;
-    border: 2px solid #979797;
-    /* transform: translate(1px, -1px); /
-} //
-
 /* Button Animation */
 
 .contact__form-button {

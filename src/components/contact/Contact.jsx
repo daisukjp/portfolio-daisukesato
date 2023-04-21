@@ -14,8 +14,6 @@ const Contact = () => {
 return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get in touch</h2>
-        {/* <h3 className="section__subtitle">Contact me</h3> */}
-
         <div className="qualification__tabs">
             <div className={
                 contactToggle === 1 
