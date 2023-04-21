@@ -76,6 +76,7 @@ const ContactInfo = () => {
         <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
             <TextField
+                id="user_name"
                 label="Name"
                 name="user_name"
                 value={formData.user_name}
@@ -89,6 +90,7 @@ const ContactInfo = () => {
 
             <div className="contact__form-div">
             <TextField
+                id="user_email"
                 label="Email"
                 name="user_email"
                 value={formData.user_email}
@@ -103,6 +105,7 @@ const ContactInfo = () => {
 
             <div className="contact__form-div contact__form-area">
             <TextField
+                id="message"
                 label="Message"
                 name="message"
                 value={formData.message}
