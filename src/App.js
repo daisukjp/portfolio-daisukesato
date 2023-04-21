@@ -16,19 +16,13 @@ const App = () => {
     <Header />
     <main className='main' >
       <Home />
-      {/* <Work /> */}
-      {/* <About /> */}
+
       <Service />
-      {/* <Router /> */}
-      {/* <Routes>
-        <Route path="/service/*" element={<Service />} />
-        <Route path="/service/portfolio/:id" element={<Portfolio />} />
-      </Routes> */}
+
 
       <Skills />
       {/* <Qualification /> */}
       <Contact />
-      {/* <Link to="/portfolio">Go to Portfolio</Link> */}
     </main>
 
     <Footer />

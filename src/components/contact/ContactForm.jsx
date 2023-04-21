@@ -1,70 +1,139 @@
-import React, { useState } from 'react';
-// import $ from 'jquery';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import "./contact.css"
 
 const ContactInfo = () => {
-    const [isClicked, setIsClicked] = useState(false);
-    const [isValidated, setIsValidated] = useState(false);
+    const [formData, setFormData] = useState({
+        user_name: '',
+        user_email: '',
+        message: '',
+    });
+    const [open, setOpen] = useState(false);
 
-    const handleClick = () => {
-        setIsClicked(true);
-        setTimeout(() => {
-        setIsClicked(false);
-        setIsValidated(true);
-        setTimeout(() => {
-            setIsValidated(false);
-        }, 1250);
-        }, 2250);
+    const form = useRef();
+
+    const handleChange = (e) => {
+        setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+        });
     };
-    
-return (
-    <div className="contact__form-section">
-        <h3 className="contact__title">Send me a message!</h3>
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (!validateEmail(formData.user_email)) {
+            alert("Please enter a valid email address");
+            return;
+        }
         
-        <form className="contact__form">
+        emailjs
+        .sendForm(
+            "service_dbuxol8",
+            "template_tczbd9k",
+            form.current,
+            "PtyEl5CsXsyffWq-3"
+        )
+        .then(
+            (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            clearForm();
+            setOpen(true); // set open state to true to show the success snackbar
+            },
+            (error) => {
+            console.log(error.text);
+            }
+        );
+    };
+
+    const clearForm = () => {
+        setFormData({
+        user_name: '',
+        user_email: '',
+        message: '',
+        });
+    };
+
+    const handleClose = () => {
+        setOpen(false); // set open state to false to hide the success snackbar
+    };
+
+    const validateEmail = (email) => {
+        // email validation regex pattern
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    };
+
+    return (
+        <div className="contact__form-section">
+        <h3 className="contact__title">Send me a message!</h3>
+
+        <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
-                <label className="contact__form-tags">Name</label>
-                <input
-                type="text"
-                name="name"
-                className="contact__form-input"
+            <TextField
+                label="Name"
+                name="user_name"
+                value={formData.user_name}
+                onChange={handleChange}
                 placeholder="Type your name"
-                />
+                variant="outlined"
+                required
+                className="contact__form-input"
+            />
             </div>
 
             <div className="contact__form-div">
-                <label className="contact__form-tags">Email</label>
-                <input
-                type="email"
-                name="email"
-                className="contact__form-input"
+            <TextField
+                label="Email"
+                name="user_email"
+                value={formData.user_email}
+                onChange={handleChange}
                 placeholder="Type your email"
-                />
+                variant="outlined"
+                type="email"
+                required
+                className="contact__form-input"
+            />
             </div>
 
             <div className="contact__form-div contact__form-area">
-                <label className="contact__form-tags">Message</label>
-                <textarea
+            <TextField
+                label="Message"
                 name="message"
-                cols="30"
-                rows="10"
-                className="contact__form-input"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Type your message"
-                ></textarea>
+                multiline
+                rows={4}
+                variant="outlined"
+                required
+                className="contact__form-input"
+            />
             </div>
-            
-            <a
-                className={`contact__form-button button__flex ${isClicked ? "onclic" : ""} ${
-                    isValidated ? "validate" : ""
-                }`}
-                onClick={handleClick}
-                >
-                Submit
-            </a>
+            <Button
+            variant="contained"
+            type="submit"
+            className="contact__form-button button__flex"
+            >
+            Send
+            </Button>
         </form>
 
-    </div>
-)
-}
+        {/* Snackbar to show message sent alert */}
+        <div>
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                <MuiAlert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                Message sent!
+                </MuiAlert>
+            </Snackbar>
+        </div>
+        </div>
+    );
+};
 
-export default ContactInfo
+export default ContactInfo;
