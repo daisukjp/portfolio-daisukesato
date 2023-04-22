@@ -1,0 +1,48 @@
+{
+    "projects": [
+        {
+            "title": "Ethical Conveni",
+            "gif": "img/van-cafe/vancafe.gif",
+            "thumbnail": "img/van-cafe/top.jpg",
+            "skills": ["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
+            "category": "Featured",
+            "github": "https://github.com/miacan2021/VanCafe.git",
+            "url": "https://work-friendly-cafe-van.vercel.app/",
+            "slug": "cafe-van",
+            "description": "“Next.js” & “WordPress” - JAMstack website using WP GraphQL and REST API. We can find or post cafe information that has outlets and Wi-Fi."
+        },
+        {
+            "title": "Fuwa Fuwa-Gallery",
+            "gif": "img/web.png",
+            "thumbnail": "img/web.png",
+            "skills": ["Next.js", "GraphQL", "AWS amplify", "Tailwind CSS", "daisyUI"],
+            "category": "Featured",
+            "github": "https://github.com/miacan2021/webeginner-aws.git",
+            "url": "https://webeginner-7cvz45216-miacan2021.vercel.app/",
+            "slug": "webeginner",
+            "description": "Communication web app for web beginners! It helps to find good tutorials."
+        },
+        {
+            "title": "My Portfolio Website",
+            "gif": "img/monaco.png",
+            "thumbnail": "img/monaco.png",
+            "skills": ["Bootstrap", "jQuery"],
+            "category": "Featured",
+            "github": "https://www.liveatmonaco.ca/",
+            "url": "https://www.liveatmonaco.ca/",
+            "slug": "monaco",
+            "description": "A condominium introduction website. You can see views from rooms and book appointments with representatives."
+        },
+        {
+            "title": "Parkland Tai Chi",
+            "gif": "img/mokumoku/top.gif",
+            "thumbnail": "img/mokumoku/top.jpg",
+            "skills": ["MongoDB", "Express.js", "React", "Node.js", "Firebase"],
+            "category": "Featured",
+            "github": "https://github.com/miacan2021/VanCafe.git",
+            "url": "https://mokumoku-miacan2021.vercel.app/",
+            "slug": "mokumoku",
+            "description": "MERN stack event advertisement web application. We can recruit participants for the event."
+        }
+        ]
+    }
