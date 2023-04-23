@@ -3,6 +3,7 @@ import { useState } from 'react'
 import "./projectsPage.css";
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import ScrollUp from '../scrollup/ScrollUp';
 import { ProjectsCard } from './ProjectsCard';
 import { useNavigate } from 'react-router-dom'
 import ProjectData from '../../ProjectData.json'
@@ -24,13 +25,18 @@ export const ProjectsPage = () => {
         return (
         <>
             <Header />
-                <div className="projectsPage__container">
+                <h1 className="projectPage__projectTitle">
+                        Projects
+                </h1>
+                <div className="projectsPage__container-main">
                     {datas.map((data, i) => {
                         const direction = chooseDirection(i)
                         return <ProjectsCard key={data.title}  data={data} direction={direction} />
                         })}
                 </div>
             <Footer />
+            <ScrollUp />
+    
         </>
         )
 };

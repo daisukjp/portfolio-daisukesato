@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./header.css";
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import DSLOGO from "../../assets/dsato-logo.png"
 
 const Header = () => {

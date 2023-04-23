@@ -2,13 +2,14 @@ import React from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import ScrollUp from '../scrollup/ScrollUp';
+import ProjectData from '../../ProjectData.json'
 import EthicalOne from "../../assets/ethical-convini-pic-1.png";
 import EthicalTwo from "../../assets/ethical-2.png"
 import EthicalThree from "../../assets/ethical-3.png";
 import EthicalFour from "../../assets/ethical-4.png";
 
 export const Ethical = () => {
-
+    const data = ProjectData.projects.filter((project) => project.slug === 'ethical')[0]
     return (
         <>
         <Header />
@@ -16,14 +17,15 @@ export const Ethical = () => {
                 <section className="project__title">
                     <div className="project__title-div">
                         <h1 className="project__title">
-                        Ethical Page
+                            {data.title}
                         </h1>
                         <div className="project__nav">
                             <nav>
                             <ul className="project__nav-ul">
-                                <li className="project__nav-li">#PHP</li>
-                                <li className="project__nav-li">#Laravel 6</li>
-                                </ul>
+                                {data.skills.map((skill, i) => (
+                                    <li className="project__nav-li" key={i}>#{skill}</li>
+                                ))}
+                            </ul>
                             </nav>
                         </div>
                     </div>

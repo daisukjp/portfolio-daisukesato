@@ -6,7 +6,7 @@ import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
-import Service from './components/service/Service';
+import Service from './components/projectHome/Service';
 
 
 const App = () => {
