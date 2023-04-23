@@ -23,6 +23,15 @@
   });
   </script>	
 
+<script>
+  const path = sessionStorage.getItem('path');
+  console.log(path);
+  if (path && path === '/https://www.daisukjp.com/projects') {
+    sessionStorage.removeItem('path');
+    window.history.replaceState(null, null, './projects');
+  }
+</script>
+
   <title>Daisuke Sato || Website</title>
 </head>
 <body>

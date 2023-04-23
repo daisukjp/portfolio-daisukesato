@@ -29,7 +29,7 @@ const Service = () => {
                     <h5 className="pt-h5">PHP, Laravel6</h5>
 
                     <div className="work__cover">
-                        <Link to="/ethical" className="sc-iwjdpV ilgNXF">
+                        <Link to="projects/ethical" className="sc-iwjdpV ilgNXF">
                             Detail
                         <i className="uil uil-file-info-alt"></i>
                         </Link>
@@ -54,7 +54,7 @@ const Service = () => {
                     </h3>
                     <h5 className="pt-h5">WordPress, PHP</h5>
                     <div className="work__cover">
-                        <Link to="/fuwa" className="sc-iwjdpV ilgNXF">
+                        <Link to="projects/fuwafuwa" className="sc-iwjdpV ilgNXF">
                             Detail
                         <i className="uil uil-file-info-alt"></i>
                         </Link>
@@ -82,7 +82,7 @@ const Service = () => {
                     <h5 className="pt-h5">React(JavaScript), React Router</h5>
                     
                     <div className="work__cover">
-                        <Link to="/portfolio" className="sc-iwjdpV ilgNXF">
+                        <Link to="projects/portfolio" className="sc-iwjdpV ilgNXF">
                             Detail
                         <i className="uil uil-file-info-alt"></i>
                         </Link>

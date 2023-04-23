@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./header.css";
+import { Link } from 'react-router-dom';
 import DSLOGO from "../../assets/dsato-logo.png"
 
 const Header = () => {
@@ -35,14 +36,14 @@ const Header = () => {
                         </li>
 
                         <li className='nav__item'>
-                            <a href="/#service" 
+                            <Link to="/projects"
                             onClick={() => setActiveNav('#service')} className={
                             activeNav === "#service" ? "nav__link active-link" : "nav_link"
                             }
                             >
                                 <i className='uil uil-briefcase-alt nav__icon'></i>
                                 Projects
-                            </a>
+                            </Link>
                         </li>
 
                         <li className='nav__item'>

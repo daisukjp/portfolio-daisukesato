@@ -1,0 +1,136 @@
+.projectPage__projectTitle {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.projectsPage__container {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2rem 1rem;
+    width: 80vw;
+    max-width: 1000px;
+    text-align: center;
+    border: 2px solid #707070;
+    border-radius: 8px;
+    box-shadow: -8px 8px 0 0 #000;
+}
+
+.projectPage__item-container {
+    width: 100%;
+}
+
+.projectPage__item-title {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.projectPage__item-box {
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.projectPage__item-left {
+    width: 50%;
+    padding: 10px;
+}
+
+.ProjectPage__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projectPage__item-right {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projectPage__il {
+    display: flex;
+    gap: 3px;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: var(--normal-font-size);
+}
+
+.projectPage__description {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.projectPage__direct {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.projectPage__direct a {
+    font-size: 2.2rem;
+}
+
+.projectPage__button {
+    background-color: var(--title-color);
+    border: 4px solid var(--title-color);
+    border-radius: 1rem;
+    color: var(--container-color);
+    display: inline-block;
+    font-weight: var(1rem);
+    padding: 0.8rem 2rem;
+    transition: transform .3s ease 0s;
+    -webkit-transition: transform .3s ease 0s;
+    -moz-transition: transform .3s ease 0s;
+    -ms-transition: transform .3s ease 0s;
+    -o-transition: transform .3s ease 0s;
+}
+
+.projectPage__button:hover {
+    transform: translateY(-3px);
+}
+
+/* Break Points */
+/* Large Device */
+@media screen and (max-width: 1120px) {
+
+}
+
+/* Medium Device */
+@media screen and (max-width: 768px) {
+    .projectPage__item-title {
+        width: 100%;
+        font-size: 20px;
+    }
+    .projectPage__item-box {
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .projectPage__item-left,
+    .projectPage__item-right {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+/* Small Device */
+@media screen and (max-width: 466px) {
+}
+
+/* Small Device */
+@media screen and (max-width: 350px) {
+
+}

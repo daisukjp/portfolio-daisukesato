@@ -3,11 +3,10 @@ import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
-import Qualification from './components/qualification/Qualification';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
-import Service from './components/service/Service';
+import Service from './components/projectHome/Service';
 
 
 const App = () => {
@@ -19,9 +18,7 @@ const App = () => {
 
       <Service />
 
-
       <Skills />
-      {/* <Qualification /> */}
       <Contact />
     </main>
 

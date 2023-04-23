@@ -14,43 +14,43 @@ const Contact = () => {
 return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get in touch</h2>
-        <div className="qualification__tabs">
+        <div className="contact__tabs">
             <div className={
                 contactToggle === 1 
-                ? "qualification__button qualification__active button--flex" 
-                : "qualification__button  button--flex"
+                ? "contact__section-button contact__active button--flex" 
+                : "contact__section-button  button--flex"
                 }
                 
                 onClick={() => toggleTab(1)}
                 >
-                <i className="uil uil-envelope-upload qualification__icon"></i>Contact Form
+                <i className="uil uil-envelope-upload contact__icon"></i>Contact Form
             </div>
 
             <div className={
                 contactToggle === 2 
-                ? "qualification__button qualification__active button--flex" 
-                : "qualification__button  button--flex"
+                ? "contact__section-button contact__active button--flex" 
+                : "contact__section-button  button--flex"
                 }
                 
                 onClick={() => toggleTab(2)}
                 >
-                <i className="uil uil-user-exclamation qualification__icon"></i>Contact Info
+                <i className="uil uil-user-exclamation contact__icon"></i>Contact Info
             </div>
         </div>
 
         <div className="contact__form-main-container">
             <div className={
                 contactToggle === 1 
-                ? "qualification__content qualification__content-active button--flex" 
-                : "qualification__content"
+                ? "contact__content contact__content-active button--flex" 
+                : "contact__content"
                 }>
                 <div className="contact__form-container">
                     <ContactInfo />
                 </div>
             </div>
 
-            <div className={contactToggle === 2 ? "qualification__content qualification__content-active button--flex" 
-                    : "qualification__content"}>
+            <div className={contactToggle === 2 ? "contact__content contact__content-active button--flex" 
+                    : "contact__content"}>
                 <div className="contact__container container grid">
                     <Email />
                     <Phone />

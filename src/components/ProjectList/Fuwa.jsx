@@ -1,42 +1,43 @@
 import React from 'react';
-import "./project.css"
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 import ScrollUp from '../scrollup/ScrollUp';
-import Daisuke from "../../assets/daisuke_portforio.jpg";
-import PortfolioOne from "../../assets/dsato-logo.jpg";
-import PortfolioTwo from "../../assets/portfolio_skills.png";
+import ProjectData from '../../ProjectData.json'
+import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
+import FuwaTwo from "../../assets/fuwa-1.png"
+import FuwaThree from "../../assets/fuwa-2.png"
 
-export const Portfolio = () => {
-
+export const Fuwa = () => {
+    const data = ProjectData.projects.filter((project) => project.slug === 'fuwafuwa')[0]
     return (
         <>
         <Header />
-            <div id="portfoliopage" className="project__container">
+            <div className="project__container">
                 <section className="project__title">
                     <div className="project__title-div">
                         <h1 className="project__title">
-                        My Portfolio Page
+                            {data.title}
                         </h1>
                         <div className="project__nav">
                             <nav>
                             <ul className="project__nav-ul">
-                                <li className="project__nav-li">#React(JavaScript)</li>
-                                <li className="project__nav-li">#React Router</li>
-                                </ul>
+                                {data.skills.map((skill, i) => (
+                                    <li className="project__nav-li" key={i}>#{skill}</li>
+                                ))}
+                            </ul>
                             </nav>
                         </div>
                     </div>
 
                     <div className="project__body">
                         <div className="project__img">
-                            <img src={Daisuke} alt="daisuke's portfolio" className="project__img-img" />
+                            <img src={FuwaOne} alt="Fuwa" className="project__img-img"/>
                         </div>
                         <div className="project__icon">
-                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank" rel="noopener noreferrer">
+                            <a className="project__icon-a" href="https://xs272520.xsrv.jp" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-window"></i>
                             </a>
-                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank" rel="noopener noreferrer">
+                            <a className="project__icon-a" href="https://github.com/daisukjp/FuwaFuwa-Gallery/tree/main/FuwaFuwa" target="_blank" rel="noopener noreferrer">
                                 <i className="uil uil-github"></i>
                             </a>
                         </div>
@@ -45,29 +46,28 @@ export const Portfolio = () => {
 
                         <div className="project__body-content">
                             <section className="project__body-flex">
-                                <img src={PortfolioTwo} alt="" className="project__body-left project__img-img"/>
+                                <img src={FuwaTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
                                         Story
                                     </h1>
                                     <p className="project__content-body">
-                                    Welcome to my website, which was built using React! As of March 2023, I've updated the design to its latest version. I chose to use mostly white color because I appreciate clean and simple design aesthetics. I believe that the use of white color helps to highlight the content and create a more accessible user experience. I hope that you enjoy exploring my website and learning more about me and my work!
+                                        In the autumn of 2022, I developed a gallery site to chronicle the growth of my friend's feline companion with a collection of captivating photos and videos. Utilizing WordPress as a platform, I customized the site further by crafting an original theme through the power of PHP programming.
                                     </p>
                                 </div>
                             </section>
 
                             <section className="project__body-flex-middle">
-                                <img src={PortfolioOne} alt="" className="project__body-left project__img-img"/>
+                                <img src={FuwaThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
                                     <h1 className="project__content-title">
-                                        Logo Design
+                                        Fun Part
                                     </h1>
                                     <p className="project__content-body">
-                                        The logo design I created was inspired by my passion for baking and my Japanese anime fandom. I used a bread motif to represent my love for baking and incorporated my initials, D and S, into the design. By combining these elements, I created a unique logo that reflects my personality and interests. 
+                                        I have developed an original theme for this site, keeping in mind my preference for simplicity, and ensuring that it is user-friendly for visitors.
                                     </p>
                                 </div>
                             </section>
-
                         </div>
                     </div>
 
@@ -78,18 +78,19 @@ export const Portfolio = () => {
                             Description
                         </h1>
                         <h2 className="project__bottom-h2">
-                            - Challenged using React
+                            - Challenged making Original Theme
                         </h2>
                         <p className="project__bottom-p">
                             &#8209;
-                            It's impressive that I built this site using React, a technology that I'm currently studying. This project has helped me realize the significance of immediately applying the concepts I learn to reinforce my learning process. 
+                            While taking a WordPress course in school, I designed the theme for this site. Although I struggled with the back-end coding and the placement of certain design elements, it was an invaluable opportunity to apply and expand upon what I had learned.
                         </p>
 
-                        <br />
-
+                        <h2 className="project__bottom-h2">
+                            - Just for FUN
+                        </h2>
                         <p className="project__bottom-p">
                             &#8209;
-                            One of the more challenging aspects of creating this site was incorporating page transitions into React Router version 6, a topic that wasn't covered in my class. Nonetheless, through extensive research, I learned how to do it, and I thoroughly enjoyed the process.
+                            My primary motivation for creating this site was purely for the enjoyment of it. As a devoted cat person, the idea of designing a site solely dedicated to felines was particularly inspiring to me.
                         </p>
                     </div>
                 </section>
