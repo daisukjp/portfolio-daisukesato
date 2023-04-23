@@ -7,7 +7,7 @@ import { ProjectsPage } from './components/Projects/ProjectsPage';
 import { Portfolio } from './components/ProjectList/Portfolio';
 import { Ethical } from './components/ProjectList/Ethical';
 import { Fuwa } from './components/ProjectList/Fuwa';
-import { Error } from './components/Error';
+import { Error } from './components/Error/Error';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>

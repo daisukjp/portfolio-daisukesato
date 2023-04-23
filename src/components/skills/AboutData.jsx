@@ -5,7 +5,7 @@ import Typed from './Typed'
 
 const AboutData = () => {
     return (
-        <div className="profile__section section">
+        <div className="profile__section">
             <h1 className="sc-hKwDye iyooZD">
                 <div className="Typewriter" data-testid="typewriter-wrapper">
                     <div>
