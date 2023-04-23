@@ -54,7 +54,7 @@ const Service = () => {
                     </h3>
                     <h5 className="pt-h5">WordPress, PHP</h5>
                     <div className="work__cover">
-                        <Link to="projects/fuwa" className="sc-iwjdpV ilgNXF">
+                        <Link to="projects/fuwafuwa" className="sc-iwjdpV ilgNXF">
                             Detail
                         <i className="uil uil-file-info-alt"></i>
                         </Link>
