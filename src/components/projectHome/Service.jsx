@@ -26,7 +26,7 @@ const Service = () => {
                     <h3 className="work__title">
                         Ethical Conveni 
                     </h3>
-                    <h5 className="pt-h5">PHP, Laravel6</h5>
+                    <h4 className="pt-h5">PHP, Laravel6</h4>
 
                     <div className="work__cover">
                         <Link to="projects/ethical" className="sc-iwjdpV ilgNXF">
