@@ -28,13 +28,13 @@ const Service = () => {
     `;
     return (
         <section className="services section" id="service">
-            <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+            <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                 <h2 className="section__title">Projects</h2>
             </Reveal>
 
             <div className="service__container container grid">
                 <div className="service__content">
-                <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                     <div className="work__card">
                             <img src={EthicalOne} alt="work__img" className="work__img" />
                         <div className="card__content">
@@ -58,7 +58,7 @@ const Service = () => {
 
                 </div>
                 <div className="service__content">
-                <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                     <div className="work__card">
                             <img src={FuwaOne} alt="work__img" className="work__img" />
                         <div className="card__content">
@@ -85,7 +85,7 @@ const Service = () => {
                 </div>
 
                 <div className="service__content">
-                <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+                <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                     <div className="work__card">
                             <img src={Daisuke} alt="work__img" className="work__img" />
                         <div className="card__content">

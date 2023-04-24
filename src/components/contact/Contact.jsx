@@ -26,7 +26,7 @@ const Contact = () => {
 
 return (
     <section className="contact section" id="contact">
-        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>  
+        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>  
             <h2 className="section__title">Get in touch</h2>
             <div className="contact__tabs">
                 <div className={
@@ -53,7 +53,7 @@ return (
             </div>
         </Reveal>
         
-        <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
             <div className="contact__form-main-container">
                 <div className={
                     contactToggle === 1 
