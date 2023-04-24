@@ -1,9 +1,6 @@
 import React from 'react';
 import "./projectsPage.css";
-import { useState, useCallback } from "react"
 import { Link } from 'react-router-dom';
-
-// images 
 
 const params = {
     data: {
@@ -39,15 +36,6 @@ const params = {
     }
 
 export const ProjectsCard = (props) => {
-    const [hover, setHover] = useState(false)
-    const handleHover = useCallback(
-        () => {
-        setHover(prev => !prev)
-        },
-        []
-        )
-    const width = window.innerWidth;
-    
         return (
         <>
                 <div className="projectsPage__container">
