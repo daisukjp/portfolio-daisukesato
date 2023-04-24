@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import "./header.css";
 import { Link } from 'react-router-dom';
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import DSLOGO from "../../assets/dsato-logo.png"
 
 const Header = () => {
@@ -11,20 +13,34 @@ const Header = () => {
         else header.classList.remove("scroll-header");
     });
 
+    const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    `;
+
     /* Toggle Menu */
         const [Toggle, ShowMenu] = useState(false);
         const [activeNav, setActiveNav] = useState("#home");
 
-
     return (
-        <div>
+        <>
         <header className="header">
             <nav className="nav container">
-                <a href="/" className="nav__logo"><img src={DSLOGO} alt="DS logo" /></a>
-
+                <a href="/" className="nav__logo">
+                <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
+                    <img src={DSLOGO} alt="DS logo" />
+                </Reveal>
+                </a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className='nav__list grid'>
                         <li className='nav__item'>
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                             <a href="/#home" 
                             onClick={() => setActiveNav('#home')} className={
                             activeNav === "#home" ? "nav__link active-link" : "nav_link"
@@ -33,9 +49,11 @@ const Header = () => {
                                 <i className='uil uil-estate nav__icon'></i>
                                 Home
                             </a>
+                        </Reveal>
                         </li>
 
                         <li className='nav__item'>
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                             <Link to="/projects"
                             onClick={() => setActiveNav('#service')} className={
                             activeNav === "#service" ? "nav__link active-link" : "nav_link"
@@ -44,9 +62,11 @@ const Header = () => {
                                 <i className='uil uil-briefcase-alt nav__icon'></i>
                                 Projects
                             </Link>
+                        </Reveal>
                         </li>
 
                         <li className='nav__item'>
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                             <a href="/#skills" 
                                 onClick={() => setActiveNav('#skills')} className={
                                 activeNav === "#skills" ? "nav__link active-link" : "nav_link"
@@ -55,10 +75,12 @@ const Header = () => {
                                 <i className='uil uil-file-alt nav__icon'></i>
                                 About
                             </a>
+                        </Reveal>
                         </li>
 
 
                         <li className='nav__item'>
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                             <a href="/#contact"
                             onClick={() => setActiveNav('#contact')} className={
                             activeNav === "#contact" ? "nav__link active-link" : "nav_link"
@@ -67,9 +89,11 @@ const Header = () => {
                                 <i className='uil uil-message nav__icon'></i>
                                 Contact
                             </a>
+                        </Reveal>
                         </li>
 
                         <li className='nav__item'>
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                             <a href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing"
                             onClick={() => setActiveNav('#resume')} className={
                             activeNav === "#resume" ? "nav__link active-link" : "nav_link"
@@ -78,6 +102,7 @@ const Header = () => {
                                 <i className='uil uil-message nav__icon'></i>
                                 Resume
                             </a>
+                        </Reveal>
                         </li>
                     </ul>
                     <div className="snsArea pc_show">
@@ -93,13 +118,14 @@ const Header = () => {
                 </div>
 
                 <div className='nav__toggle' onClick={() => ShowMenu(!Toggle)}>
-                <i className="uil uil-apps"></i>
+                <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
+                    <i className="uil uil-apps"></i>
+                </Reveal>
                 </div>
             </nav>
-            
         </header>
             
-        </div>
+        </>
         
     )
 }
