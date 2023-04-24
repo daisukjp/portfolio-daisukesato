@@ -8,8 +8,6 @@ const Skills = () => {
     return (
         <section className="skills section" id="skills">
             <AboutData />
-            <div className="skills__container container grid">
-            </div>
         </section>
     )
 }
