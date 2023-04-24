@@ -194,6 +194,11 @@
     transform: translateX(0.25rem);
 }
 
+.onStep {
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+    animation-fill-mode: both;
+    }
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 1120px) {

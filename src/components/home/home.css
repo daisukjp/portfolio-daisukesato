@@ -121,6 +121,27 @@
     color: var(--title-color);
 }
 
+/* loading animation */
+
+.fadeUp-1 {
+    transform: translateY(5px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+
+.onStep {
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+    animation-fill-mode: both;
+    }
+
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 1120px) {
