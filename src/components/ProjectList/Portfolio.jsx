@@ -6,14 +6,27 @@ import ScrollUp from '../scrollup/ScrollUp';
 import Daisuke from "../../assets/daisuke_portforio.jpg";
 import PortfolioOne from "../../assets/dsato-logo.jpg";
 import PortfolioTwo from "../../assets/portfolio_skills.png";
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 export const Portfolio = () => {
+    const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    `;
 
     return (
         <>
         <Header />
             <div id="portfoliopage" className="project__container">
                 <section className="project__title">
+                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                     <div className="project__title-div">
                         <h1 className="project__title">
                         My Portfolio Page
@@ -27,8 +40,10 @@ export const Portfolio = () => {
                             </nav>
                         </div>
                     </div>
+                </Reveal>
 
                     <div className="project__body">
+                    <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                         <div className="project__img">
                             <img src={Daisuke} alt="daisuke's portfolio" className="project__img-img" />
                         </div>
@@ -42,8 +57,10 @@ export const Portfolio = () => {
                         </div>
 
                         <div className="project__line"></div>
-
+                    </Reveal>
                         <div className="project__body-content">
+
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex">
                                 <img src={PortfolioTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -55,7 +72,9 @@ export const Portfolio = () => {
                                     </p>
                                 </div>
                             </section>
+                        </Reveal>
 
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex-middle">
                                 <img src={PortfolioOne} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -67,10 +86,11 @@ export const Portfolio = () => {
                                     </p>
                                 </div>
                             </section>
-
+                        </Reveal>
                         </div>
                     </div>
 
+                    <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                     <div className="project__line"></div>
 
                     <div className="project__bottom">
@@ -92,6 +112,7 @@ export const Portfolio = () => {
                             One of the more challenging aspects of creating this site was incorporating page transitions into React Router version 6, a topic that wasn't covered in my class. Nonetheless, through extensive research, I learned how to do it, and I thoroughly enjoyed the process.
                         </p>
                     </div>
+                    </Reveal>
                 </section>
             </div>
         <Footer />

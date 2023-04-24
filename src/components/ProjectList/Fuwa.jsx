@@ -6,14 +6,27 @@ import ProjectData from '../../ProjectData.json'
 import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
 import FuwaTwo from "../../assets/fuwa-1.png"
 import FuwaThree from "../../assets/fuwa-2.png"
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 export const Fuwa = () => {
     const data = ProjectData.projects.filter((project) => project.slug === 'fuwafuwa')[0]
+    const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    `;
     return (
         <>
         <Header />
             <div className="project__container">
                 <section className="project__title">
+                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                     <div className="project__title-div">
                         <h1 className="project__title">
                             {data.title}
@@ -28,8 +41,10 @@ export const Fuwa = () => {
                             </nav>
                         </div>
                     </div>
+                </Reveal>
 
                     <div className="project__body">
+                    <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                         <div className="project__img">
                             <img src={FuwaOne} alt="Fuwa" className="project__img-img"/>
                         </div>
@@ -41,10 +56,10 @@ export const Fuwa = () => {
                                 <i className="uil uil-github"></i>
                             </a>
                         </div>
-
                         <div className="project__line"></div>
-
+                    </Reveal>
                         <div className="project__body-content">
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex">
                                 <img src={FuwaTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -56,7 +71,9 @@ export const Fuwa = () => {
                                     </p>
                                 </div>
                             </section>
+                        </Reveal>
 
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex-middle">
                                 <img src={FuwaThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -68,9 +85,11 @@ export const Fuwa = () => {
                                     </p>
                                 </div>
                             </section>
+                        </Reveal>
                         </div>
                     </div>
 
+                    <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                     <div className="project__line"></div>
 
                     <div className="project__bottom">
@@ -93,6 +112,7 @@ export const Fuwa = () => {
                             My primary motivation for creating this site was purely for the enjoyment of it. As a devoted cat person, the idea of designing a site solely dedicated to felines was particularly inspiring to me.
                         </p>
                     </div>
+                    </Reveal>
                 </section>
             </div>
         <Footer />

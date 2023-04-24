@@ -7,14 +7,28 @@ import EthicalOne from "../../assets/ethical-convini-pic-1.png";
 import EthicalTwo from "../../assets/ethical-2.png"
 import EthicalThree from "../../assets/ethical-3.png";
 import EthicalFour from "../../assets/ethical-4.png";
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 export const Ethical = () => {
     const data = ProjectData.projects.filter((project) => project.slug === 'ethical')[0]
+
+    const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    `;
     return (
         <>
         <Header />
             <div className="project__container">
                 <section className="project__title">
+                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                     <div className="project__title-div">
                         <h1 className="project__title">
                             {data.title}
@@ -29,8 +43,10 @@ export const Ethical = () => {
                             </nav>
                         </div>
                     </div>
+                </Reveal>
 
-                    <div className="project__body">
+                <div className="project__body">
+                    <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
                         <div className="project__img">
                             <img src={EthicalOne} alt="ethical" className="project__img-img" />
                         </div>
@@ -39,10 +55,11 @@ export const Ethical = () => {
                                 <i className="uil uil-window"></i>
                             </a>
                         </div>
-
                         <div className="project__line"></div>
-
-                        <div className="project__body-content">
+                    </Reveal>
+                    <div className="project__body-content">
+                        
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex">
                                 <img src={EthicalTwo} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -54,7 +71,9 @@ export const Ethical = () => {
                                     </p>
                                 </div>
                             </section>
+                        </Reveal>
 
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex-middle">
                                 <img src={EthicalThree} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -66,7 +85,9 @@ export const Ethical = () => {
                                     </p>
                                 </div>
                             </section>
+                        </Reveal>
 
+                        <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                             <section className="project__body-flex">
                                 <img src={EthicalFour} alt="" className="project__body-left project__img-img"/>
                                 <div className="project__body-right">
@@ -78,9 +99,11 @@ export const Ethical = () => {
                                     </p>
                                 </div>
                             </section>
-                        </div>
+                        </Reveal>
                     </div>
+                </div>
 
+                <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={600} triggerOnce>
                     <div className="project__line"></div>
 
                     <div className="project__bottom">
@@ -100,6 +123,7 @@ export const Ethical = () => {
                             Over time, my search skills improved, enabling me to efficiently troubleshoot any issue that came my way. Through this process, I gained a newfound sense of assurance in my research abilities.
                         </p>
                     </div>
+                </Reveal>
                 </section>
             </div>
         <Footer />
