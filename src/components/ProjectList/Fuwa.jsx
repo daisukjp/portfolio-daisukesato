@@ -52,7 +52,7 @@ export const Fuwa = () => {
                                         Story
                                     </h1>
                                     <p className="project__content-body">
-                                        In the autumn of 2022, I developed a gallery site to chronicle the growth of my friend's feline companion with a collection of captivating photos and videos. Utilizing WordPress as a platform, I customized the site further by crafting an original theme through the power of PHP programming.
+                                        In the autumn of 2022, I developed a gallery site to chronicle the growth of my friend's feline companion with a collection of captivating photos and videos. Utilizing WordPress as a platform, I customized the site further by crafting an original theme through the PHP programming.
                                     </p>
                                 </div>
                             </section>

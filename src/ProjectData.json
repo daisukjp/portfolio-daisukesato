@@ -9,7 +9,7 @@
             "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
             "url": "https://work-friendly-cafe-van.vercel.app/",
             "slug": "ethical",
-            "description": "“Next.js” & “WordPress” - JAMstack website using WP GraphQL and REST API. We can find or post cafe information that has outlets and Wi-Fi."
+            "description": "“During the summer break of 2022, I completed a four-month internship as a front-end developer in Sapporo, Japan. While there, I collaborated with a small team to develop an e-commerce website for a client, utilizing PHP and Laravel 6."
         },
         {
             "title": "Fuwa Fuwa-Gallery",
@@ -20,18 +20,18 @@
             "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
             "url": "https://xs272520.xsrv.jp/",
             "slug": "fuwafuwa",
-            "description": "Communication web app for web beginners! It helps to find good tutorials."
+            "description": "In the autumn of 2022, I developed a gallery site to chronicle the growth of my friend's feline companion with a collection of captivating photos and videos. Utilizing WordPress as a platform, I customized the site further by crafting an original theme through the PHP programming."
         },
         {
             "title": "My Portfolio Website",
             "gif": "img/monaco.png",
             "thumbnail": "http://drive.google.com/uc?export=view&id=1J49g2qbHuBOHoUwri-MlTP387yRP73SY",
-            "skills": ["Bootstrap", "jQuery"],
+            "skills": ["React", "React Router"],
             "category": "Featured",
             "github": "https://www.liveatmonaco.ca/",
             "url": "https://www.liveatmonaco.ca/",
             "slug": "portfolio",
-            "description": "A condominium introduction website. You can see views from rooms and book appointments with representatives."
+            "description": "This is my portfolio website. Built using react. Last update April 23rd 2023."
         }
         ]
     }
