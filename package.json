@@ -6,6 +6,7 @@
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@iconscout/unicons": "^4.0.8",
     "@mui/material": "^5.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
