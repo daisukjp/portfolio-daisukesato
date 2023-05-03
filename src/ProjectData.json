@@ -6,8 +6,8 @@
             "thumbnail": "http://drive.google.com/uc?export=view&id=1YLjv-0fxxPDPlIqvw5N338l8-1h4nLCB",
             "skills": ["PHP", "Laravel 6"],
             "category": "Featured",
-            "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
-            "url": "https://work-friendly-cafe-van.vercel.app/",
+            "github": "",
+            "url": "https://ethical-conveni.com/",
             "slug": "ethical",
             "description": "“During the summer break of 2022, I completed a four-month internship as a front-end developer in Sapporo, Japan. While there, I collaborated with a small team to develop an e-commerce website for a client, utilizing PHP and Laravel 6."
         },
@@ -28,8 +28,8 @@
             "thumbnail": "http://drive.google.com/uc?export=view&id=1J49g2qbHuBOHoUwri-MlTP387yRP73SY",
             "skills": ["React", "React Router"],
             "category": "Featured",
-            "github": "https://www.liveatmonaco.ca/",
-            "url": "https://www.liveatmonaco.ca/",
+            "github": "https://github.com/daisukjp/portfolio-daisukesato",
+            "url": "http://daisukjp.com/",
             "slug": "portfolio",
             "description": "This is my portfolio website. Built using react. Last update April 23rd 2023."
         }

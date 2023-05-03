@@ -23,26 +23,7 @@ const WorkItems = ({item}) => {
 
             
         </div>
-            {/* <div className={toggleState === 1 ? "work__model active-model" : "work__model"}>
-                <div className="work__model-content">
-                    <i onClick={() => toggleTab(0)} className="uil uil-times service__model-close">
-                    </i>
-                    <h3 className="work__model-title">
-                        hello
-                    </h3>
-                    <p className="work__model-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis necessitatibus impedit repudiandae eum illo esse sapiente quidem eveniet culpa reiciendis eius, sint id cumque fugiat ullam possimus qui eaque cupiditate!
-                    </p>
-                    <ul className="work__model-services grid">
-                        <li className="work__model-service">
-                            <i className="uil uil-check-circle"></i>
-                            <p className="work__model-info">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nam perferendis, ratione, repellat sequi magnam dignissimos ea, quibusdam eos eum sed? Tenetur commodi ipsa dolorem placeat rem aliquid accusantium doloribus!
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div> */}
+
             </>
     )
 }

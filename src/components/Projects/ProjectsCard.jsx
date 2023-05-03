@@ -59,9 +59,12 @@ export const ProjectsCard = (props) => {
                                     <a className="sc-iwjdpV ilgNXF" href={props.data.url} target="_blank" rel="noopener noreferrer">
                                     <i className="uil uil-window"></i>
                                     </a>
-                                    <a className="sc-iwjdpV ilgNXF" href={props.data.github} target="_blank" rel="noopener noreferrer">
-                                    <i className="uil uil-github"></i>
-                                    </a>
+                                    
+                                    {props.data.github ? (
+                                        <a className="sc-iwjdpV ilgNXF" href={props.data.github} target="_blank" rel="noopener noreferrer">
+                                            <i className="uil uil-github"></i>
+                                        </a>
+                                    ) : null}
                                 </div>
                                 <Link to={props.data.slug}><div className="projectPage__button">MORE...</div></Link>
                             </div>
