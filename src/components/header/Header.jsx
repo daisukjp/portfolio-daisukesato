@@ -3,7 +3,6 @@ import "./header.css";
 import { Link } from 'react-router-dom';
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import NavLink from "./NavLink";
 import DSLOGO from "../../assets/dsato-logo.png"
 
 const Header = () => {
@@ -26,15 +25,8 @@ const Header = () => {
     `;
 
     /* Toggle Menu */
-    const [Toggle, ShowMenu] = useState(false);
-    const [activeNav, setActiveNav] = useState("#home");
-
-    const links = [
-        { label: "Home", href: "/#home" },
-        { label: "Projects", href: "/projects" },
-        { label: "Contract", href: "/#contact" },
-        { label: "Resume", href: "https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing" },
-    ];
+        const [Toggle, ShowMenu] = useState(false);
+        const [activeNav, setActiveNav] = useState("#home");
 
     return (
         <>
@@ -46,10 +38,10 @@ const Header = () => {
                 </Reveal>
                 </a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
-                    {/* <ul className='nav__list grid'>
+                    <ul className='nav__list grid'>
                         <li className='nav__item'>
                         <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
-                            <a href="#/home" 
+                            <a href="/#home" 
                             onClick={() => setActiveNav('#home')} className={
                             activeNav === "#home" ? "nav__link active-link" : "nav_link"
                             }
@@ -112,21 +104,7 @@ const Header = () => {
                             </a>
                         </Reveal>
                         </li>
-                    </ul> */}
-
-                    <ul>
-                        {links.map((link) => (
-                            <li key={link.href}>
-                                <NavLink href={link.href}>{link.label}</NavLink>
-                            </li>
-                        ))}
                     </ul>
-
-                    {/* {links.map((link) => (
-                        <li key={link.href}>
-                        <NavLink href={link.href}>{link.label}</NavLink>
-                        </li>
-                    ))} */}
                     <div className="snsArea pc_show">
                     <p className="ttl en_go"> &nbsp;</p>
                         <ul className="snsList">

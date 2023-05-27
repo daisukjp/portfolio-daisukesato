@@ -1,7 +1,6 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink as Link, useLocation } from "react-router-dom";
 import cn from "clsx";
-
 
 export default function NavLink({ to, children }) {
   const location = useLocation();
