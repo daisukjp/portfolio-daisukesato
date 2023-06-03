@@ -30,7 +30,7 @@ const Data = () => {
                 </h1>
             </Reveal>
             <Reveal className='onStep' keyframes={fadeInUp} delay={800} duration={900} triggerOnce>
-                <h3 className="home__subtitle">CREATIVE FRONT-END DEVELOPER BASED IN Edmonton</h3>
+                <h3 className="home__subtitle">SOFTWARE DEVELOPER BASED IN Edmonton</h3>
             
 
             <a href="#contact" className="button button__flex">
