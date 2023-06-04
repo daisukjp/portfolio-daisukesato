@@ -19,7 +19,7 @@ const AboutData = () => {
         <div className="profile__section">
             <h1 className="sc-hKwDye iyooZD">
                 <div className="Typewriter" data-testid="typewriter-wrapper">
-                    <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
+                    {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
                         <div>
                             <Typed />
                         </div>
@@ -28,33 +28,19 @@ const AboutData = () => {
                         Learning is a lifelong, goalless pursuit that I will embrace with unwavering passion.
                         </h1>
                         </div>
-                    </Reveal>
+                    </Reveal> */}
 
                     <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
-                        <ul className="about__ul">
-                            <li className="about__li">
-                                <span className='about__span'>
-                                    Passionate about web development
-                                </span>
-                                <br />
-                                I am a front-end developer who is eager to learn about new technologies.
-                            </li>
 
-                            <li className="about__li">
-                                <span className='about__span'>
-                                    High potential as a developer
-                                </span>
-                                <br />
-                                Coding brings me immense pleasure, and the pursuit of knowledge and problem-solving invigorate my passion for learning.
-                            </li>
-                            <li className="about__li">
-                                <span className='about__span'>
-                                Diploma in Digital Media and IT Web Design and Development
-                                </span>
-                                <br />
-                                I'm furthering my professional web development studies at Northern Alberta institute of Technology. I'm looking for a job as a front-end developer.
-                            </li>
-                        </ul>
+                        <section className="about__flex">
+                            <h2 className="md:w-28 text-secondary shrink-0">About</h2>
+                            <div className="about__content-div">
+                                <p>Hello world, I'm Daisuke Sato!</p>
+                                <p>
+                                    I'm a Jr Software Developer with a passion for web design. I thrive on finding fast and efficient solutions to problems, and I'm driven by the desire to make a significant impact on web development teams. 
+                                </p>
+                            </div>
+                        </section>
                     </Reveal>
                 </div>
             </h1>

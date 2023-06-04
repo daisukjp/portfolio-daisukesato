@@ -98,8 +98,47 @@
     color: #6d6d6d;
 }
 
+.about__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 3rem;
+}
+.about__flex h2 {
+    flex-shrink: 0;
+    color: #6f6f6f;
+    font-size: 22px;
+}
+
+.about__content-div {
+    gap: 1.5rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.about__content-div {
+    font-size: 18px;   
+    color: #6f6f6f;
+}
+
 /* Break Points */
 /* Large Device */
+
+@media screen and (min-width: 768px) {
+    .about__flex {
+        display: flex;
+        flex-direction: row;
+        gap: 2.25rem;
+    }
+
+    .about__flex h2 {
+        width: 7rem;
+    }
+}
+
+
 @media screen and (max-width: 1120px) {
     .skills__container {
         grid-template-columns: max-content;
