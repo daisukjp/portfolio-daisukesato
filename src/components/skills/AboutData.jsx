@@ -19,7 +19,7 @@ const AboutData = () => {
         <div className="profile__section">
             <h1 className="sc-hKwDye iyooZD">
                 <div className="Typewriter" data-testid="typewriter-wrapper">
-                    <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
+                    {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
                         <div>
                             <Typed />
                         </div>
@@ -28,7 +28,7 @@ const AboutData = () => {
                         Learning is a lifelong, goalless pursuit that I will embrace with unwavering passion.
                         </h1>
                         </div>
-                    </Reveal>
+                    </Reveal> */}
 
                     <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
 
