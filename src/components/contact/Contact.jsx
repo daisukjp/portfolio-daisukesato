@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import "./contact.css"
-import Email from './Email'
-import Phone from './Phone'
-import ContactInfo from './ContactForm'
+// import Email from './Email'
+// import Phone from './Phone'
+import ConnectLinks from './ConnectLinks';
+
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
 const Contact = () => {
-    const [contactToggle, setContactToggle] = useState(1);
+    // const [contactToggle, setContactToggle] = useState(1);
 
-    const toggleTab = (index) => {
-        setContactToggle(index);
-    };
+    // const toggleTab = (index) => {
+    //     setContactToggle(index);
+    // };
 
     const fadeInUp = keyframes`
     0% {
@@ -27,52 +28,20 @@ const Contact = () => {
 return (
     <section className="contact section" id="contact">
         <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>  
-            <h2 className="section__title">Get in touch</h2>
-            <div className="contact__tabs">
-                <div className={
-                    contactToggle === 1 
-                    ? "contact__section-button contact__active button--flex" 
-                    : "contact__section-button  button--flex"
-                    }
-                    
-                    onClick={() => toggleTab(1)}
-                    >
-                    <i className="uil uil-envelope-upload contact__icon"></i>Contact Form
-                </div>
 
-                <div className={
-                    contactToggle === 2 
-                    ? "contact__section-button contact__active button--flex" 
-                    : "contact__section-button  button--flex"
-                    }
-                    
-                    onClick={() => toggleTab(2)}
-                    >
-                    <i className="uil uil-user-exclamation contact__icon"></i>Contact Info
+            <section className="connect__section">
+                <h2 className="connect__h2">Connect</h2>
+                <div className="connect__div-container">
+                    <p>
+                    Have a question or just want to chat? Feel free to {" "}
+                        <a href="mailto:daisukjp1@gmail.com" className="contact__underline">email me</a>.
+                    {' '}Try finding me anywhere else at @daisukjp
+                    </p>
+                    <ul className="connect__ul">
+                        <ConnectLinks />
+                    </ul>
                 </div>
-            </div>
-        </Reveal>
-        
-        <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
-            <div className="contact__form-main-container">
-                <div className={
-                    contactToggle === 1 
-                    ? "contact__content contact__content-active button--flex" 
-                    : "contact__content"
-                    }>
-                    <div className="contact__form-container">
-                        <ContactInfo />
-                    </div>
-                </div>
-
-                <div className={contactToggle === 2 ? "contact__content contact__content-active button--flex" 
-                        : "contact__content"}>
-                    <div className="contact__container container grid">
-                        <Email />
-                        <Phone />
-                    </div>
-                </div>
-            </div>
+            </section>
         </Reveal>
     </section>
 )

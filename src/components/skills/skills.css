@@ -121,8 +121,7 @@
     display: flex;
 }
 
-.about__content-div {
-    font-size: 18px;   
+.about__content-div {  
     color: #6f6f6f;
 }
 
