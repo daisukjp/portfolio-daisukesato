@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
 import "./contact.css"
-// import Email from './Email'
-// import Phone from './Phone'
 import ConnectLinks from './ConnectLinks';
 
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
 const Contact = () => {
-    // const [contactToggle, setContactToggle] = useState(1);
-
-    // const toggleTab = (index) => {
-    //     setContactToggle(index);
-    // };
 
     const fadeInUp = keyframes`
     0% {
