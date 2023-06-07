@@ -160,11 +160,104 @@
     padding: .8rem 2rem !important;
 }
 
+.connect__section {
+    gap: 2.25rem;
+    flex-direction: row;
+    display: flex;
+    max-width: 1120px;
+    margin-bottom: 2rem;
+}
+
+.connect__h2 {
+    flex-shrink: 0;
+    color: #6f6f6f;
+    font-size: 22px;
+}
+.connect__svg,
+.connect__svg-2 {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.connect__svg-2 {
+    color: #6f6f6f;
+    margin-left: auto;
+}
+
+.connect__ul {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.connect__div-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact__underline {
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    grid-column: span 1/span 1;
+}
+
+.connect__a-1 {
+    color: inherit;
+    text-decoration: inherit;
+    display: inline-grid;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-underline-offset: 4px;
+    text-decoration-line: none;
+    color: #171717;
+}
+
+.connect__inner-div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.connect__text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.connect__center-svg svg{
+    display: block;
+    vertical-align: middle;
+}
+
+@media (hover: hover) {
+    .animated-list:hover li {
+        opacity: 0.5;
+    }
+    .animated-list:hover li:hover {
+        opacity: 1;
+    }
+}
+
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 1120px) {
     .contact__container {
         row-gap: 2rem;
+    }
+
+    .connect__section {
+        max-width: 700px;
+        
     }
 }
 
@@ -175,6 +268,27 @@
         row-gap: 3rem;
     }
 
+    .connect__section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 700px;
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+        
+    }
+
+    .connect__ul {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .connect__section {
+        margin: auto;
+        padding-left: var(--mb-1-5);
+        padding-right: var(--mb-1-5);
+    }
 }
 
 @media screen and (max-width: 576px) {
