@@ -37,7 +37,7 @@ return (
                         <a href="mailto:daisukjp1@gmail.com" className="contact__underline">email me</a>.
                     {' '}Try finding me anywhere else at @daisukjp
                     </p>
-                    <ul className="connect__ul">
+                    <ul className="connect__ul animated-list" >
                         <ConnectLinks />
                     </ul>
                 </div>
