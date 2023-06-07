@@ -102,9 +102,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    max-width: 70vw;
+    /* max-width: 55vw;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 3rem; */
+    max-width: 700px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 .about__flex h2 {
     flex-shrink: 0;
@@ -125,12 +128,20 @@
 
 /* Break Points */
 /* Large Device */
+@media screen and (min-width: 700px) {
+    .about__flex {
+        margin: auto;
+        padding-left: var(--mb-1-5);
+        padding-right: var(--mb-1-5);
+    }
+}
 
 @media screen and (min-width: 768px) {
     .about__flex {
         display: flex;
         flex-direction: row;
         gap: 2.25rem;
+        max-width: 700px;
     }
 
     .about__flex h2 {
@@ -139,7 +150,11 @@
 }
 
 
-@media screen and (max-width: 1120px) {
+@media screen and (min-width: 1120px) {
+    .about__flex {
+
+        max-width: 1120px;
+    }
     .skills__container {
         grid-template-columns: max-content;
         row-gap: 2rem;

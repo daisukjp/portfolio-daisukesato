@@ -17,8 +17,8 @@ const AboutData = () => {
     `;
     return (
         <div className="profile__section">
-            <h1 className="sc-hKwDye iyooZD">
-                <div className="Typewriter" data-testid="typewriter-wrapper">
+            {/* <h1 className="sc-hKwDye iyooZD"> */}
+                {/* <div className="Typewriter" data-testid="typewriter-wrapper"> */}
                     {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
                         <div>
                             <Typed />
@@ -42,8 +42,8 @@ const AboutData = () => {
                             </div>
                         </section>
                     </Reveal>
-                </div>
-            </h1>
+                {/* </div> */}
+            {/* </h1> */}
         </div>
     )
 }
