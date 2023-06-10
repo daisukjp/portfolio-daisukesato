@@ -32,7 +32,7 @@ export const ProjectsPage = () => {
                     {datas.map((data, i) => {
                         const direction = chooseDirection(i)
                         return <ProjectsCard key={data.title}  data={data} direction={direction} />
-                        })}
+                    })}
                 </div>
             <Footer />
             <ScrollUp />

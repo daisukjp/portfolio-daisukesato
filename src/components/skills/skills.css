@@ -102,9 +102,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* max-width: 55vw;
-    margin: auto;
-    margin-top: 3rem; */
     max-width: 700px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -152,7 +149,7 @@
 @media screen and (min-width: 1120px) {
     .about__flex {
 
-        max-width: 1120px;
+        max-width: 800px;
     }
     .skills__container {
         grid-template-columns: max-content;
