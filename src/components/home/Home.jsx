@@ -37,7 +37,7 @@ const Home = () => {
               Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal development.
             </p>
             <u>
-
+              
             </u>
           </div>
         {/* <div className="home__content grid">
