@@ -27,15 +27,14 @@ const Home = () => {
 
             <div className="home__profile-pic">
               <img src={Avatar} alt="" />
-            </div>
-
-            <div className="">
-
-            </div>
-
-            <p>
+              <p>
               Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal development.
             </p>
+            </div>
+
+            {/* <p>
+              Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal development.
+            </p> */}
             <u>
               
             </u>
