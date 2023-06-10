@@ -43,6 +43,18 @@ const Home = () => {
                 Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also take photography, focusing on pet, portrait, and landscape photography.
             </p>
             </div>
+            <ul className="home__u animated-list">
+              <li className="home__li transition-opacity">
+                <a href="">
+                  <span>Email me</span>
+                </a>
+              </li>
+              <li className="home__li transition-opacity">
+                <a href="">
+                  <span>Connect with me</span>
+                </a>
+              </li>
+            </ul>
           </div>
       </Reveal>
         {/* <div className="home__content grid">
