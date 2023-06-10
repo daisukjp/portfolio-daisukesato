@@ -1,6 +1,8 @@
 import React from 'react'
 import "./service.css"
 import { useState } from 'react'
+import ProjectData from '../../ProjectData.json'
+import { ProjectsPost } from './ProjectsPost'
 import {  Link } from 'react-router-dom';
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -10,11 +12,23 @@ import Daisuke from "../../assets/daisuke_portforio.jpg";
 
 
 const Service = () => {
+    const [datas, setDatas] = useState(ProjectData.projects)
+
+    const directionArr = ['row', 'row-reverse'];
+    const chooseDirection = (i) => {
+        if (i % 2 === 0) {
+            return directionArr[0];
+        } else {
+            return directionArr[1];
+        }
+    };
+
     const [toggleState, setToggleState] = useState(0)
 
     const toggleTab = (index) => {
         setToggleState(index);
     }
+    
 
     const fadeInUp = keyframes`
     0% {
@@ -128,6 +142,17 @@ const Service = () => {
                     </div>
                 </div>
             </div>
+
+{/* New item */}
+            {/* <div className="project__box-container">
+                <h2>Projects</h2>
+                <ul>
+                {datas.map((data, i) => {
+                    const direction = chooseDirection(i)
+                    return <ProjectsPost key={data.title}  data={data} direction={direction} />
+                })}
+                </ul>
+            </div> */}
         </section>
     )
 }
