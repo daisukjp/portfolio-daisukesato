@@ -171,7 +171,8 @@
 .connect__h2 {
     flex-shrink: 0;
     color: #6f6f6f;
-    font-size: 22px;
+    font-size: 18px;
+    width: 7rem;
 }
 .connect__svg,
 .connect__svg-2 {
@@ -196,6 +197,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+    color: #171717;
 }
 
 .contact__underline {
@@ -254,11 +256,6 @@
     .contact__container {
         row-gap: 2rem;
     }
-
-    .connect__section {
-        max-width: 700px;
-        
-    }
 }
 
 /* Medium Device */
@@ -272,7 +269,6 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        max-width: 700px;
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
         

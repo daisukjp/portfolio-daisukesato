@@ -22,7 +22,7 @@ return (
         <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>  
 
             <section className="connect__section">
-                <h2 className="connect__h2">Connect</h2>
+                <h2 className="connect__h2" id="#contact">Connect</h2>
                 <div className="connect__div-container">
                     <p>
                     Have a question or just want to chat? Feel free to {" "}

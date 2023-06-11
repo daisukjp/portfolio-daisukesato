@@ -42,7 +42,7 @@ const Service = () => {
     `;
     return (
         <section className="services section" id="service">
-            <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+            {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
                 <h2 className="section__title">Projects</h2>
             </Reveal>
 
@@ -141,18 +141,17 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-{/* New item */}
-            {/* <div className="project__box-container">
-                <h2>Projects</h2>
-                <ul>
+            <div className="project__box-container">
+                <h2 className="project__h2-1">Projects</h2>
+                <ul className="animated-list">
                 {datas.map((data, i) => {
                     const direction = chooseDirection(i)
                     return <ProjectsPost key={data.title}  data={data} direction={direction} />
                 })}
                 </ul>
-            </div> */}
+            </div>
         </section>
     )
 }

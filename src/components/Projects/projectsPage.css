@@ -55,9 +55,8 @@
 .projectPage__il {
     display: flex;
     gap: 3px;
-    padding: 10px;
     flex-wrap: wrap;
-    font-size: var(--normal-font-size);
+    font-size: 15px;
 }
 
 .projectPage__description {
