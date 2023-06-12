@@ -41,11 +41,11 @@ const Home = () => {
               <img src={Avatar} alt="" />
               <p>
                 Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also take photography, focusing on pet, portrait, and landscape photography.
-            </p>
+              </p>
             </div>
             <ul className="home__ul animated-list">
               <li className="home__li transition-opacity">
-                <a className="home__a" href="">
+                <a className="home__a" href="mailto:daisukjp1@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="home__icon">
                   <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"/>
                 </svg>
@@ -53,7 +53,7 @@ const Home = () => {
                 </a>
               </li>
               <li className="home__li transition-opacity">
-                <a className="home__a" href="">
+                <a className="home__a" href="#contact">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="home__icon">
                     <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"/>
                   </svg>
