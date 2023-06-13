@@ -31,7 +31,7 @@ const Header = () => {
     return (
         <>
         <header className="header">
-            <nav className="nav container">
+            <nav className="nav container nav-width">
                 <a href="/" className="nav__logo">
                 <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                     <img src={DSLOGO} alt="DS logo" />
