@@ -3,13 +3,8 @@ import "./service.css"
 import { useState } from 'react'
 import ProjectData from '../../ProjectData.json'
 import { ProjectsPost } from './ProjectsPost'
-import {  Link } from 'react-router-dom';
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import EthicalOne from "../../assets/ethical-convini-pic-1.png";
-import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
-import Daisuke from "../../assets/daisuke_portforio.jpg";
-
 
 const Service = () => {
     const [datas, setDatas] = useState(ProjectData.projects)

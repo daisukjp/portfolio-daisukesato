@@ -3,7 +3,7 @@ import "./project.css"
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import ScrollUp from '../scrollup/ScrollUp';
-import Daisuke from "../../assets/daisuke_portforio.jpg";
+import Daisuke from "../../assets/daisuke_portforio.png";
 import PortfolioOne from "../../assets/dsato-logo.jpg";
 import PortfolioTwo from "../../assets/portfolio_skills.png";
 
