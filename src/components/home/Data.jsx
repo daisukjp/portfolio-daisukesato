@@ -36,7 +36,8 @@ const Data = () => {
             <a href="#contact" className="button button__flex">
                 GET IN TOUCH
             </a>
-            </Reveal> */}
+            </Reveal> cdjcndcjnd cjdcd*/}
+
 
         </div>
     )
