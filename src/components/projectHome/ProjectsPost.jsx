@@ -75,8 +75,8 @@ export const ProjectsPost = (props) => {
 
                         <div className="project__items-img">
                             <Link to={`projects/` + props.data.slug} >
-                            <img src={props.data.thumbnail} alt="project_featured_image" className=""></img>
-                          </Link>  
+                                <img src={props.data.thumbnail} alt="project_featured_image" className=""></img>
+                            </Link>  
                         </div>
                     </div>
                 </div>
