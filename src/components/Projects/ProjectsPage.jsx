@@ -25,15 +25,7 @@ export const ProjectsPage = () => {
   return (
     <>
       <Header />
-      {/* <h1 className="projectPage__projectTitle">
-                        Projects
-                </h1> */}
-      {/* <div className="projectsPage__container-main">
-                    {datas.map((data, i) => {
-                        const direction = chooseDirection(i)
-                        return <ProjectsCard key={data.title}  data={data} direction={direction} />
-                    })}
-                </div> */}
+
       <div style={{ marginTop: "7.5rem", maxWidth: "800px", marginRight: "auto", marginLeft: "auto", paddingLeft: "1.5rem", paddingRight: "1.5rem" }}>
         {/* <Reveal className="onStep" delay={600} duration={600} triggerOnce> */}
           <div style={{ display: "flex", flexDirection: "column", gap: "4rem" }}>

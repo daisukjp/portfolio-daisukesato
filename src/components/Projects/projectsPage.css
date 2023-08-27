@@ -95,6 +95,33 @@
     transform: translateY(-3px);
 }
 
+.ProjectMainItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectMainCardLink {
+    width: 100%;
+}
+
+.projectMainSection {
+    width: 100%;
+}
+
+.projectMainTitle {
+    text-decoration: inherit;
+    font-weight: 500;
+    color: #171717;
+    font-size: 16px;
+}
+
+.projectMainTitle:hover {
+    text-decoration-line: underline;
+}
+
+
+
 /* Break Points */
 /* Large Device */
 @media screen and (max-width: 1120px) {
@@ -117,8 +144,22 @@
     .projectPage__item-right {
         width: 100%;
     }
+}
 
+/* Medium Device */
+@media screen and (min-width: 768px) {
+    .ProjectMainItem {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
 
+    .projectMainCardLink {
+        width: 40%;
+    }
+
+    .projectMainSection {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 576px) {
