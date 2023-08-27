@@ -18,7 +18,7 @@ const Contact = () => {
     `;
 
 return (
-    <section className="contact section" id="contact">
+    <section className="contact section" id="contact" style={{fontSmooth: "antialiased"}}>
         <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>  
 
             <section className="connect__section">

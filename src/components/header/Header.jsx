@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <>
-        <header className="header">
+        <header className="header" style={{fontSmooth: "antialiased"}}>
             <nav className="nav container nav-width">
                 <a href="/" className="nav__logo">
                 <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>

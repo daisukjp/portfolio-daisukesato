@@ -2,7 +2,7 @@ import React from 'react'
 
 const ScrollDown = () => {
     return (
-        <div className="home__scroll">
+        <div className="home__scroll" style={{fontSmooth: "antialiased"}}>
             <a href="#service" className="home__scroll-button button__flex">
                 <svg
                 width="32px"

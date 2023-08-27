@@ -36,7 +36,7 @@ const Service = () => {
     }
     `;
     return (
-        <section className="services section" id="service">
+        <section className="services section" id="service" style={{fontSmooth: "antialiased"}}>
             {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
                 <h2 className="section__title">Projects</h2>
             </Reveal>

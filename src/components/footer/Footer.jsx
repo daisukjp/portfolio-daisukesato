@@ -4,7 +4,7 @@ import DSLOGO from "../../assets/dsato-logo.png"
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" style={{fontSmooth: "antialiased"}}>
             <div className="footer__container container">
                 <div className='footer__title'>
                     <a href="/"><img src={DSLOGO} alt="DS logo" className="footer__img nav__logo" /></a>

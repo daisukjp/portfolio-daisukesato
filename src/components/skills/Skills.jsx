@@ -6,7 +6,7 @@ import AboutData from './AboutData';
 
 const Skills = () => {
     return (
-        <section className="skills section" id="skills">
+        <section className="skills section" id="skills" style={{fontSmooth: "antialiased"}}>
             <AboutData />
         </section>
     )
