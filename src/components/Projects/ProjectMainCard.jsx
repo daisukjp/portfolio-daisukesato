@@ -2,9 +2,10 @@ import React from 'react';
 import "./projectsPage.css";
 import { useState, useCallback } from "react"
 import { Link } from 'react-router-dom';
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 // images 
-
 const params = {
     data: {
         title: '',
@@ -39,6 +40,16 @@ const params = {
 
 export const ProjectMainCard = (props) => {
     const [hover, setHover] = useState(false)
+    const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    `;
     const handleHover = useCallback(
         () => {
         setHover(prev => !prev)
@@ -48,10 +59,11 @@ export const ProjectMainCard = (props) => {
     
         return (
         <>
+         <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
             <li className="ProjectMainItem">
                 <Link 
                 className="projectMainCardLink"
-                to={`projects/` + props.data.slug} 
+                to={`./` + props.data.slug} 
                 style={{
                     borderRadius: "0.5rem", 
                     borderWidth: "0.1px",
@@ -83,20 +95,21 @@ export const ProjectMainCard = (props) => {
                     <div>
                         <Link 
                         className="projectMainTitle"
-                        to={`projects/` + props.data.slug} 
+                        to={`./` + props.data.slug} 
                         >{props.data.title}</Link>
-                        <ul 
+                        <p 
                             style={{
                                 overflow: "hidden",
                                 lineClamp: "3",
-                                marginTop: "0.25rem * calc(1 - 0)"
+                                marginTop: "calc(0.25rem * calc(1 - 0))",
+                                marginBottom: "calc(0.25rem * 0)",
                             }}
                         >
                             {props.data.description}
                             {/* {props.data.skills.map((skill, i) => (
                                 <li key={i}>{skill}</li>
                             ))} */}
-                        </ul>
+                        </p>
                     </div>
                     {/* <p className="project__desc-p">{props.data.description}</p> */}
                     {/* <Link to={`projects/` + props.data.slug} className="project__link">
@@ -109,6 +122,8 @@ export const ProjectMainCard = (props) => {
                     </Link> */}
                 </section>
             </li>
+
+         </Reveal>
         </>
         )
 };
