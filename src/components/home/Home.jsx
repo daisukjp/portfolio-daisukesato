@@ -40,7 +40,7 @@ const Home = () => {
             <div className="home__profile-pic">
               <img src={Avatar} alt="" />
               <p>
-                Hi, I'm Daisuke Sato, a software engineer who loves building cool things with code. In addition to coding, I also take photography, focusing on pet, portrait, and landscape photography.
+                Hi, I'm Daisuke Sato, a software developer who loves building cool things with code. In addition to coding, I also take photography, focusing on pet, portrait, and landscape photography.
               </p>
             </div>
             <ul className="home__ul animated-list">

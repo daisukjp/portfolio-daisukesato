@@ -2,8 +2,6 @@ import React from 'react';
 import "./projectsPost.css";
 import { useState, useCallback } from "react"
 import { Link } from 'react-router-dom';
-import { Reveal } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
 
 // images 
 
@@ -42,16 +40,6 @@ const params = {
 
 export const ProjectsPost = (props) => {
     const [hover, setHover] = useState(false)
-    const fadeInUp = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    `;
     const handleHover = useCallback(
         () => {
         setHover(prev => !prev)
@@ -60,63 +48,31 @@ export const ProjectsPost = (props) => {
         )
     
         return (
-            <>
-            <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
-                <li className="ProjectMainItem">
-                    <Link 
-                    className="projectMainCardLink"
-                    to={`./` + props.data.slug} 
-                    style={{
-                        borderRadius: "0.5rem", 
-                        borderWidth: "0.1px",
-                        backgroundColor: "#ededed", 
-                        borderColor: "#ededed", 
-                        color: "#ededed",
-                        aspectRatio: "16/9", 
-                        overflow: "clip",
-                        border: "solid"
-                    }}
-                    >
-                        <img src={props.data.thumbnail} alt="project_featured_image" 
-                            style={{
-                                height: "100%", 
-                                width: "100%", 
-                                top: "0", 
-                                bottom: "0", 
-                                left: "0", 
-                                right: "0", 
-                                objectFit: "cover",
-                            }}
-                        >
-    
-                        </img>
-                    </Link>  
-                    <section 
-                        className='projectMainSection'
-                    >
-                        <div>
-                            <Link 
-                            className="projectMainTitle"
-                            to={`./` + props.data.slug} 
-                            >{props.data.title}</Link>
-                            <p 
-                                style={{
-                                    overflow: "hidden",
-                                    lineClamp: "3",
-                                    marginTop: "calc(0.25rem * calc(1 - 0))",
-                                    marginBottom: "calc(0.25rem * 0)",
-                                }}
-                            >
-                                {props.data.description}
-                                {/* {props.data.skills.map((skill, i) => (
-                                    <li key={i}>{skill}</li>
-                                ))} */}
-                            </p>
+        <>
+            <li className="projects__box-li">
+                <div className="transition-opacity">
+                    <div className="projects__box-item-container">
+                        <div className="project__items-img">
+                            <Link to={`projects/` + props.data.slug} >
+                                <img src={props.data.thumbnail} alt="project_featured_image" className=""></img>
+                            </Link>  
                         </div>
-                    </section>
-                </li>
-    
-            </Reveal>
-            </>
+                        <section>
+                            <div className="project__section-item">
+                                <h2 style={{fontSize: "16px", color: "#6f6f6f"}}>{props.data.title}</h2>
+                                <Link>
+                                    {props.data.description}
+                                </Link>
+                                {/* <ul className="projectPage__il">
+                                    {props.data.skills.map((skill, i) => (
+                                        <li key={i}>#{skill}</li>
+                                    ))}
+                                </ul> */}
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </li>
+        </>
         )
 };
