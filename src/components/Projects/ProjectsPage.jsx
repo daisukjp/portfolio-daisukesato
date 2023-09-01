@@ -35,7 +35,7 @@ export const ProjectsPage = () => {
       transform: translateY(0);
   }`;
 
-const fadeIn = keyframes`
+  const fadeIn = keyframes`
   0% {
     opacity: 0;
   }
@@ -48,22 +48,47 @@ const fadeIn = keyframes`
     <>
       <Header />
 
-      <div style={{ marginTop: "7.5rem", maxWidth: "800px", marginRight: "auto", marginLeft: "auto", paddingLeft: "1.5rem", paddingRight: "1.5rem" }}>
+      <div
+        style={{
+          marginTop: "7.5rem",
+          maxWidth: "800px",
+          marginRight: "auto",
+          marginLeft: "auto",
+          paddingLeft: "1.5rem",
+          paddingRight: "1.5rem",
+        }}
+      >
         {/* <Reveal className="onStep" delay={600} duration={600} triggerOnce> */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "4rem" }}>
-          <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-            <div style={{gap: "2rem"}}>
-              <h1 style={{fontSize: "1.875rem", lineHeight: "2.25rem"}}>Projects</h1>
-              <p style={{lineHeight: "1.5rem"}}>Here's a glimpse of the projects I've contributed to.</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "4rem" }}>
+          <Reveal
+            className="onStep"
+            keyframes={fadeInUp}
+            delay={300}
+            duration={600}
+            triggerOnce
+          >
+            <div style={{ gap: "2rem" }}>
+              <h1 style={{ fontSize: "1.875rem", lineHeight: "2.25rem" }}>
+                Projects
+              </h1>
+              <p style={{ lineHeight: "1.5rem" }}>
+                Here's a glimpse of the projects I've contributed to.
+              </p>
             </div>
           </Reveal>
-            <ul style={{display: "flex", flexDirection: "column"}}>
-              {datas.map((data, i) => {
-                        const direction = chooseDirection(i)
-                        return <ProjectMainCard key={data.title}  data={data} direction={direction} />
-                    })}
-            </ul>
-          </div>
+          <ul style={{ display: "flex", flexDirection: "column" }}>
+            {datas.map((data, i) => {
+              const direction = chooseDirection(i);
+              return (
+                <ProjectMainCard
+                  key={data.title}
+                  data={data}
+                  direction={direction}
+                />
+              );
+            })}
+          </ul>
+        </div>
         {/* </Reveal> */}
       </div>
       <Footer />

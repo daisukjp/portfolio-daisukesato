@@ -1,101 +1,190 @@
-import React from 'react';
-import "./project.css"
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
-import ScrollUp from '../scrollup/ScrollUp';
+import React from "react";
+import "./project.css";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+import ProjectData from "../../ProjectData.json";
+import ScrollUp from "../scrollup/ScrollUp";
 import Daisuke from "../../assets/daisuke_portforio.png";
 import PortfolioOne from "../../assets/dsato-logo.jpg";
 import PortfolioTwo from "../../assets/portfolio_skills.png";
+import { Link } from "react-router-dom";
 
 export const Portfolio = () => {
+  const data = ProjectData.projects.filter(
+    (project) => project.slug === "portfolio"
+  )[0];
 
-    return (
-        <>
-        <Header />
-            <div id="portfoliopage" className="project__container">
-                <section className="project__title">
-                    <div className="project__title-div">
-                        <h1 className="project__title">
-                        My Portfolio Page
-                        </h1>
-                        <div className="project__nav">
-                            <nav>
-                            <ul className="project__nav-ul">
-                                <li className="project__nav-li">#React(JavaScript)</li>
-                                <li className="project__nav-li">#React Router</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+  return (
+    <>
+      <Header />
+      <div>
+        <div className="project_top-child-container">
+          <div
+            className="project_top-intro"
+            style={{ fontSize: "16px", color: "#6F6F6F" }}
+          >
+            <p>2022</p>
+            <span>·</span>
+            <a
+              href="asaaa"
+              style={{
+                fontSize: "16px",
+                color: "#6F6F6F",
+                textUnderlineOffset: "4px",
+                textDecorationLine: "underline",
+                textDecoration: "inherit",
+              }}
+            >
+              Link
+            </a>
+          </div>
+          <h1
+            style={{
+              fontSize: "1.875rem",
+              fontWeight: "700",
+              lineHeight: "1.25",
+              letterSpacing: "-.025em",
+              color: "#171717",
+            }}
+            className="project__title"
+          >
+            {data.title}
+          </h1>
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: "1.75rem",
+              color: "#6f6f6f",
+              animation: "in .6s both",
+              animationDelay: "calc(var(--index) * .13s)",
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad
+            facilis hic non sunt iste culpa, nihil alias sit sint nemo eveniet
+            excepturi. Autem excepturi temporibus eaque, magnam iste aliquid.
+          </p>
+        </div>
+        <div style={{ Height: "2rem" }}></div>
+        <div className="project_top-child-body">
+          <div
+            style={{ width: "100%", marginTop: "2rem", marginBottom: "2rem" }}
+          >
+            <figure
+              style={{
+                gap: "0.5rem",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <img
+                src={Daisuke}
+                alt="ethical"
+                loading="lazy"
+                width="2267"
+                height="1280"
+                decoding="async"
+                data-img="1"
+                style={{
+                  borderRadius: "10px",
+                  border: "0.1px solid #e5e7eb",
+                  backgroundColor: "#f3f3f3",
+                  color: "transparent",
+                }}
+              />
+              <figcaption
+                style={{
+                  margin: "0.5rem auto 2rem",
+                  maxWidth: "28rem",
+                  textAlign: "center",
+                  fontSize: ".875rem",
+                  lineHeight: "1.25rem",
+                  fontWeight: "300",
+                  lineHeight: "1.25",
+                  color: "#8f8f8f",
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Blanditiis neque, illo iure laborum asperiores totam. Incidunt
+                recusandae dolores obcaecati? Dolorem ratione ipsam quidem nisi
+                temporibus unde quam alias fuga quibusdam?
+              </figcaption>
+            </figure>
+          </div>
 
-                    <div className="project__body">
-                        <div className="project__img">
-                            <img src={Daisuke} alt="daisuke's portfolio" className="project__img-img" />
-                        </div>
-                        <div className="project__icon">
-                            <a className="project__icon-a" href="https://www.daisukjp.com/" target="_blank" rel="noopener noreferrer">
-                                <i className="uil uil-window"></i>
-                            </a>
-                            <a className="project__icon-a" href="https://github.com/daisukjp/portfolio-daisukesato" target="_blank" rel="noopener noreferrer">
-                                <i className="uil uil-github"></i>
-                            </a>
-                        </div>
+          <div
+            style={{ width: "100%", marginTop: "2rem", marginBottom: "2rem" }}
+          >
+            <figure
+              style={{
+                gap: "0.5rem",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <img
+                src={PortfolioOne}
+                alt="ethical"
+                loading="lazy"
+                width="2267"
+                height="1280"
+                decoding="async"
+                data-img="1"
+                style={{
+                  borderRadius: "10px",
+                  border: "0.1px solid #e5e7eb",
+                  backgroundColor: "#f3f3f3",
+                  color: "transparent",
+                }}
+              />
+            </figure>
+          </div>
 
-                        <div className="project__line"></div>
+          <div
+            style={{ width: "100%", marginTop: "2rem", marginBottom: "2rem" }}
+          >
+            <figure
+              style={{
+                gap: "0.5rem",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <img
+                src={PortfolioTwo}
+                alt="ethical"
+                loading="lazy"
+                width="2267"
+                height="1280"
+                decoding="async"
+                data-img="1"
+                style={{
+                  borderRadius: "10px",
+                  border: "0.1px solid #e5e7eb",
+                  backgroundColor: "#f3f3f3",
+                  color: "transparent",
+                }}
+              />
+            </figure>
+          </div>
+        </div>
 
-                        <div className="project__body-content">
-                            <section className="project__body-flex">
-                                <img src={PortfolioTwo} alt="" className="project__body-left project__img-img"/>
-                                <div className="project__body-right">
-                                    <h1 className="project__content-title">
-                                        Story
-                                    </h1>
-                                    <p className="project__content-body">
-                                    Welcome to my website, which was built using React! As of March 2023, I've updated the design to its latest version. I chose to use mostly white color because I appreciate clean and simple design aesthetics. I believe that the use of white color helps to highlight the content and create a more accessible user experience. I hope that you enjoy exploring my website and learning more about me and my work!
-                                    </p>
-                                </div>
-                            </section>
-
-                            <section className="project__body-flex-middle">
-                                <img src={PortfolioOne} alt="" className="project__body-left project__img-img"/>
-                                <div className="project__body-right">
-                                    <h1 className="project__content-title">
-                                        Logo Design
-                                    </h1>
-                                    <p className="project__content-body">
-                                        The logo design I created was inspired by my passion for baking and my Japanese anime fandom. I used a bread motif to represent my love for baking and incorporated my initials, D and S, into the design. By combining these elements, I created a unique logo that reflects my personality and interests. 
-                                    </p>
-                                </div>
-                            </section>
-
-                        </div>
-                    </div>
-
-                    <div className="project__line"></div>
-
-                    <div className="project__bottom">
-                        <h1 className="project__bottom-h1">
-                            Description
-                        </h1>
-                        <h2 className="project__bottom-h2">
-                            - Challenged using React
-                        </h2>
-                        <p className="project__bottom-p">
-                            &#8209;
-                            It's impressive that I built this site using React, a technology that I'm currently studying. This project has helped me realize the significance of immediately applying the concepts I learn to reinforce my learning process. 
-                        </p>
-
-                        <br />
-
-                        <p className="project__bottom-p">
-                            &#8209;
-                            One of the more challenging aspects of creating this site was incorporating page transitions into React Router version 6, a topic that wasn't covered in my class. Nonetheless, through extensive research, I learned how to do it, and I thoroughly enjoyed the process.
-                        </p>
-                    </div>
-                </section>
-            </div>
-        <Footer />
-        <ScrollUp />
-        </>
-    );
+        <div
+          className="project_top-child-bottom"
+          style={{ marginBottom: "2rem" }}
+        >
+          <Link
+            to="/projects"
+            style={{
+              textDecorationLine: "underline",
+              color: "#171717",
+            }}
+          >
+            ← All Projects
+          </Link>
+        </div>
+      </div>
+      <Footer />
+      <ScrollUp />
+    </>
+  );
 };

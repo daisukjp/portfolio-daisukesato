@@ -1,30 +1,30 @@
 {
-    "projects": [
-        {
-            "title": "Ethical Conveni",
-            "thumbnail": "ethical-convini-pic-1.png",
-            "skills": ["PHP", "Laravel 6"],
-            "url": "https://ethical-conveni.com/",
-            "slug": "ethical",
-            "description": "Ethical Conveni is an e-commerce website that offers a range of.... "
-        },
-        {
-            "title": "Fuwa Fuwa Gallery",
-            "thumbnail": "fuwafuwa_garalley.jpg",
-            "skills": ["WordPress", "PHP"],
-            "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
-            "url": "https://xs272520.xsrv.jp/",
-            "slug": "fuwafuwa",
-            "description": "I developed a gallery site to chronicle the growth of my friend's...."
-        },
-        {
-            "title": "My Portfolio Website",
-            "thumbnail": "daisuke_portforio.png",
-            "skills": ["React", "React Router"],
-            "github": "https://github.com/daisukjp/portfolio-daisukesato",
-            "url": "http://daisukjp.com/",
-            "slug": "portfolio",
-            "description": "This is my portfolio website. Built using react. Last update April...."
-        }
-        ]
+  "projects": [
+    {
+      "title": "Ethical Conveni",
+      "thumbnail": "ethical-convini-pic-1.png",
+      "skills": ["PHP", "Laravel 6"],
+      "url": "https://ethical-conveni.com/",
+      "slug": "ethical",
+      "description": "Ethical Conveni is an e-commerce website that offers a range of.... "
+    },
+    {
+      "title": "Fuwa Fuwa Gallery",
+      "thumbnail": "fuwafuwa_garalley.jpg",
+      "skills": ["WordPress", "PHP"],
+      "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
+      "url": "https://xs272520.xsrv.jp/",
+      "slug": "fuwafuwa",
+      "description": "I developed a gallery site to chronicle the growth of my friend's...."
+    },
+    {
+      "title": "My Portfolio Website",
+      "thumbnail": "daisuke_portforio.png",
+      "skills": ["React", "React Router"],
+      "github": "https://github.com/daisukjp/portfolio-daisukesato",
+      "url": "http://daisukjp.com/",
+      "slug": "portfolio",
+      "description": "This is my portfolio website. Built using react. Last update April...."
+    }
+  ]
 }
