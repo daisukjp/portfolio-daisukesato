@@ -56,61 +56,61 @@ export const ProjectMainCard = (props) => {
 
   return (
     <>
-      <Reveal
+      {/* <Reveal
         className="onStep"
         keyframes={fadeInUp}
         delay={600}
         duration={600}
         triggerOnce
-      >
-        <li className="ProjectMainItem ">
-          <Link
-            className="projectMainCardLink"
-            to={`./` + props.data.slug}
+      > */}
+      <li className="ProjectMainItem ">
+        <Link
+          className="projectMainCardLink"
+          to={`./` + props.data.slug}
+          style={{
+            borderRadius: "0.5rem",
+            border: "0.1px solid #e5e7eb",
+            color: "#ededed",
+            aspectRatio: "16/9",
+            overflow: "clip",
+          }}
+        >
+          <img
+            src={props.data.thumbnail}
+            alt="project_featured_image"
             style={{
-              borderRadius: "0.5rem",
-              border: "0.1px solid #e5e7eb",
-              color: "#ededed",
-              aspectRatio: "16/9",
-              overflow: "clip",
+              height: "100%",
+              width: "100%",
+              top: "0",
+              bottom: "0",
+              left: "0",
+              right: "0",
+              objectFit: "cover",
             }}
-          >
-            <img
-              src={props.data.thumbnail}
-              alt="project_featured_image"
+          ></img>
+        </Link>
+        <section className="projectMainSection">
+          <div>
+            <Link className="projectMainTitle" to={`./` + props.data.slug}>
+              {props.data.title}
+            </Link>
+            <p
               style={{
-                height: "100%",
-                width: "100%",
-                top: "0",
-                bottom: "0",
-                left: "0",
-                right: "0",
-                objectFit: "cover",
+                overflow: "hidden",
+                lineClamp: "3",
+                marginTop: "calc(0.25rem * calc(1 - 0))",
+                marginBottom: "calc(0.25rem * 0)",
               }}
-            ></img>
-          </Link>
-          <section className="projectMainSection">
-            <div>
-              <Link className="projectMainTitle" to={`./` + props.data.slug}>
-                {props.data.title}
-              </Link>
-              <p
-                style={{
-                  overflow: "hidden",
-                  lineClamp: "3",
-                  marginTop: "calc(0.25rem * calc(1 - 0))",
-                  marginBottom: "calc(0.25rem * 0)",
-                }}
-              >
-                {props.data.description}
-                {/* {props.data.skills.map((skill, i) => (
+            >
+              {props.data.description}
+              {/* {props.data.skills.map((skill, i) => (
                                 <li key={i}>{skill}</li>
                             ))} */}
-              </p>
-            </div>
-          </section>
-        </li>
-      </Reveal>
+            </p>
+          </div>
+        </section>
+      </li>
+      {/* </Reveal> */}
     </>
   );
 };
