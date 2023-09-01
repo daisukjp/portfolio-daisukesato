@@ -63,7 +63,7 @@ export const ProjectMainCard = (props) => {
         duration={600}
         triggerOnce
       >
-        <li className="ProjectMainItem">
+        <li className="ProjectMainItem ">
           <Link
             className="projectMainCardLink"
             to={`./` + props.data.slug}

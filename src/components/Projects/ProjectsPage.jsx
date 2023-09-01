@@ -1,12 +1,11 @@
 import React from "react";
 import { useState } from "react";
-// import "./projectsPage.css";
+import "../contact/contact.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import ScrollUp from "../scrollup/ScrollUp";
 import { ProjectsCard } from "./ProjectsCard";
 import { ProjectMainCard } from "./ProjectMainCard";
-// import { useNavigate } from 'react-router-dom'
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import ProjectData from "../../ProjectData.json";
@@ -76,7 +75,10 @@ export const ProjectsPage = () => {
               </p>
             </div>
           </Reveal>
-          <ul style={{ display: "flex", flexDirection: "column" }}>
+          <ul
+            className="animated-list"
+            style={{ display: "flex", flexDirection: "column" }}
+          >
             {datas.map((data, i) => {
               const direction = chooseDirection(i);
               return (
