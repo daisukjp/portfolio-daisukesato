@@ -1,11 +1,10 @@
-import React from 'react'
-import Typed from './Typed'
+import React from "react";
+import Typed from "./Typed";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-
 const AboutData = () => {
-    const fadeInUp = keyframes`
+  const fadeInUp = keyframes`
     0% {
         opacity: 0;
         transform: translateY(40px);
@@ -15,11 +14,11 @@ const AboutData = () => {
         transform: translateY(0);
     }
     `;
-    return (
-        <div className="profile__section">
-            {/* <h1 className="sc-hKwDye iyooZD"> */}
-                {/* <div className="Typewriter" data-testid="typewriter-wrapper"> */}
-                    {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
+  return (
+    <div className="profile__section">
+      {/* <h1 className="sc-hKwDye iyooZD"> */}
+      {/* <div className="Typewriter" data-testid="typewriter-wrapper"> */}
+      {/* <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce> 
                         <div>
                             <Typed />
                         </div>
@@ -30,22 +29,30 @@ const AboutData = () => {
                         </div>
                     </Reveal> */}
 
-                    <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
+      <Reveal
+        className="onStep"
+        keyframes={fadeInUp}
+        delay={600}
+        duration={600}
+        triggerOnce
+      >
+        <section className="aboutBody-section">
+          <h2 className="aboutBody-h2">About</h2>
+          <div className="about__content-div">
+            <p>Hello world, I'm Daisuke Sato!</p>
+            <p>
+              I'm a Jr Software Developer with a passion for web design. I
+              thrive on finding fast and efficient solutions to problems, and
+              I'm driven by the desire to make a significant impact on web
+              development teams.
+            </p>
+          </div>
+        </section>
+      </Reveal>
+      {/* </div> */}
+      {/* </h1> */}
+    </div>
+  );
+};
 
-                        <section className="about__flex">
-                            <h2 className="md:w-28 text-secondary shrink-0">About</h2>
-                            <div className="about__content-div">
-                                <p>Hello world, I'm Daisuke Sato!</p>
-                                <p>
-                                    I'm a Jr Software Developer with a passion for web design. I thrive on finding fast and efficient solutions to problems, and I'm driven by the desire to make a significant impact on web development teams. 
-                                </p>
-                            </div>
-                        </section>
-                    </Reveal>
-                {/* </div> */}
-            {/* </h1> */}
-        </div>
-    )
-}
-
-export default AboutData
+export default AboutData;

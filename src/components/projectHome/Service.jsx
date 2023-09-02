@@ -47,8 +47,8 @@ const Service = () => {
         duration={600}
         triggerOnce
       >
-        <div className="project__box-container">
-          <h2 className="project__h2-1">Projects</h2>
+        <div className="aboutBody-section">
+          <h2 className="aboutBody-h2">Projects</h2>
           <ul className="animated-list">
             {datas.map((data, i) => {
               const direction = chooseDirection(i);

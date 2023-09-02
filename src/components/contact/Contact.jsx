@@ -1,12 +1,11 @@
-import "./contact.css"
-import ConnectLinks from './ConnectLinks';
+import "./contact.css";
+import ConnectLinks from "./ConnectLinks";
 
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
 const Contact = () => {
-
-    const fadeInUp = keyframes`
+  const fadeInUp = keyframes`
     0% {
         opacity: 0;
         transform: translateY(40px);
@@ -17,26 +16,42 @@ const Contact = () => {
     }
     `;
 
-return (
-    <section className="contact section" id="contact" style={{fontSmooth: "antialiased"}}>
-        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>  
-
-            <section className="connect__section">
-                <h2 className="connect__h2" id="#contact">Connect</h2>
-                <div className="connect__div-container">
-                    <p>
-                    Have a question or just want to chat? Feel free to {" "}
-                        <a href="mailto:daisukjp1@gmail.com" className="contact__underline">email me</a>.
-                    {' '}Try finding me anywhere else at @daisukjp
-                    </p>
-                    <ul className="connect__ul animated-list" >
-                        <ConnectLinks />
-                    </ul>
-                </div>
-            </section>
-        </Reveal>
+  return (
+    <section
+      className="contact section"
+      id="contact"
+      style={{ fontSmooth: "antialiased" }}
+    >
+      <Reveal
+        className="onStep"
+        keyframes={fadeInUp}
+        delay={300}
+        duration={600}
+        triggerOnce
+      >
+        <section className="aboutBody-section">
+          <h2 className="aboutBody-h2" id="#contact">
+            Connect
+          </h2>
+          <div className="connect__div-container">
+            <p>
+              Have a question or just want to chat? Feel free to{" "}
+              <a
+                href="mailto:daisukjp1@gmail.com"
+                className="contact__underline"
+              >
+                email me
+              </a>
+              . Try finding me anywhere else at @daisukjp
+            </p>
+            <ul className="connect__ul animated-list">
+              <ConnectLinks />
+            </ul>
+          </div>
+        </section>
+      </Reveal>
     </section>
-)
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -160,11 +160,8 @@
 }
 
 .connect__section {
-  gap: 2.25rem;
   flex-direction: row;
-  display: flex;
-  max-width: 800px;
-  margin-bottom: 2rem;
+  gap: 2.25rem;
 }
 
 .connect__h2 {
@@ -268,20 +265,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
   }
 
   .connect__ul {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .connect__section {
-    margin: auto;
-    padding-left: var(--mb-1-5);
-    padding-right: var(--mb-1-5);
   }
 }
 
