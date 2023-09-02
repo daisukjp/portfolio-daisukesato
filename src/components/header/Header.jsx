@@ -1,19 +1,20 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import "./header.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import DSLOGO from "../../assets/dsato-logo.png"
+import DSLOGO from "../../assets/dsato-logo.png";
+import NavLink from "./NavLink";
 
 const Header = () => {
-    /* Background color changer */
-    window.addEventListener("scroll", function() {
-        const header = document.querySelector(".header")
-        if (this.scrollY >= 80) header.classList.add("scroll-header");
-        else header.classList.remove("scroll-header");
-    });
+  /* Background color changer */
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (this.scrollY >= 80) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+  });
 
-    const fadeInUp = keyframes`
+  const fadeInUp = keyframes`
     0% {
         opacity: 0;
         transform: translateY(-40px);
@@ -24,14 +25,22 @@ const Header = () => {
     }
     `;
 
-    /* Toggle Menu */
-        const [Toggle, ShowMenu] = useState(false);
-        const [activeNav, setActiveNav] = useState("#home");
+  const links = [
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Project", href: "/#project" },
+    { label: "Contact", href: "/#contact" },
+    { label: "Resume", href: "/#resume" },
+  ];
 
-    return (
-        <>
-        <header className="header" style={{fontSmooth: "antialiased"}}>
-            <nav className="nav container nav-width">
+  /* Toggle Menu */
+  const [Toggle, ShowMenu] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
+
+  return (
+    <>
+      <header className="header" style={{ fontSmooth: "antialiased" }}>
+        {/* <nav className="nav container nav-width">
                 <a href="/" className="nav__logo">
                 <Reveal className='onStep' keyframes={fadeInUp} delay={200} duration={200} triggerOnce>
                     <img src={DSLOGO} alt="DS logo" />
@@ -122,12 +131,42 @@ const Header = () => {
                     <i className="uil uil-apps"></i>
                 </Reveal>
                 </div>
-            </nav>
-        </header>
-            
-        </>
-        
-    )
-}
+            </nav> */}
+        <nav className="newNav-container">
+          <Link to={"/"} className="nav__logo">
+            <Reveal
+              className="onStep"
+              keyframes={fadeInUp}
+              delay={200}
+              duration={200}
+              triggerOnce
+            >
+              <img src={DSLOGO} alt="DS logo" />
+            </Reveal>
+          </Link>
 
-export default Header
+          <ul className="newNav-ul">
+            {/* Loop li + NavLink */}
+            {links.map((link) => (
+              <li key={link.href}>
+                <NavLink
+                  key={link.href}
+                  href={link.href}
+                  className={
+                    pathname === link.href
+                      ? "bg-secondaryA font-medium"
+                      : "font-normal"
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+    </>
+  );
+};
+
+export default Header;
