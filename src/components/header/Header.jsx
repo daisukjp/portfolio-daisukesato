@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./header.css";
 import { Link, useLocation } from "react-router-dom";
+import { Popover, Transition } from "@headlessui/react";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import DSLOGO from "../../assets/dsato-logo.png";
@@ -29,7 +30,7 @@ const Header = () => {
   const pathname = location.pathname;
 
   const links = [
-    { label: "Home", href: "/#home" },
+    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
     {
@@ -46,16 +47,8 @@ const Header = () => {
     <>
       <header className="header" style={{ fontSmooth: "antialiased" }}>
         <nav className="newNav-container">
-          <Link href={"/"} className="nav__logo">
-            <Reveal
-              className="onStep"
-              keyframes={fadeInUp}
-              delay={300}
-              duration={600}
-              triggerOnce
-            >
-              <img src={DSLOGO} alt="DS logo" />
-            </Reveal>
+          <Link to={"/"} className="nav__logo">
+            <img src={DSLOGO} alt="DS logo" />
           </Link>
 
           <ul className="newNav-ul">
@@ -76,6 +69,49 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <Popover className="mobileNave-top">
+            <Popover.Button
+              className="mobileNave-button"
+              style={{ backgroundColor: "#fafafa" }}
+            >
+              Menu
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                style={{ width: "1.25rem", height: "1.25rem" }}
+              >
+                <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+              </svg>
+            </Popover.Button>
+            <Transition
+              as={Fragment}
+              enter="transition"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            >
+              <Popover.Panel className="mobileNave-panel">
+                <div className="mobileNave-grid">
+                  {links.map((link) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      className={
+                        pathname === link.href
+                          ? "bg-secondaryA mobileNave-items"
+                          : "mobileNave-items"
+                      }
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </Popover.Panel>
+            </Transition>
+          </Popover>
         </nav>
       </header>
     </>

@@ -62,7 +62,11 @@ export const ProjectsPost = (props) => {
                 <h2 style={{ fontSize: "16px", color: "#6f6f6f" }}>
                   {props.data.title}
                 </h2>
-                <Link>{props.data.description}</Link>
+                <Link>
+                  {props.data.description.length > 80
+                    ? props.data.description.substring(0, 80) + "..."
+                    : props.data.description}
+                </Link>
               </div>
             </section>
           </div>

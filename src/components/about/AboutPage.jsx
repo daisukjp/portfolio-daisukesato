@@ -2,6 +2,7 @@ import React from "react";
 import "./aboutmain.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import ScrollUp from "../scrollup/ScrollUp";
 import Contact from "../contact/Contact";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -73,8 +74,8 @@ const AboutPage = () => {
                     opportunities to integrate it into my engineering endeavors.
                   </p>
                   <p>
-                    In addition to coding, I also take photography, focusing on
-                    pet, portrait, and landscape photography.
+                    Beyond programming, I'm an avid photographer specializing in
+                    pet, portrait, and landscape captures.
                   </p>
                   <p>
                     When I'm not at my desk, I'm at the gym, watching videos
@@ -88,6 +89,7 @@ const AboutPage = () => {
         </div>
       </div>
       <Footer />
+      <ScrollUp />
     </>
   );
 };

@@ -38,6 +38,17 @@
   margin-right: auto;
 }
 
+.p-items-link {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+.p-items-link:hover {
+  color: #171717;
+}
+
 /* Medium Device */
 @media screen and (min-width: 768px) {
   .project_top-child-container {

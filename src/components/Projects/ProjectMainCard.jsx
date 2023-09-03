@@ -56,13 +56,6 @@ export const ProjectMainCard = (props) => {
 
   return (
     <>
-      {/* <Reveal
-        className="onStep"
-        keyframes={fadeInUp}
-        delay={600}
-        duration={600}
-        triggerOnce
-      > */}
       <li className="ProjectMainItem ">
         <Link
           className="projectMainCardLink"
@@ -102,15 +95,13 @@ export const ProjectMainCard = (props) => {
                 marginBottom: "calc(0.25rem * 0)",
               }}
             >
-              {props.data.description}
-              {/* {props.data.skills.map((skill, i) => (
-                                <li key={i}>{skill}</li>
-                            ))} */}
+              {props.data.description.length > 120
+                ? props.data.description.substring(0, 120) + "..."
+                : props.data.description}
             </p>
           </div>
         </section>
       </li>
-      {/* </Reveal> */}
     </>
   );
 };

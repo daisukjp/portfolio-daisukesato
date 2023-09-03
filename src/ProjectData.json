@@ -6,7 +6,7 @@
       "skills": ["PHP", "Laravel 6"],
       "url": "https://ethical-conveni.com/",
       "slug": "ethical",
-      "description": "Ethical Conveni is an e-commerce website that offers a range of.... "
+      "description": "During a four-month internship in the summer of 2022, pivotal contributions were made to its development, with a particular emphasis on comprehensive site validation."
     },
     {
       "title": "Fuwa Fuwa Gallery",
@@ -15,7 +15,7 @@
       "github": "https://github.com/daisukjp/FuwaFuwa-Gallery",
       "url": "https://xs272520.xsrv.jp/",
       "slug": "fuwafuwa",
-      "description": "I developed a gallery site to chronicle the growth of my friend's...."
+      "description": "In autumn 2022, I created a gallery website showcasing the journey of my friend's feline companion through a series of enchanting photos and videos. Using WordPress, I enhanced the site's uniqueness by designing a custom theme with PHP programming."
     },
     {
       "title": "My Portfolio Website",
@@ -24,7 +24,7 @@
       "github": "https://github.com/daisukjp/portfolio-daisukesato",
       "url": "http://daisukjp.com/",
       "slug": "portfolio",
-      "description": "This is my portfolio website. Built using react. Last update April...."
+      "description": "My portfolio site, last updated in September 2023, has been meticulously crafted using React, complemented by a selection of cutting-edge libraries, demonstrating my dedication to modern web development."
     }
   ]
 }
