@@ -23,9 +23,7 @@ const App = () => {
             paddingRight: "1.5rem",
           }}
         >
-          <div
-            style={{ display: "flex", flexDirection: "column", gap: "4rem" }}
-          >
+          <div style={{ display: "flex", flexDirection: "column" }}>
             <Service />
             <Skills />
             <Contact />

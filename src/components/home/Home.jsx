@@ -91,12 +91,6 @@ const Home = () => {
             </ul>
           </div>
         </Reveal>
-        {/* <div className="home__content grid">
-          <Data />
-        <Reveal className='onStep' keyframes={fadeIn} delay={900} duration={1500} triggerOnce>
-          
-        </Reveal>
-        </div> */}
       </div>
     </section>
   );
