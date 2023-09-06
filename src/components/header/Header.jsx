@@ -1,8 +1,7 @@
-import React, { useState, Fragment } from "react";
+import React, { Fragment } from "react";
 import "./header.css";
 import { Link, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
-import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import DSLOGO from "../../assets/dsato-logo.png";
 import NavLink from "./NavLink";
@@ -40,8 +39,6 @@ const Header = () => {
   ];
 
   /* Toggle Menu */
-  const [Toggle, ShowMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
 
   return (
     <>
@@ -63,6 +60,8 @@ const Header = () => {
                       ? "bg-secondaryA font-medium"
                       : "font-normal"
                   }
+                  target={link.label === "Resume" ? "_blank" : "_self"}
+                  rel={link.label === "Resume" ? "noopener noreferrer" : ""}
                 >
                   {link.label}
                 </NavLink>
@@ -104,6 +103,8 @@ const Header = () => {
                           ? "bg-secondaryA mobileNave-items"
                           : "mobileNave-items"
                       }
+                      target={link.label === "Resume" ? "_blank" : "_self"}
+                      rel={link.label === "Resume" ? "noopener noreferrer" : ""}
                     >
                       {link.label}
                     </Link>
