@@ -9,6 +9,8 @@ import { Portfolio } from "./components/ProjectList/Portfolio";
 import { Ethical } from "./components/ProjectList/Ethical";
 import { Fuwa } from "./components/ProjectList/Fuwa";
 import { Error } from "./components/Error/Error";
+import AlbumMain from "./components/album/AlbumMain";
+import ImageUp from "./components/album/ImageUp";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -16,6 +18,8 @@ createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="about" element={<AboutPage />} />
+      <Route path="image" element={<AlbumMain />} />
+      <Route path="image/upload" element={<ImageUp />} />
       <Route path="projects" element={<ProjectsPage />} />
       <Route path="projects/portfolio" element={<Portfolio />} />
       <Route path="projects/ethical" element={<Ethical />} />
