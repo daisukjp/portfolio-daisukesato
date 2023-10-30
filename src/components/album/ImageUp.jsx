@@ -33,37 +33,46 @@ const ImageUp = () => {
 
   return (
     <>
-      {loading ? <h2>uploading.....</h2> : <h2>uploaded</h2>}
-      {/* // <div className="outerBox">
-      //   <div className="title">
-      //     <h2>Image uploader</h2>
-      //     <p>Jpeg or Png file</p>
-      //   </div>
-      //   <div className="imageUplodeBox">
-      //     <div className="imageLogoAndText">
-      //       <img alt="imagelogo" />
-      //       <p>drag＆drop</p>
-      //     </div>
-      //     <input
-      //       className="imageUploadInput"
-      //       multiple
-      //       name="imageURL"
-      //       type="file"
-      //       accept=".png, .jpg, .jpeg"
-      //       onChange={OnFileUploadToFirebase}
-      //     />
-      //   </div>
-      //   <p>Or</p>
-      //   <Button variant="contained">
-      //     Select file
-      //     <input
-      //       className="imageUploadInput"
-      //       multiple
-      //       type="file"
-      //       onChange={OnFileUploadToFirebase}
-      //     />
-      //   </Button>
-      // </div> */}
+      {loading ? (
+        <h2>uploading.....</h2>
+      ) : (
+        <>
+          {isUploaded ? (
+            <h2>uploaded</h2>
+          ) : (
+            <div className="outerBox">
+              <div className="title">
+                <h2>Image uploader</h2>
+                <p>Jpeg or Png file</p>
+              </div>
+              <div className="imageUplodeBox">
+                <div className="imageLogoAndText">
+                  <img alt="imagelogo" />
+                  <p>drag＆drop</p>
+                </div>
+                <input
+                  className="imageUploadInput"
+                  multiple
+                  name="imageURL"
+                  type="file"
+                  accept=".png, .jpg, .jpeg"
+                  onChange={OnFileUploadToFirebase}
+                />
+              </div>
+              <p>Or</p>
+              <Button variant="contained">
+                Select file
+                <input
+                  className="imageUploadInput"
+                  multiple
+                  type="file"
+                  onChange={OnFileUploadToFirebase}
+                />
+              </Button>
+            </div>
+          )}
+        </>
+      )}
     </>
   );
 };
