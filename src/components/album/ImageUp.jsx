@@ -1,20 +1,38 @@
 import React, { useState } from "react";
-import { Button } from "@mui/material";
-import "./ImageUp.css";
+import {
+  Button,
+  Typography,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Box,
+} from "@mui/material";
 import storage from "../../firebase";
-import { ref, uploadBytes, uploadBytesResumable } from "firebase/storage";
+import { ref, uploadBytesResumable } from "firebase/storage";
 
 const ImageUp = () => {
   const [loading, setLoading] = useState(false);
   const [isUploaded, setIsUploaded] = useState(false);
+  const [selectedTag, setSelectedTag] = useState("");
+
   const OnFileUploadToFirebase = (e) => {
-    // console.log(e.target.files[0].name);
+    if (!selectedTag) {
+      alert("Please select a tag before uploading.");
+      return;
+    }
+
     const file = e.target.files[0];
     const storageRef = ref(storage, "image/" + file.name);
-    // uploadBytes(storageRef, file).then((snapshot) => {
-    //   console.log("Uploaded a blob or file!");
-    // });
-    const uploadImage = uploadBytesResumable(storageRef, file);
+
+    const metadata = {
+      contentType: file.type,
+      customMetadata: {
+        tag: selectedTag,
+      },
+    };
+
+    const uploadImage = uploadBytesResumable(storageRef, file, metadata);
 
     uploadImage.on(
       "state_change",
@@ -32,48 +50,53 @@ const ImageUp = () => {
   };
 
   return (
-    <>
+    <Box mt={5} textAlign="center">
       {loading ? (
-        <h2>uploading.....</h2>
+        <Typography variant="h5">Uploading...</Typography>
       ) : (
         <>
           {isUploaded ? (
-            <h2>uploaded</h2>
+            <Typography variant="h5">Uploaded</Typography>
           ) : (
-            <div className="outerBox">
-              <div className="title">
-                <h2>Image uploader</h2>
-                <p>Jpeg or Png file</p>
-              </div>
-              <div className="imageUplodeBox">
-                <div className="imageLogoAndText">
-                  <img alt="imagelogo" />
-                  <p>drag＆drop</p>
-                </div>
+            <Box>
+              <Typography variant="h4">Image Uploader</Typography>
+              <Typography variant="subtitle1">JPEG or PNG file</Typography>
+              <FormControl variant="outlined" style={{ marginTop: 20 }}>
+                <InputLabel id="tag-label">Tag</InputLabel>
+                <Select
+                  labelId="tag-label"
+                  value={selectedTag}
+                  onChange={(e) => setSelectedTag(e.target.value)}
+                  label="Tag"
+                  style={{ width: "200px" }}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem value="fuwa">Fuwa</MenuItem>
+                  <MenuItem value="lucy">Lucy</MenuItem>
+                </Select>
+              </FormControl>
+              <Box mt={3}>
                 <input
-                  className="imageUploadInput"
-                  multiple
-                  name="imageURL"
-                  type="file"
                   accept=".png, .jpg, .jpeg"
-                  onChange={OnFileUploadToFirebase}
-                />
-              </div>
-              <p>Or</p>
-              <Button variant="contained">
-                Select file
-                <input
-                  className="imageUploadInput"
+                  style={{ display: "none" }}
+                  id="raised-button-file"
                   multiple
                   type="file"
                   onChange={OnFileUploadToFirebase}
                 />
-              </Button>
-            </div>
+                <label htmlFor="raised-button-file">
+                  <Button variant="contained" component="span">
+                    Select File
+                  </Button>
+                </label>
+              </Box>
+            </Box>
           )}
         </>
       )}
-    </>
+    </Box>
   );
 };
 
