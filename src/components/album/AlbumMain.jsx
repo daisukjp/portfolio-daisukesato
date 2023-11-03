@@ -4,6 +4,7 @@ import { Avatar, Typography, Box } from "@mui/material";
 import Header from "./Header";
 import fuwaAvatar from "../../assets/IMG_6639.jpeg";
 import lucyAvatar from "../../assets/lucy.jpg";
+import youtubeIcon from "../../assets/yotubeicon.png";
 
 const AlbumMain = () => {
   return (
@@ -42,6 +43,22 @@ const AlbumMain = () => {
               </Typography>
             </Link>
           </Box>
+        </Box>
+        <Box style={{ marginTop: "5rem" }}>
+          <Link
+            to="https://www.youtube.com/@daisukjp1"
+            style={{
+              textDecoration: "none",
+              textAlign: "center",
+              display: "block",
+            }}
+            target="_blank"
+          >
+            <img style={{ width: 90, height: 60 }} src={youtubeIcon} />
+            {/* <Typography variant="h6" style={{ marginTop: 8 }}>
+            
+            </Typography> */}
+          </Link>
         </Box>
       </Box>
     </>
