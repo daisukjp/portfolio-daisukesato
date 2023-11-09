@@ -12,6 +12,7 @@ const NavLink = (props) => {
     ? `${className} NavLink-body`
     : "NavLink-body";
 
+  // Check if the href is an external link
   if (href.startsWith("http")) {
     return (
       <a href={href} className={combinedClassName} target={target} rel={rel}>
@@ -20,6 +21,7 @@ const NavLink = (props) => {
     );
   }
 
+  // Internal link
   return (
     <Link to={href} className={combinedClassName}>
       {children}

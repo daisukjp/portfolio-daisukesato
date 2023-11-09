@@ -32,10 +32,10 @@ const Header = () => {
     { label: "Home", href: "/image" },
     // { label: "Portfolio Site", href: "/about" },
     // { label: "Projects", href: "/projects" },
-    // {
-    //   label: "Resume",
-    //   href: "https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing",
-    // },
+    {
+      label: "YouTube",
+      href: "https://www.youtube.com/@daisukjp1/videos",
+    },
   ];
 
   /* Toggle Menu */
@@ -51,17 +51,16 @@ const Header = () => {
           <ul className="newNav-ul">
             {/* Loop li + NavLink */}
             {links.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <NavLink
-                  key={link.href}
                   href={link.href}
                   className={
                     pathname === link.href
                       ? "bg-secondaryA font-medium"
                       : "font-normal"
                   }
-                  target={link.label === "Resume" ? "_blank" : "_self"}
-                  rel={link.label === "Resume" ? "noopener noreferrer" : ""}
+                  target={link.label === "YouTube" ? "_blank" : "_self"}
+                  rel={link.label === "YouTube" ? "noopener noreferrer" : ""}
                 >
                   {link.label}
                 </NavLink>
@@ -94,21 +93,42 @@ const Header = () => {
             >
               <Popover.Panel className="mobileNave-panel">
                 <div className="mobileNave-grid">
-                  {links.map((link) => (
-                    <Link
-                      key={link.href}
-                      to={link.href}
-                      className={
-                        pathname === link.href
-                          ? "bg-secondaryA mobileNave-items"
-                          : "mobileNave-items"
-                      }
-                      target={link.label === "Resume" ? "_blank" : "_self"}
-                      rel={link.label === "Resume" ? "noopener noreferrer" : ""}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  {links.map((link) => {
+                    // Check if the link is an external link
+                    if (link.href.startsWith("http")) {
+                      return (
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          className={
+                            pathname === link.href
+                              ? "bg-secondaryA mobileNave-items"
+                              : "mobileNave-items"
+                          }
+                          // Open in a new tab for the YouTube link
+                          target="_blank"
+                          // Security for opening new tabs
+                          rel="noopener noreferrer"
+                        >
+                          {link.label}
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <Link
+                          key={link.label}
+                          to={link.href}
+                          className={
+                            pathname === link.href
+                              ? "bg-secondaryA mobileNave-items"
+                              : "mobileNave-items"
+                          }
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    }
+                  })}
                 </div>
               </Popover.Panel>
             </Transition>

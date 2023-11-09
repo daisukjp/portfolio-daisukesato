@@ -23,19 +23,29 @@ const FuwaPage = () => {
       .then((res) => {
         const metadataPromises = res.items.map((item) =>
           getMetadata(item).then((metadata) => {
+            // Only proceed if the tag matches 'lucy'
             if (
               metadata.customMetadata &&
               metadata.customMetadata.tag === "lucy"
             ) {
-              return getDownloadURL(item);
+              // Return an object with both the URL and the update time
+              return getDownloadURL(item).then((url) => ({
+                url,
+                updated: metadata.updated,
+              }));
             }
             return null;
           })
         );
 
-        Promise.all(metadataPromises).then((urls) => {
-          const validUrls = urls.filter((url) => url !== null);
-          setImages(validUrls.reverse());
+        Promise.all(metadataPromises).then((items) => {
+          // Filter out nulls and sort by the updated time in descending order
+          const validItems = items.filter((item) => item !== null);
+          validItems.sort((a, b) => new Date(b.updated) - new Date(a.updated));
+
+          // Extract the URLs for display
+          const sortedUrls = validItems.map((item) => item.url);
+          setImages(sortedUrls);
         });
       })
       .catch((err) => console.log(err));

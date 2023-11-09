@@ -17,36 +17,54 @@ const ImageUp = () => {
   const [selectedTag, setSelectedTag] = useState("");
 
   const OnFileUploadToFirebase = (e) => {
+    const files = e.target.files;
     if (!selectedTag) {
       alert("Please select a tag before uploading.");
       return;
     }
+    if (files.length === 0) {
+      alert("Please select one or more files to upload.");
+      return;
+    }
 
-    const file = e.target.files[0];
-    const storageRef = ref(storage, "image/" + file.name);
+    // Set loading to true and isUploaded to false at the start of the upload process
+    setLoading(true);
+    setIsUploaded(false);
 
-    const metadata = {
-      contentType: file.type,
-      customMetadata: {
-        tag: selectedTag,
-      },
-    };
+    // Convert the FileList to an array and iterate over it
+    Array.from(files).forEach((file) => {
+      const storageRef = ref(storage, "image/" + file.name);
 
-    const uploadImage = uploadBytesResumable(storageRef, file, metadata);
+      const metadata = {
+        contentType: file.type,
+        customMetadata: {
+          tag: selectedTag,
+        },
+      };
 
-    uploadImage.on(
-      "state_change",
-      (snapshot) => {
-        setLoading(true);
-      },
-      (err) => {
-        console.log(err);
-      },
-      () => {
-        setLoading(false);
-        setIsUploaded(true);
-      }
-    );
+      const uploadImage = uploadBytesResumable(storageRef, file, metadata);
+
+      uploadImage.on(
+        "state_changed",
+        (snapshot) => {
+          // Handle progress updates here if you wish
+        },
+        (err) => {
+          console.error(err);
+          // If any upload fails, you could set a failed state here
+        },
+        () => {
+          // This will be called for each successful upload
+          // If you want to track when all files are uploaded you'll need to implement additional logic
+          console.log(`${file.name} uploaded successfully`);
+        }
+      );
+    });
+
+    // Once all the files are being uploaded, you could set loading to false
+    // However, if you want to track the actual completion of all uploads, you'll need a more complex state management
+    setLoading(false);
+    setIsUploaded(true);
   };
 
   return (

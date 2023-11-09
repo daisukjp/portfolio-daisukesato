@@ -22,25 +22,35 @@ const FuwaPage = () => {
   useEffect(() => {
     listAll(gsReference)
       .then((res) => {
-        const metadataPromises = res.items.map((item) =>
-          getMetadata(item).then((metadata) => {
-            if (
-              metadata.customMetadata &&
-              metadata.customMetadata.tag === "fuwa"
-            ) {
-              return getDownloadURL(item);
+        const fetchImageUrls = res.items.map((item) => {
+          return getMetadata(item).then((metadata) => {
+            // Check if the tag is 'fuwa' and if there is a valid 'updated' date
+            if (metadata.customMetadata?.tag === "fuwa" && metadata.updated) {
+              return getDownloadURL(item).then((url) => ({
+                url,
+                updated: metadata.updated,
+              }));
             }
             return null;
-          })
-        );
+          });
+        });
 
-        Promise.all(metadataPromises).then((urls) => {
-          const validUrls = urls.filter((url) => url !== null);
-          setImages(validUrls.reverse());
+        Promise.all(fetchImageUrls).then((items) => {
+          // Filter out nulls and sort by the updated time in descending order
+          const validItems = items.filter((item) => item !== null);
+          validItems.sort((a, b) => new Date(b.updated) - new Date(a.updated));
+
+          // Set the sorted image URLs to the state
+          const sortedUrls = validItems.map((item) => item.url);
+          setImages(sortedUrls);
         });
       })
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false));
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   const handleImageClick = (imgUrl) => {
