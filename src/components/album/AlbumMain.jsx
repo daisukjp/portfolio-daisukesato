@@ -5,6 +5,7 @@ import Header from "./Header";
 import fuwaAvatar from "../../assets/IMG_6639.jpeg";
 import lucyAvatar from "../../assets/lucy.jpg";
 import youtubeIcon from "../../assets/yotubeicon.png";
+import sorenAvatar from "../../assets/soren.jpg";
 
 const AlbumMain = () => {
   return (
@@ -15,7 +16,22 @@ const AlbumMain = () => {
         <Box display="flex" flexDirection="row" mt={3}>
           <Box mx={2}>
             <Link
-              to="./lucypage"
+              to="./soren"
+              style={{
+                textDecoration: "none",
+                textAlign: "center",
+                display: "block",
+              }}
+            >
+              <Avatar style={{ width: 80, height: 80 }} src={sorenAvatar} />
+              <Typography variant="h6" style={{ marginTop: 8 }}>
+                Soren
+              </Typography>
+            </Link>
+          </Box>
+          <Box mx={2}>
+            <Link
+              to="./lucy"
               style={{
                 textDecoration: "none",
                 textAlign: "center",
@@ -30,7 +46,7 @@ const AlbumMain = () => {
           </Box>
           <Box mx={2}>
             <Link
-              to="./fuwapage"
+              to="./fuwa"
               style={{
                 textDecoration: "none",
                 textAlign: "center",

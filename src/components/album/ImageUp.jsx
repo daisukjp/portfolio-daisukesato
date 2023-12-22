@@ -93,6 +93,7 @@ const ImageUp = () => {
                   </MenuItem>
                   <MenuItem value="fuwa">Fuwa</MenuItem>
                   <MenuItem value="lucy">Lucy</MenuItem>
+                  <MenuItem value="soren">Soren</MenuItem>
                 </Select>
               </FormControl>
               <Box mt={3}>
