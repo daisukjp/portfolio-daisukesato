@@ -14,6 +14,7 @@ import {
   InstagramOutlined,
   CheckCircleOutlined,
 } from "@ant-design/icons";
+import imageCompression from "browser-image-compression";
 
 import storage from "../../firebase";
 import { ref, uploadBytesResumable } from "firebase/storage";
@@ -27,7 +28,7 @@ const ImageUp = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const OnFileUploadToFirebase = () => {
+  const OnFileUploadToFirebase = async () => {
     if (!selectedTag || selectedTag === "") {
       setErrorMessage("Please select a tag before uploading.");
       return;
@@ -41,35 +42,50 @@ const ImageUp = () => {
     setLoading(true);
     setIsUploaded(false);
 
-    selectedFiles.forEach((file) => {
-      const storageRef = ref(storage, "image/" + file.name);
-
-      const metadata = {
-        contentType: file.type,
-        customMetadata: {
-          tag: selectedTag,
-        },
+    for (const file of selectedFiles) {
+      const options = {
+        maxSizeMB: 1, // (max file size in MB)
+        maxWidthOrHeight: 1920, // (max pixel in width or height)
+        useWebWorker: true,
       };
 
-      const uploadImage = uploadBytesResumable(storageRef, file, metadata);
+      try {
+        const compressedFile = await imageCompression(file, options);
+        const storageRef = ref(storage, "image/" + compressedFile.name);
 
-      uploadImage.on(
-        "state_changed",
-        (snapshot) => {
-          // Handle progress updates here if you wish
-        },
-        (err) => {
-          console.error(err);
-          // If any upload fails, you could set a failed state here
-        },
-        () => {
-          console.log(`${file.name} uploaded successfully`);
-          setLoading(false);
-          setIsUploaded(true);
-          setErrorMessage(""); // Clear the error message
-        }
-      );
-    });
+        const metadata = {
+          contentType: compressedFile.type,
+          customMetadata: {
+            tag: selectedTag,
+          },
+        };
+
+        const uploadImage = uploadBytesResumable(
+          storageRef,
+          compressedFile,
+          metadata
+        );
+
+        uploadImage.on(
+          "state_changed",
+          (snapshot) => {
+            // Handle progress updates here if you wish
+          },
+          (err) => {
+            console.error(err);
+            // If any upload fails, you could set a failed state here
+          },
+          () => {
+            console.log(`${compressedFile.name} uploaded successfully`);
+            setLoading(false);
+            setIsUploaded(true);
+            setErrorMessage(""); // Clear the error message
+          }
+        );
+      } catch (error) {
+        console.error("Error occurred while compressing image", error);
+      }
+    }
   };
 
   const resetUpload = () => {

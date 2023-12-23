@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { Grid, Dialog, Pagination } from "@mui/material";
 import { getDownloadURL, ref, listAll, getMetadata } from "firebase/storage";
 import Header from "../Header";
+import ProfileCard from "../profile/ProfileCard";
+import { tagInfo } from "../AlbumMain";
 
 const fireStorage = storage;
 const gsReference = ref(
@@ -20,6 +22,8 @@ const TaggedImagePage = ({ match }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const { tag } = useParams();
+  const profile = tagInfo[tag];
+  console.log(profile);
 
   useEffect(() => {
     listAll(gsReference)
@@ -71,19 +75,41 @@ const TaggedImagePage = ({ match }) => {
   return (
     <>
       <Header />
-      <div style={{ maxWidth: "800px", margin: "auto", marginTop: "10rem" }}>
-        <Grid container spacing={3} style={{ padding: "2rem" }}>
+      <div style={{ maxWidth: "800px", margin: "auto", marginTop: "8rem" }}>
+        <ProfileCard
+          avatar={profile.avatar}
+          name={profile.name}
+          gender={profile.gender}
+          repositoryStars={1000}
+          blogViews={10185}
+          youtubeSubscribers={53300}
+        />
+        <Grid container spacing={0} style={{ padding: "0", margin: "0" }}>
           {displayedImages.map((imgUrl, index) => (
-            <Grid item xs={6} md={3} key={index}>
+            <Grid item xs={4} key={index}>
               <img
                 src={imgUrl}
                 alt={`Image ${index}`}
-                style={{ width: "100%" }}
+                style={{
+                  width: "100%",
+                  aspectRatio: "1/1",
+                  objectFit: "cover",
+                  display: "block",
+                  border: "0.1px solid #333333",
+                }}
                 onClick={() => handleImageClick(imgUrl)}
               />
             </Grid>
           ))}
         </Grid>
+
+        <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
+          <img
+            src={selectedImage}
+            alt="Selected"
+            style={{ width: "auto", height: "auto" }}
+          />
+        </Dialog>
         <Pagination
           count={Math.ceil(images.length / IMAGES_PER_PAGE)}
           page={currentPage}

@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["http://localhost:3000", "https://www.daisukjp.com"],
+    "method": ["GET", "POST"],
+    "maxAgeSeconds": 3600
+  }
+]

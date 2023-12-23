@@ -3,7 +3,7 @@ import "./header.css";
 import { Link, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { keyframes } from "@emotion/react";
-import FUWALOGO from "../../assets/fuwafuwa.jpg";
+import FUWALOGO from "../../assets/fuwafuwa.png";
 import NavLink from "./NavLink";
 
 const Header = () => {

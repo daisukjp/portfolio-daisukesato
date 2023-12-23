@@ -7,10 +7,17 @@ import lucyAvatar from "../../assets/lucy.jpg";
 import youtubeIcon from "../../assets/yotubeicon.png";
 import sorenAvatar from "../../assets/soren.jpg";
 
+export const tagInfo = {
+  soren: { name: "Soren", avatar: sorenAvatar, gender: "male" },
+  lucy: { name: "Lucy", avatar: lucyAvatar, gender: "female" },
+  fuwa: { name: "Fuwa", avatar: fuwaAvatar, gender: "female" },
+};
+
 const AlbumMain = () => {
   return (
     <>
       <Header />
+
       <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
         <Typography variant="h4">Select your love:)</Typography>
         <Box display="flex" flexDirection="row" mt={3}>
