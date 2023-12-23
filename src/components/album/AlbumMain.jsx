@@ -14,7 +14,7 @@ const AlbumMain = () => {
       <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
         <Typography variant="h4">Select your love:)</Typography>
         <Box display="flex" flexDirection="row" mt={3}>
-          <Box mx={2}>
+          {/* <Box mx={2}>
             <Link
               to="./test"
               style={{
@@ -28,7 +28,7 @@ const AlbumMain = () => {
                 Test
               </Typography>
             </Link>
-          </Box>
+          </Box> */}
           <Box mx={2}>
             <Link
               to="./soren"
