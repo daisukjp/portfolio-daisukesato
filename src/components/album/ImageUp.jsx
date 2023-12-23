@@ -1,38 +1,47 @@
 import React, { useState } from "react";
 import {
+  Upload,
   Button,
-  Typography,
   Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Box,
-} from "@mui/material";
+  Typography,
+  Alert,
+  Spin,
+  Space,
+  Divider,
+} from "antd";
+import {
+  UploadOutlined,
+  InstagramOutlined,
+  CheckCircleOutlined,
+} from "@ant-design/icons";
+
 import storage from "../../firebase";
 import { ref, uploadBytesResumable } from "firebase/storage";
+
+const { Option } = Select;
 
 const ImageUp = () => {
   const [loading, setLoading] = useState(false);
   const [isUploaded, setIsUploaded] = useState(false);
   const [selectedTag, setSelectedTag] = useState("");
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const OnFileUploadToFirebase = (e) => {
-    const files = e.target.files;
-    if (!selectedTag) {
-      alert("Please select a tag before uploading.");
-      return;
-    }
-    if (files.length === 0) {
-      alert("Please select one or more files to upload.");
+  const OnFileUploadToFirebase = () => {
+    if (!selectedTag || selectedTag === "") {
+      setErrorMessage("Please select a tag before uploading.");
       return;
     }
 
-    // Set loading to true and isUploaded to false at the start of the upload process
+    if (selectedFiles.length === 0) {
+      setErrorMessage("Please select files before uploading.");
+      return;
+    }
+
     setLoading(true);
     setIsUploaded(false);
 
-    // Convert the FileList to an array and iterate over it
-    Array.from(files).forEach((file) => {
+    selectedFiles.forEach((file) => {
       const storageRef = ref(storage, "image/" + file.name);
 
       const metadata = {
@@ -54,68 +63,131 @@ const ImageUp = () => {
           // If any upload fails, you could set a failed state here
         },
         () => {
-          // This will be called for each successful upload
-          // If you want to track when all files are uploaded you'll need to implement additional logic
           console.log(`${file.name} uploaded successfully`);
+          setLoading(false);
+          setIsUploaded(true);
+          setErrorMessage(""); // Clear the error message
         }
       );
     });
+  };
 
-    // Once all the files are being uploaded, you could set loading to false
-    // However, if you want to track the actual completion of all uploads, you'll need a more complex state management
-    setLoading(false);
-    setIsUploaded(true);
+  const resetUpload = () => {
+    setSelectedFiles([]);
+    setIsUploaded(false);
+    setErrorMessage("");
+  };
+
+  const onFileSelect = (file) => {
+    setSelectedFiles((prevFiles) => [...prevFiles, file]);
+    return false;
   };
 
   return (
-    <Box mt={5} textAlign="center">
-      {loading ? (
-        <Typography variant="h5">Uploading...</Typography>
-      ) : (
-        <>
-          {isUploaded ? (
-            <Typography variant="h5">Uploaded</Typography>
-          ) : (
-            <Box>
-              <Typography variant="h4">Image Uploader</Typography>
-              <Typography variant="subtitle1">JPEG or PNG file</Typography>
-              <FormControl variant="outlined" style={{ marginTop: 20 }}>
-                <InputLabel id="tag-label">Tag</InputLabel>
-                <Select
-                  labelId="tag-label"
-                  value={selectedTag}
-                  onChange={(e) => setSelectedTag(e.target.value)}
-                  label="Tag"
-                  style={{ width: "200px" }}
-                >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value="fuwa">Fuwa</MenuItem>
-                  <MenuItem value="lucy">Lucy</MenuItem>
-                  <MenuItem value="soren">Soren</MenuItem>
-                </Select>
-              </FormControl>
-              <Box mt={3}>
-                <input
-                  accept=".png, .jpg, .jpeg"
-                  style={{ display: "none" }}
-                  id="raised-button-file"
-                  multiple
-                  type="file"
-                  onChange={OnFileUploadToFirebase}
+    <div
+      style={{
+        textAlign: "center",
+        marginTop: "5rem",
+        backgroundColor: "#fafafa",
+        padding: "2rem",
+        borderRadius: "1rem",
+        boxShadow: "0 0 1rem rgba(0,0,0,0.1)",
+        maxWidth: "500px",
+        margin: "5rem auto",
+      }}
+    >
+      <Typography.Title level={2} style={{ color: "#262626" }}>
+        <InstagramOutlined /> Image Uploader
+      </Typography.Title>
+      <Divider />
+      <Space direction="vertical" size="large">
+        {errorMessage && <Alert message={errorMessage} type="error" />}
+        {loading ? (
+          <Spin tip="Uploading...">
+            <Alert
+              message="Please wait while we upload your images"
+              description="This might take a few seconds."
+              type="info"
+            />
+          </Spin>
+        ) : (
+          <>
+            {isUploaded ? (
+              <>
+                <Alert
+                  message={
+                    <span>
+                      <CheckCircleOutlined style={{ color: "lightgreen" }} />{" "}
+                      Images uploaded successfully!
+                    </span>
+                  }
+                  type="success"
                 />
-                <label htmlFor="raised-button-file">
-                  <Button variant="contained" component="span">
-                    Select File
+                <Button
+                  style={{
+                    backgroundColor: "#0095f6",
+                    borderColor: "#0095f6",
+                    color: "#fff",
+                    marginTop: "1rem",
+                    width: "100%",
+                  }}
+                  onClick={resetUpload}
+                >
+                  Upload More
+                </Button>
+              </>
+            ) : (
+              <div>
+                <Typography.Text type="secondary" style={{ color: "#8e8e8e" }}>
+                  JPEG or PNG files
+                </Typography.Text>
+                <Select
+                  placeholder="Select a tag"
+                  style={{ width: "100%", marginTop: 20 }}
+                  onChange={(value) => setSelectedTag(value)}
+                >
+                  <Option value="fuwa">Fuwa</Option>
+                  <Option value="lucy">Lucy</Option>
+                  <Option value="soren">Soren</Option>
+                  <Option value="test">test</Option>
+                </Select>
+                <Upload
+                  accept=".png, .jpg, .jpeg"
+                  multiple
+                  beforeUpload={onFileSelect}
+                  showUploadList={false}
+                >
+                  <Button
+                    icon={<UploadOutlined />}
+                    style={{
+                      backgroundColor: "#0095f6",
+                      borderColor: "#0095f6",
+                      color: "#fff",
+                      marginTop: "1rem",
+                      width: "100%",
+                    }}
+                  >
+                    Select Files
                   </Button>
-                </label>
-              </Box>
-            </Box>
-          )}
-        </>
-      )}
-    </Box>
+                </Upload>
+                <Button
+                  style={{
+                    backgroundColor: "#0095f6",
+                    borderColor: "#0095f6",
+                    color: "#fff",
+                    marginTop: "1rem",
+                    width: "100%",
+                  }}
+                  onClick={OnFileUploadToFirebase}
+                >
+                  Upload Files
+                </Button>
+              </div>
+            )}
+          </>
+        )}
+      </Space>
+    </div>
   );
 };
 

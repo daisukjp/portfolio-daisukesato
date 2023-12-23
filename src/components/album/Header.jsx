@@ -3,7 +3,7 @@ import "./header.css";
 import { Link, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { keyframes } from "@emotion/react";
-import FUWALOGO from "../../assets/fuwalogo.png";
+import FUWALOGO from "../../assets/fuwafuwa.jpg";
 import NavLink from "./NavLink";
 
 const Header = () => {
@@ -45,7 +45,7 @@ const Header = () => {
       <header className="header" style={{ fontSmooth: "antialiased" }}>
         <nav className="newNav-container">
           <Link to={"/image"} className="nav__logo2">
-            <img src={FUWALOGO} alt="DS logo" />
+            <img src={FUWALOGO} alt="fuwa logo" />
           </Link>
 
           <ul className="newNav-ul">

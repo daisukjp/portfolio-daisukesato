@@ -16,6 +16,21 @@ const AlbumMain = () => {
         <Box display="flex" flexDirection="row" mt={3}>
           <Box mx={2}>
             <Link
+              to="./test"
+              style={{
+                textDecoration: "none",
+                textAlign: "center",
+                display: "block",
+              }}
+            >
+              <Avatar style={{ width: 80, height: 80 }} src={sorenAvatar} />
+              <Typography variant="h6" style={{ marginTop: 8 }}>
+                Test
+              </Typography>
+            </Link>
+          </Box>
+          <Box mx={2}>
+            <Link
               to="./soren"
               style={{
                 textDecoration: "none",
