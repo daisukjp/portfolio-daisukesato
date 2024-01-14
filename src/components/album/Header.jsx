@@ -30,8 +30,8 @@ const Header = () => {
 
   const links = [
     { label: "Home", href: "/image" },
-    // { label: "Portfolio Site", href: "/about" },
-    // { label: "Projects", href: "/projects" },
+    { label: "Portfolio", href: "/" },
+    { label: "Instagram", href: "https://www.instagram.com/daisukjp/" },
     {
       label: "YouTube",
       href: "https://www.youtube.com/@daisukjp1/videos",

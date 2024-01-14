@@ -63,7 +63,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/film_jp/"
+            href="https://www.instagram.com/daisukjp_vlog/"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"

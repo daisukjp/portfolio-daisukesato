@@ -19,7 +19,7 @@ const AlbumMain = () => {
       <Header />
 
       <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
-        <Typography variant="h4">Select your love:)</Typography>
+        <Typography variant="h6">Select your love:)</Typography>
         <Box display="flex" flexDirection="row" mt={3}>
           {/* <Box mx={2}>
             <Link
