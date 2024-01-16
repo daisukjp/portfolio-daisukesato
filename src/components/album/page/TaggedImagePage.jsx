@@ -13,7 +13,7 @@ const gsReference = ref(
   "gs://image-iploader-a08c8.appspot.com/image"
 );
 
-const IMAGES_PER_PAGE = 20;
+const IMAGES_PER_PAGE = 21;
 
 const TaggedImagePage = ({ match }) => {
   const [images, setImages] = useState([]);
@@ -23,7 +23,6 @@ const TaggedImagePage = ({ match }) => {
 
   const { tag } = useParams();
   const profile = tagInfo[tag];
-  console.log(profile);
 
   useEffect(() => {
     listAll(gsReference)

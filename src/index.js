@@ -11,9 +11,7 @@ import { Fuwa } from "./components/ProjectList/Fuwa";
 import { Error } from "./components/Error/Error";
 import AlbumMain from "./components/album/AlbumMain";
 import ImageUp from "./components/album/ImageUp";
-import LucyPage from "./components/album/LucyPage";
-import FuwaPage from "./components/album/FuwaPage";
-import SorenPage from "./components/album/SorenPage";
+
 import TaggedImagePage from "./components/album/page/TaggedImagePage";
 
 createRoot(document.getElementById("root")).render(
@@ -25,9 +23,6 @@ createRoot(document.getElementById("root")).render(
       <Route path="image" element={<AlbumMain />} />
       <Route path="image/upload" element={<ImageUp />} />
       <Route path="image/:tag" element={<TaggedImagePage />} />
-      <Route path="image/lucypage" element={<LucyPage />} />
-      <Route path="image/fuwapage" element={<FuwaPage />} />
-      <Route path="image/sorenpage" element={<SorenPage />} />
       <Route path="projects" element={<ProjectsPage />} />
       <Route path="projects/portfolio" element={<Portfolio />} />
       <Route path="projects/ethical" element={<Ethical />} />

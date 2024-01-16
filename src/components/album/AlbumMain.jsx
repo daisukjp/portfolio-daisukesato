@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Avatar, Typography, Box } from "@mui/material";
 import Header from "./Header";
+import ImageGallery from "./page/ImageGallery";
 import fuwaAvatar from "../../assets/IMG_6639.jpeg";
 import lucyAvatar from "../../assets/lucy.jpg";
 import youtubeIcon from "../../assets/yotubeicon.png";
@@ -21,21 +22,6 @@ const AlbumMain = () => {
       <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
         <Typography variant="h6">Select your love:)</Typography>
         <Box display="flex" flexDirection="row" mt={3}>
-          {/* <Box mx={2}>
-            <Link
-              to="./test"
-              style={{
-                textDecoration: "none",
-                textAlign: "center",
-                display: "block",
-              }}
-            >
-              <Avatar style={{ width: 80, height: 80 }} src={sorenAvatar} />
-              <Typography variant="h6" style={{ marginTop: 8 }}>
-                Test
-              </Typography>
-            </Link>
-          </Box> */}
           <Box mx={2}>
             <Link
               to="./soren"
@@ -82,8 +68,10 @@ const AlbumMain = () => {
             </Link>
           </Box>
         </Box>
+
         <Box style={{ marginTop: "5rem" }}>
-          <Link
+          <ImageGallery />
+          {/* <Link
             to="https://www.youtube.com/@daisukjp1"
             style={{
               textDecoration: "none",
@@ -93,10 +81,7 @@ const AlbumMain = () => {
             target="_blank"
           >
             <img style={{ width: 90, height: 60 }} src={youtubeIcon} />
-            {/* <Typography variant="h6" style={{ marginTop: 8 }}>
-            
-            </Typography> */}
-          </Link>
+          </Link> */}
         </Box>
       </Box>
     </>
