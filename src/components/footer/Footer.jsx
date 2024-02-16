@@ -33,7 +33,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1ioacoxNJMVuzSonjpXlriBa1vPifJH_R/view?usp=sharing"
+              href="https://drive.google.com/file/d/100q4k2p4PUA6VqXphu7xcqNuhUUAEInG/view?usp=sharing"
               className="footer__link"
               target="_blank"
               rel="noopener noreferrer"
