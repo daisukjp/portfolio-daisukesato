@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import AboutPage from "./components/about/AboutPage";
 import { ProjectsPage } from "./components/Projects/ProjectsPage";
@@ -15,7 +15,7 @@ import ImageUp from "./components/album/ImageUp";
 import TaggedImagePage from "./components/album/page/TaggedImagePage";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <HashRouter>
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />} />
@@ -29,5 +29,5 @@ createRoot(document.getElementById("root")).render(
       <Route path="projects/fuwafuwa" element={<Fuwa />} />
       <Route path="*" element={<Error />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
