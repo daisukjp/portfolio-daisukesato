@@ -24,7 +24,7 @@ const ConnectLinks = () => {
     },
     {
       label: "Instagram",
-      href: "https://www.instagram.com/daisukjp_vlog/",
+      href: "https://www.instagram.com/daisukjp",
       icon: <FaInstagram />,
     },
     {

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Social = () => {
   return (
     <div className="home__social">
-        {/* <a href="https://www.instagram.com/film_jp/" className="home__social-icon" target="_blank">
+      {/* <a href="https://www.instagram.com/film_jp/" className="home__social-icon" target="_blank">
           <i className="uil uil-instagram"></i>
         </a>
 
@@ -15,7 +15,7 @@ const Social = () => {
           <i className="uil uil-linkedin-alt"></i>
         </a> */}
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;
