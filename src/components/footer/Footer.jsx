@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 import DSLOGO from "../../assets/dsato-logo.png";
 
 const Footer = () => {
@@ -7,28 +8,28 @@ const Footer = () => {
     <footer className="footer" style={{ fontSmooth: "antialiased" }}>
       <div className="footer__container container">
         <div className="footer__title">
-          <a href="/">
+          <Link to="/">
             <img src={DSLOGO} alt="DS logo" className="footer__img nav__logo" />
-          </a>
+          </Link>
         </div>
 
         <ul className="footer__list">
           <li>
-            <a href="/" className="footer__link">
+            <Link to="/" className="footer__link">
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/about" className="footer__link">
+            <Link to="/about" className="footer__link">
               About
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/projects" className="footer__link">
+            <Link to="/projects" className="footer__link">
               Projects
-            </a>
+            </Link>
           </li>
 
           <li>
