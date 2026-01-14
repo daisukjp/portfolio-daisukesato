@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import ScrollUp from "../scrollup/ScrollUp";
+import ScrollUp from "../scrollup/Scrollup";
 import ProjectData from "../../ProjectData.json";
 import EthicalOne from "../../assets/ethical-convini-pic-1.png";
 import EthicalTwo from "../../assets/ethical-2.png";
@@ -45,7 +45,11 @@ export const Ethical = () => {
             >
               <p>2022</p>
               <span>·</span>
-              <a href="https://ethical-conveni.com/" className="p-items-link">
+              <a
+                href="https://ethical-conveni.com/"
+                className="p-items-link"
+                target="_blank"
+              >
                 Visit Project ↗
               </a>
             </div>

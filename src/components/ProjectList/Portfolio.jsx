@@ -3,7 +3,7 @@ import "./project.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import ProjectData from "../../ProjectData.json";
-import ScrollUp from "../scrollup/ScrollUp";
+import ScrollUp from "../scrollup/Scrollup";
 import Daisuke from "../../assets/daisuke_portforio.png";
 import PortfolioOne from "../../assets/dsato-logo.jpg";
 import PortfolioTwo from "../../assets/portfolio_skills.png";
@@ -46,7 +46,11 @@ export const Portfolio = () => {
             >
               <p>2023</p>
               <span>·</span>
-              <a href="http://daisukjp.com/" className="p-items-link">
+              <a
+                href="https://github.com/daisukjp/portfolio-daisukesato"
+                className="p-items-link"
+                target="_blank"
+              >
                 Visit Project ↗
               </a>
             </div>

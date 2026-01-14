@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import ScrollUp from "../scrollup/ScrollUp";
+import ScrollUp from "../scrollup/Scrollup";
 import ProjectData from "../../ProjectData.json";
 import FuwaOne from "../../assets/fuwafuwa_garalley.jpg";
 import FuwaTwo from "../../assets/fuwa-1.png";
@@ -44,7 +44,11 @@ export const Fuwa = () => {
             >
               <p>2022</p>
               <span>·</span>
-              <a href="https://xs272520.xsrv.jp/" className="p-items-link">
+              <a
+                href="https://github.com/daisukjp/FuwaFuwa-Gallery"
+                className="p-items-link"
+                target="_blank"
+              >
                 Visit Project ↗
               </a>
             </div>

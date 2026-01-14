@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./projectsPage.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import ScrollUp from "../scrollup/ScrollUp";
+import ScrollUp from "../scrollup/Scrollup";
 import { ProjectsCard } from "./ProjectsCard";
 import { ProjectMainCard } from "./ProjectMainCard";
 import { Reveal } from "react-awesome-reveal";

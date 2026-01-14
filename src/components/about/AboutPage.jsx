@@ -2,7 +2,7 @@ import React from "react";
 import "./aboutmain.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import ScrollUp from "../scrollup/ScrollUp";
+import ScrollUp from "../scrollup/Scrollup";
 import Contact from "../contact/Contact";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";

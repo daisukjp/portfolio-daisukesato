@@ -41,9 +41,9 @@ const AboutData = () => {
           <div className="about__content-div">
             <p>Hello world, I'm Daisuke Sato!</p>
             <p>
-              I'm a Jr Software Developer with a passion for web design. I
-              thrive on finding fast and efficient solutions to problems, and
-              I'm driven by the desire to make a significant impact on web
+              I'm a Software Developer with a passion for web design. I thrive
+              on finding fast and efficient solutions to problems, and I'm
+              driven by the desire to make a significant impact on web
               development teams.
             </p>
           </div>
