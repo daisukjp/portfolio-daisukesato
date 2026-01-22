@@ -123,7 +123,7 @@ export const Portfolio = () => {
               >
                 <img
                   src={PortfolioOne}
-                  alt="ethical"
+                  alt="logo"
                   loading="lazy"
                   width="2267"
                   height="1280"
