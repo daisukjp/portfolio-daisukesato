@@ -34,7 +34,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1fWrhkpz3ICieeMEJB43Nu9Xtjcc-VigJ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1IrO8W5LggU62diEHr0OOHZ6Ln6KkGReY/view?usp=sharing"
               className="footer__link"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1fWrhkpz3ICieeMEJB43Nu9Xtjcc-VigJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1IrO8W5LggU62diEHr0OOHZ6Ln6KkGReY/view?usp=sharing"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
