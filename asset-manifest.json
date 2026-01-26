@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio-daisukesato/static/css/main.0f44b22d.css",
+    "main.js": "/portfolio-daisukesato/static/js/main.33a5cd70.js",
+    "static/media/IMG_6639.jpeg": "/portfolio-daisukesato/static/media/IMG_6639.33fcd8ee0cf96754a276.jpeg",
+    "static/media/lucy.jpg": "/portfolio-daisukesato/static/media/lucy.e784bbd69992229a634e.jpg",
+    "static/media/ethical-convini-pic-1.png": "/portfolio-daisukesato/static/media/ethical-convini-pic-1.fb8c2d0d7883ec6ec23e.png",
+    "static/media/profile-about.jpg": "/portfolio-daisukesato/static/media/profile-about.a94cf779b2ddf7677740.jpg",
+    "static/media/about.jpg": "/portfolio-daisukesato/static/media/about.c9471ac0caac7f27740c.jpg",
+    "static/media/ethical-2.png": "/portfolio-daisukesato/static/media/ethical-2.594a6e70a9454a216f5d.png",
+    "static/media/fuwa-2.png": "/portfolio-daisukesato/static/media/fuwa-2.45b9cd603251a28bbbd1.png",
+    "static/media/ethical-4.png": "/portfolio-daisukesato/static/media/ethical-4.c787a82e297ebd33c52c.png",
+    "static/media/fuwa-1.png": "/portfolio-daisukesato/static/media/fuwa-1.c8144a466c9ab84cc566.png",
+    "static/media/fuwafuwa_garalley.jpg": "/portfolio-daisukesato/static/media/fuwafuwa_garalley.60dc87235fde927b0f7a.jpg",
+    "static/media/ethical-3.png": "/portfolio-daisukesato/static/media/ethical-3.74fce43d0042793c2df6.png",
+    "static/media/soren.jpg": "/portfolio-daisukesato/static/media/soren.49a9c780db84ef3ecbce.jpg",
+    "static/media/daisuke_portforio.png": "/portfolio-daisukesato/static/media/daisuke_portforio.794796bef83bcfc8188b.png",
+    "static/media/fuwafuwa.png": "/portfolio-daisukesato/static/media/fuwafuwa.c853261e2daa7fee0750.png",
+    "static/media/dsato-logo.jpg": "/portfolio-daisukesato/static/media/dsato-logo.14190fc1f28e9224bf10.jpg",
+    "static/media/portfolio_skills.png": "/portfolio-daisukesato/static/media/portfolio_skills.9f9464c4d410ecaea96f.png",
+    "static/media/yotubeicon.png": "/portfolio-daisukesato/static/media/yotubeicon.3dade2f5989f615c0250.png",
+    "static/media/dsato-logo.png": "/portfolio-daisukesato/static/media/dsato-logo.9b6d9d7e4f205ad63df4.png",
+    "index.html": "/portfolio-daisukesato/index.html",
+    "main.0f44b22d.css.map": "/portfolio-daisukesato/static/css/main.0f44b22d.css.map",
+    "main.33a5cd70.js.map": "/portfolio-daisukesato/static/js/main.33a5cd70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f44b22d.css",
+    "static/js/main.33a5cd70.js"
+  ]
+}
