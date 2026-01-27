@@ -34,7 +34,7 @@ const Header = () => {
     { label: "Projects", href: "/projects" },
     {
       label: "Resume",
-      href: "https://drive.google.com/file/d/1IrO8W5LggU62diEHr0OOHZ6Ln6KkGReY/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1n60DnwQe0UoM5JLHa0_WKXa2TJcMXsTu/view?usp=sharing",
     },
   ];
 
